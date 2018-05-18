@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<tosca version="0.9" prefix="/track">
+    <parameter index="1" name="azim" min="-180" max="180" scaling="linear"/>
+    <parameter index="2" name="elev" min="-90" max="90" scaling="linear"/>
+    <parameter index="3" name="dist" min="1" max="10" scaling="linear"/>
+</tosca>
+
+
+ 
