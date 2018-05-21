@@ -2,7 +2,7 @@
 	"name" : "Panoramix-AVM",
 	"version" : 1,
 	"creationdate" : 3609486721,
-	"modificationdate" : 3609486769,
+	"modificationdate" : 3609772955,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,16 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"AudioSetup.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM/patches",
+					"projectrelativepath" : "./patches"
+				}
+
 			}
 
 		}
