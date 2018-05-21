@@ -84,7 +84,7 @@
 							"/row/18/col/1" : 0,
 							"/row/18/col/2" : 0,
 							"/constraints/oneperrow" : 1,
-							"/constraints/onepercol" : 1,
+							"/constraints/onepercol" : 0,
 							"/constraints/onepermatrix" : 0,
 							"/row/1/name" : "spat_output1",
 							"/row/1/color" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -168,7 +168,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -345.0, 96.0, 1292.0, 883.0 ],
+						"rect" : [ 354.0, 207.0, 1292.0, 883.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -197,6 +197,151 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 379.75, 580.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "$2 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 167.5, 444.292725, 117.0, 35.0 ],
+									"style" : "",
+									"text" : ";\rdsp outremap $1 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 167.5, 377.292725, 117.0, 22.0 ],
+									"style" : "",
+									"text" : "spat5.osc.unslashify"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 167.5, 413.292725, 61.0, 22.0 ],
+									"style" : "",
+									"text" : "route row"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-62",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 36.5, 163.292725, 58.0, 22.0 ],
+									"style" : "",
+									"text" : "route 1 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.5, 134.292725, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "$2 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-58",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 36.5, 101.292725, 179.0, 22.0 ],
+									"style" : "",
+									"text" : "spat5.osc.routepass /row/*/col/*"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-57",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.5, 444.292725, 117.0, 35.0 ],
+									"style" : "",
+									"text" : ";\rdsp outremap $1 $3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 36.5, 377.292725, 117.0, 22.0 ],
+									"style" : "",
+									"text" : "spat5.osc.unslashify"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 36.5, 413.292725, 61.0, 22.0 ],
+									"style" : "",
+									"text" : "route row"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 430.0, 396.292725, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "$2 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -210,65 +355,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 408.75, 666.0, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "$2 $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-89",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 390.5, 579.0, 48.0, 22.0 ],
+									"patching_rect" : [ 379.75, 620.0, 48.0, 22.0 ],
 									"style" : "",
 									"text" : "route 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-83",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 353.0, 138.0, 22.0 ],
-									"style" : "",
-									"text" : "s dumpOutputMappings"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-82",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "stop" ],
-									"patching_rect" : [ 36.5, 248.0, 46.0, 22.0 ],
-									"style" : "",
-									"text" : "t l stop"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-81",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 101.0, 306.0, 63.0, 22.0 ],
-									"style" : "",
-									"text" : "delay 100"
 								}
 
 							}
@@ -395,7 +489,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1008.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 18"
+																	"text" : "18 $1"
 																}
 
 															}
@@ -423,7 +517,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 883.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 17"
+																	"text" : "17 $1"
 																}
 
 															}
@@ -451,7 +545,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 758.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 16"
+																	"text" : "16 $1"
 																}
 
 															}
@@ -479,7 +573,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 633.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 15"
+																	"text" : "15 $1"
 																}
 
 															}
@@ -507,7 +601,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 508.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 14"
+																	"text" : "14 $1"
 																}
 
 															}
@@ -535,7 +629,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 383.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 13"
+																	"text" : "13 $1"
 																}
 
 															}
@@ -563,7 +657,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 12"
+																	"text" : "12 $1"
 																}
 
 															}
@@ -591,7 +685,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 38.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 11"
+																	"text" : "11 $1"
 																}
 
 															}
@@ -838,9 +932,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -849,9 +943,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -1045,7 +1139,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1258.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 10"
+																	"text" : "10 $1"
 																}
 
 															}
@@ -1073,7 +1167,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1133.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 9"
+																	"text" : "9 $1"
 																}
 
 															}
@@ -1101,7 +1195,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1008.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 8"
+																	"text" : "8 $1"
 																}
 
 															}
@@ -1129,7 +1223,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 883.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 7"
+																	"text" : "7 $1"
 																}
 
 															}
@@ -1157,7 +1251,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 758.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 6"
+																	"text" : "6 $1"
 																}
 
 															}
@@ -1185,7 +1279,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 633.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 5"
+																	"text" : "5 $1"
 																}
 
 															}
@@ -1213,7 +1307,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 508.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 4"
+																	"text" : "4 $1"
 																}
 
 															}
@@ -1241,7 +1335,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 383.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 3"
+																	"text" : "3 $1"
 																}
 
 															}
@@ -1269,7 +1363,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 2"
+																	"text" : "2 $1"
 																}
 
 															}
@@ -1297,7 +1391,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 1"
+																	"text" : "1 $1"
 																}
 
 															}
@@ -1588,9 +1682,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -1599,9 +1693,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -1763,19 +1857,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-68",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 85.0, 202.5, 161.0, 33.0 ],
-									"style" : "",
-									"text" : "if 0 not followed by 1, dump all inputs again"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-59",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
@@ -1807,22 +1888,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 445.5, 642.0, 29.5, 22.0 ],
+									"patching_rect" : [ 460.5, 587.0, 29.5, 22.0 ],
 									"style" : "",
-									"text" : "$2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-43",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 419.5, 611.0, 29.5, 22.0 ],
-									"style" : "",
-									"text" : "t l l"
+									"text" : "$1"
 								}
 
 							}
@@ -1833,7 +1901,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 450.5, 675.0, 165.0, 22.0 ],
+									"patching_rect" : [ 465.5, 620.0, 165.0, 22.0 ],
 									"style" : "",
 									"text" : "sprintf /set/row/%ld/col/* 0"
 								}
@@ -1932,19 +2000,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 416.0, 154.292725, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "$2 $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-14",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -2026,85 +2081,6 @@
 									"patching_rect" : [ 783.0, 210.0, 93.0, 22.0 ],
 									"style" : "",
 									"text" : "t b dump length"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-62",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 36.5, 174.292725, 58.0, 22.0 ],
-									"style" : "",
-									"text" : "route 1 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-61",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.5, 145.292725, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "$2 $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-58",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 36.5, 112.292725, 179.0, 22.0 ],
-									"style" : "",
-									"text" : "spat5.osc.routepass /row/*/col/*"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-57",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.5, 455.292725, 117.0, 35.0 ],
-									"style" : "",
-									"text" : ";\rdsp outremap $1 $3"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-55",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 36.5, 388.292725, 117.0, 22.0 ],
-									"style" : "",
-									"text" : "spat5.osc.unslashify"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-54",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 36.5, 424.292725, 61.0, 22.0 ],
-									"style" : "",
-									"text" : "route row"
 								}
 
 							}
@@ -2335,7 +2311,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 589.0, 79.0, 640.0, 480.0 ],
+										"rect" : [ 39.0, 307.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2383,7 +2359,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 371.5, 260.0, 142.0, 22.0 ],
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 483.5, 175.0, 133.0, 22.0 ],
+													"presentation_rect" : [ 483.5, 175.0, 133.0, 35.0 ],
 													"style" : "",
 													"text" : "/constraints/oneperrow 1"
 												}
@@ -2617,9 +2593,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -2628,9 +2604,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -2790,21 +2766,28 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-48", 0 ],
+									"destination" : [ "obj-89", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
+									"destination" : [ "obj-16", 0 ],
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -2832,7 +2815,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-2", 1 ]
 								}
 
@@ -3038,22 +3021,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-89", 0 ],
+									"destination" : [ "obj-1", 0 ],
+									"order" : 1,
 									"source" : [ "obj-40", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-46", 0 ],
-									"source" : [ "obj-43", 1 ]
+									"order" : 0,
+									"source" : [ "obj-40", 0 ]
 								}
 
 							}
@@ -3164,15 +3142,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-62", 1 ]
+									"destination" : [ "obj-55", 0 ],
+									"source" : [ "obj-62", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-82", 0 ],
-									"source" : [ "obj-62", 0 ]
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-62", 1 ]
 								}
 
 							}
@@ -3199,29 +3177,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-83", 0 ],
-									"source" : [ "obj-81", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-55", 0 ],
-									"source" : [ "obj-82", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-82", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-43", 0 ],
+									"destination" : [ "obj-48", 0 ],
 									"source" : [ "obj-89", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -3256,9 +3220,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3267,9 +3231,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3453,7 +3417,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 592.0, 53.0, 105.0, 22.0 ],
 					"restore" : [ 						{
-							"/row/number" : 64,
+							"/row/number" : 2,
 							"/col/number" : 32,
 							"/row/1/col/1" : 1,
 							"/row/1/col/2" : 0,
@@ -3519,1990 +3483,6 @@
 							"/row/2/col/30" : 0,
 							"/row/2/col/31" : 0,
 							"/row/2/col/32" : 0,
-							"/row/3/col/1" : 0,
-							"/row/3/col/2" : 0,
-							"/row/3/col/3" : 1,
-							"/row/3/col/4" : 0,
-							"/row/3/col/5" : 0,
-							"/row/3/col/6" : 0,
-							"/row/3/col/7" : 0,
-							"/row/3/col/8" : 0,
-							"/row/3/col/9" : 0,
-							"/row/3/col/10" : 0,
-							"/row/3/col/11" : 0,
-							"/row/3/col/12" : 0,
-							"/row/3/col/13" : 0,
-							"/row/3/col/14" : 0,
-							"/row/3/col/15" : 0,
-							"/row/3/col/16" : 0,
-							"/row/3/col/17" : 0,
-							"/row/3/col/18" : 0,
-							"/row/3/col/19" : 0,
-							"/row/3/col/20" : 0,
-							"/row/3/col/21" : 0,
-							"/row/3/col/22" : 0,
-							"/row/3/col/23" : 0,
-							"/row/3/col/24" : 0,
-							"/row/3/col/25" : 0,
-							"/row/3/col/26" : 0,
-							"/row/3/col/27" : 0,
-							"/row/3/col/28" : 0,
-							"/row/3/col/29" : 0,
-							"/row/3/col/30" : 0,
-							"/row/3/col/31" : 0,
-							"/row/3/col/32" : 0,
-							"/row/4/col/1" : 0,
-							"/row/4/col/2" : 0,
-							"/row/4/col/3" : 0,
-							"/row/4/col/4" : 1,
-							"/row/4/col/5" : 0,
-							"/row/4/col/6" : 0,
-							"/row/4/col/7" : 0,
-							"/row/4/col/8" : 0,
-							"/row/4/col/9" : 0,
-							"/row/4/col/10" : 0,
-							"/row/4/col/11" : 0,
-							"/row/4/col/12" : 0,
-							"/row/4/col/13" : 0,
-							"/row/4/col/14" : 0,
-							"/row/4/col/15" : 0,
-							"/row/4/col/16" : 0,
-							"/row/4/col/17" : 0,
-							"/row/4/col/18" : 0,
-							"/row/4/col/19" : 0,
-							"/row/4/col/20" : 0,
-							"/row/4/col/21" : 0,
-							"/row/4/col/22" : 0,
-							"/row/4/col/23" : 0,
-							"/row/4/col/24" : 0,
-							"/row/4/col/25" : 0,
-							"/row/4/col/26" : 0,
-							"/row/4/col/27" : 0,
-							"/row/4/col/28" : 0,
-							"/row/4/col/29" : 0,
-							"/row/4/col/30" : 0,
-							"/row/4/col/31" : 0,
-							"/row/4/col/32" : 0,
-							"/row/5/col/1" : 0,
-							"/row/5/col/2" : 0,
-							"/row/5/col/3" : 0,
-							"/row/5/col/4" : 0,
-							"/row/5/col/5" : 1,
-							"/row/5/col/6" : 0,
-							"/row/5/col/7" : 0,
-							"/row/5/col/8" : 0,
-							"/row/5/col/9" : 0,
-							"/row/5/col/10" : 0,
-							"/row/5/col/11" : 0,
-							"/row/5/col/12" : 0,
-							"/row/5/col/13" : 0,
-							"/row/5/col/14" : 0,
-							"/row/5/col/15" : 0,
-							"/row/5/col/16" : 0,
-							"/row/5/col/17" : 0,
-							"/row/5/col/18" : 0,
-							"/row/5/col/19" : 0,
-							"/row/5/col/20" : 0,
-							"/row/5/col/21" : 0,
-							"/row/5/col/22" : 0,
-							"/row/5/col/23" : 0,
-							"/row/5/col/24" : 0,
-							"/row/5/col/25" : 0,
-							"/row/5/col/26" : 0,
-							"/row/5/col/27" : 0,
-							"/row/5/col/28" : 0,
-							"/row/5/col/29" : 0,
-							"/row/5/col/30" : 0,
-							"/row/5/col/31" : 0,
-							"/row/5/col/32" : 0,
-							"/row/6/col/1" : 0,
-							"/row/6/col/2" : 0,
-							"/row/6/col/3" : 0,
-							"/row/6/col/4" : 0,
-							"/row/6/col/5" : 0,
-							"/row/6/col/6" : 1,
-							"/row/6/col/7" : 0,
-							"/row/6/col/8" : 0,
-							"/row/6/col/9" : 0,
-							"/row/6/col/10" : 0,
-							"/row/6/col/11" : 0,
-							"/row/6/col/12" : 0,
-							"/row/6/col/13" : 0,
-							"/row/6/col/14" : 0,
-							"/row/6/col/15" : 0,
-							"/row/6/col/16" : 0,
-							"/row/6/col/17" : 0,
-							"/row/6/col/18" : 0,
-							"/row/6/col/19" : 0,
-							"/row/6/col/20" : 0,
-							"/row/6/col/21" : 0,
-							"/row/6/col/22" : 0,
-							"/row/6/col/23" : 0,
-							"/row/6/col/24" : 0,
-							"/row/6/col/25" : 0,
-							"/row/6/col/26" : 0,
-							"/row/6/col/27" : 0,
-							"/row/6/col/28" : 0,
-							"/row/6/col/29" : 0,
-							"/row/6/col/30" : 0,
-							"/row/6/col/31" : 0,
-							"/row/6/col/32" : 0,
-							"/row/7/col/1" : 0,
-							"/row/7/col/2" : 0,
-							"/row/7/col/3" : 0,
-							"/row/7/col/4" : 0,
-							"/row/7/col/5" : 0,
-							"/row/7/col/6" : 0,
-							"/row/7/col/7" : 1,
-							"/row/7/col/8" : 0,
-							"/row/7/col/9" : 0,
-							"/row/7/col/10" : 0,
-							"/row/7/col/11" : 0,
-							"/row/7/col/12" : 0,
-							"/row/7/col/13" : 0,
-							"/row/7/col/14" : 0,
-							"/row/7/col/15" : 0,
-							"/row/7/col/16" : 0,
-							"/row/7/col/17" : 0,
-							"/row/7/col/18" : 0,
-							"/row/7/col/19" : 0,
-							"/row/7/col/20" : 0,
-							"/row/7/col/21" : 0,
-							"/row/7/col/22" : 0,
-							"/row/7/col/23" : 0,
-							"/row/7/col/24" : 0,
-							"/row/7/col/25" : 0,
-							"/row/7/col/26" : 0,
-							"/row/7/col/27" : 0,
-							"/row/7/col/28" : 0,
-							"/row/7/col/29" : 0,
-							"/row/7/col/30" : 0,
-							"/row/7/col/31" : 0,
-							"/row/7/col/32" : 0,
-							"/row/8/col/1" : 0,
-							"/row/8/col/2" : 0,
-							"/row/8/col/3" : 0,
-							"/row/8/col/4" : 0,
-							"/row/8/col/5" : 0,
-							"/row/8/col/6" : 0,
-							"/row/8/col/7" : 0,
-							"/row/8/col/8" : 1,
-							"/row/8/col/9" : 0,
-							"/row/8/col/10" : 0,
-							"/row/8/col/11" : 0,
-							"/row/8/col/12" : 0,
-							"/row/8/col/13" : 0,
-							"/row/8/col/14" : 0,
-							"/row/8/col/15" : 0,
-							"/row/8/col/16" : 0,
-							"/row/8/col/17" : 0,
-							"/row/8/col/18" : 0,
-							"/row/8/col/19" : 0,
-							"/row/8/col/20" : 0,
-							"/row/8/col/21" : 0,
-							"/row/8/col/22" : 0,
-							"/row/8/col/23" : 0,
-							"/row/8/col/24" : 0,
-							"/row/8/col/25" : 0,
-							"/row/8/col/26" : 0,
-							"/row/8/col/27" : 0,
-							"/row/8/col/28" : 0,
-							"/row/8/col/29" : 0,
-							"/row/8/col/30" : 0,
-							"/row/8/col/31" : 0,
-							"/row/8/col/32" : 0,
-							"/row/9/col/1" : 0,
-							"/row/9/col/2" : 0,
-							"/row/9/col/3" : 0,
-							"/row/9/col/4" : 0,
-							"/row/9/col/5" : 0,
-							"/row/9/col/6" : 0,
-							"/row/9/col/7" : 0,
-							"/row/9/col/8" : 0,
-							"/row/9/col/9" : 1,
-							"/row/9/col/10" : 0,
-							"/row/9/col/11" : 0,
-							"/row/9/col/12" : 0,
-							"/row/9/col/13" : 0,
-							"/row/9/col/14" : 0,
-							"/row/9/col/15" : 0,
-							"/row/9/col/16" : 0,
-							"/row/9/col/17" : 0,
-							"/row/9/col/18" : 0,
-							"/row/9/col/19" : 0,
-							"/row/9/col/20" : 0,
-							"/row/9/col/21" : 0,
-							"/row/9/col/22" : 0,
-							"/row/9/col/23" : 0,
-							"/row/9/col/24" : 0,
-							"/row/9/col/25" : 0,
-							"/row/9/col/26" : 0,
-							"/row/9/col/27" : 0,
-							"/row/9/col/28" : 0,
-							"/row/9/col/29" : 0,
-							"/row/9/col/30" : 0,
-							"/row/9/col/31" : 0,
-							"/row/9/col/32" : 0,
-							"/row/10/col/1" : 0,
-							"/row/10/col/2" : 0,
-							"/row/10/col/3" : 0,
-							"/row/10/col/4" : 0,
-							"/row/10/col/5" : 0,
-							"/row/10/col/6" : 0,
-							"/row/10/col/7" : 0,
-							"/row/10/col/8" : 0,
-							"/row/10/col/9" : 0,
-							"/row/10/col/10" : 1,
-							"/row/10/col/11" : 0,
-							"/row/10/col/12" : 0,
-							"/row/10/col/13" : 0,
-							"/row/10/col/14" : 0,
-							"/row/10/col/15" : 0,
-							"/row/10/col/16" : 0,
-							"/row/10/col/17" : 0,
-							"/row/10/col/18" : 0,
-							"/row/10/col/19" : 0,
-							"/row/10/col/20" : 0,
-							"/row/10/col/21" : 0,
-							"/row/10/col/22" : 0,
-							"/row/10/col/23" : 0,
-							"/row/10/col/24" : 0,
-							"/row/10/col/25" : 0,
-							"/row/10/col/26" : 0,
-							"/row/10/col/27" : 0,
-							"/row/10/col/28" : 0,
-							"/row/10/col/29" : 0,
-							"/row/10/col/30" : 0,
-							"/row/10/col/31" : 0,
-							"/row/10/col/32" : 0,
-							"/row/11/col/1" : 0,
-							"/row/11/col/2" : 0,
-							"/row/11/col/3" : 0,
-							"/row/11/col/4" : 0,
-							"/row/11/col/5" : 0,
-							"/row/11/col/6" : 0,
-							"/row/11/col/7" : 0,
-							"/row/11/col/8" : 0,
-							"/row/11/col/9" : 0,
-							"/row/11/col/10" : 0,
-							"/row/11/col/11" : 1,
-							"/row/11/col/12" : 0,
-							"/row/11/col/13" : 0,
-							"/row/11/col/14" : 0,
-							"/row/11/col/15" : 0,
-							"/row/11/col/16" : 0,
-							"/row/11/col/17" : 0,
-							"/row/11/col/18" : 0,
-							"/row/11/col/19" : 0,
-							"/row/11/col/20" : 0,
-							"/row/11/col/21" : 0,
-							"/row/11/col/22" : 0,
-							"/row/11/col/23" : 0,
-							"/row/11/col/24" : 0,
-							"/row/11/col/25" : 0,
-							"/row/11/col/26" : 0,
-							"/row/11/col/27" : 0,
-							"/row/11/col/28" : 0,
-							"/row/11/col/29" : 0,
-							"/row/11/col/30" : 0,
-							"/row/11/col/31" : 0,
-							"/row/11/col/32" : 0,
-							"/row/12/col/1" : 0,
-							"/row/12/col/2" : 0,
-							"/row/12/col/3" : 0,
-							"/row/12/col/4" : 0,
-							"/row/12/col/5" : 0,
-							"/row/12/col/6" : 0,
-							"/row/12/col/7" : 0,
-							"/row/12/col/8" : 0,
-							"/row/12/col/9" : 0,
-							"/row/12/col/10" : 0,
-							"/row/12/col/11" : 0,
-							"/row/12/col/12" : 1,
-							"/row/12/col/13" : 0,
-							"/row/12/col/14" : 0,
-							"/row/12/col/15" : 0,
-							"/row/12/col/16" : 0,
-							"/row/12/col/17" : 0,
-							"/row/12/col/18" : 0,
-							"/row/12/col/19" : 0,
-							"/row/12/col/20" : 0,
-							"/row/12/col/21" : 0,
-							"/row/12/col/22" : 0,
-							"/row/12/col/23" : 0,
-							"/row/12/col/24" : 0,
-							"/row/12/col/25" : 0,
-							"/row/12/col/26" : 0,
-							"/row/12/col/27" : 0,
-							"/row/12/col/28" : 0,
-							"/row/12/col/29" : 0,
-							"/row/12/col/30" : 0,
-							"/row/12/col/31" : 0,
-							"/row/12/col/32" : 0,
-							"/row/13/col/1" : 0,
-							"/row/13/col/2" : 0,
-							"/row/13/col/3" : 0,
-							"/row/13/col/4" : 0,
-							"/row/13/col/5" : 0,
-							"/row/13/col/6" : 0,
-							"/row/13/col/7" : 0,
-							"/row/13/col/8" : 0,
-							"/row/13/col/9" : 0,
-							"/row/13/col/10" : 0,
-							"/row/13/col/11" : 0,
-							"/row/13/col/12" : 0,
-							"/row/13/col/13" : 1,
-							"/row/13/col/14" : 0,
-							"/row/13/col/15" : 0,
-							"/row/13/col/16" : 0,
-							"/row/13/col/17" : 0,
-							"/row/13/col/18" : 0,
-							"/row/13/col/19" : 0,
-							"/row/13/col/20" : 0,
-							"/row/13/col/21" : 0,
-							"/row/13/col/22" : 0,
-							"/row/13/col/23" : 0,
-							"/row/13/col/24" : 0,
-							"/row/13/col/25" : 0,
-							"/row/13/col/26" : 0,
-							"/row/13/col/27" : 0,
-							"/row/13/col/28" : 0,
-							"/row/13/col/29" : 0,
-							"/row/13/col/30" : 0,
-							"/row/13/col/31" : 0,
-							"/row/13/col/32" : 0,
-							"/row/14/col/1" : 0,
-							"/row/14/col/2" : 0,
-							"/row/14/col/3" : 0,
-							"/row/14/col/4" : 0,
-							"/row/14/col/5" : 0,
-							"/row/14/col/6" : 0,
-							"/row/14/col/7" : 0,
-							"/row/14/col/8" : 0,
-							"/row/14/col/9" : 0,
-							"/row/14/col/10" : 0,
-							"/row/14/col/11" : 0,
-							"/row/14/col/12" : 0,
-							"/row/14/col/13" : 0,
-							"/row/14/col/14" : 1,
-							"/row/14/col/15" : 0,
-							"/row/14/col/16" : 0,
-							"/row/14/col/17" : 0,
-							"/row/14/col/18" : 0,
-							"/row/14/col/19" : 0,
-							"/row/14/col/20" : 0,
-							"/row/14/col/21" : 0,
-							"/row/14/col/22" : 0,
-							"/row/14/col/23" : 0,
-							"/row/14/col/24" : 0,
-							"/row/14/col/25" : 0,
-							"/row/14/col/26" : 0,
-							"/row/14/col/27" : 0,
-							"/row/14/col/28" : 0,
-							"/row/14/col/29" : 0,
-							"/row/14/col/30" : 0,
-							"/row/14/col/31" : 0,
-							"/row/14/col/32" : 0,
-							"/row/15/col/1" : 0,
-							"/row/15/col/2" : 0,
-							"/row/15/col/3" : 0,
-							"/row/15/col/4" : 0,
-							"/row/15/col/5" : 0,
-							"/row/15/col/6" : 0,
-							"/row/15/col/7" : 0,
-							"/row/15/col/8" : 0,
-							"/row/15/col/9" : 0,
-							"/row/15/col/10" : 0,
-							"/row/15/col/11" : 0,
-							"/row/15/col/12" : 0,
-							"/row/15/col/13" : 0,
-							"/row/15/col/14" : 0,
-							"/row/15/col/15" : 1,
-							"/row/15/col/16" : 0,
-							"/row/15/col/17" : 0,
-							"/row/15/col/18" : 0,
-							"/row/15/col/19" : 0,
-							"/row/15/col/20" : 0,
-							"/row/15/col/21" : 0,
-							"/row/15/col/22" : 0,
-							"/row/15/col/23" : 0,
-							"/row/15/col/24" : 0,
-							"/row/15/col/25" : 0,
-							"/row/15/col/26" : 0,
-							"/row/15/col/27" : 0,
-							"/row/15/col/28" : 0,
-							"/row/15/col/29" : 0,
-							"/row/15/col/30" : 0,
-							"/row/15/col/31" : 0,
-							"/row/15/col/32" : 0,
-							"/row/16/col/1" : 0,
-							"/row/16/col/2" : 0,
-							"/row/16/col/3" : 0,
-							"/row/16/col/4" : 0,
-							"/row/16/col/5" : 0,
-							"/row/16/col/6" : 0,
-							"/row/16/col/7" : 0,
-							"/row/16/col/8" : 0,
-							"/row/16/col/9" : 0,
-							"/row/16/col/10" : 0,
-							"/row/16/col/11" : 0,
-							"/row/16/col/12" : 0,
-							"/row/16/col/13" : 0,
-							"/row/16/col/14" : 0,
-							"/row/16/col/15" : 0,
-							"/row/16/col/16" : 1,
-							"/row/16/col/17" : 0,
-							"/row/16/col/18" : 0,
-							"/row/16/col/19" : 0,
-							"/row/16/col/20" : 0,
-							"/row/16/col/21" : 0,
-							"/row/16/col/22" : 0,
-							"/row/16/col/23" : 0,
-							"/row/16/col/24" : 0,
-							"/row/16/col/25" : 0,
-							"/row/16/col/26" : 0,
-							"/row/16/col/27" : 0,
-							"/row/16/col/28" : 0,
-							"/row/16/col/29" : 0,
-							"/row/16/col/30" : 0,
-							"/row/16/col/31" : 0,
-							"/row/16/col/32" : 0,
-							"/row/17/col/1" : 0,
-							"/row/17/col/2" : 0,
-							"/row/17/col/3" : 0,
-							"/row/17/col/4" : 0,
-							"/row/17/col/5" : 0,
-							"/row/17/col/6" : 0,
-							"/row/17/col/7" : 0,
-							"/row/17/col/8" : 0,
-							"/row/17/col/9" : 0,
-							"/row/17/col/10" : 0,
-							"/row/17/col/11" : 0,
-							"/row/17/col/12" : 0,
-							"/row/17/col/13" : 0,
-							"/row/17/col/14" : 0,
-							"/row/17/col/15" : 0,
-							"/row/17/col/16" : 0,
-							"/row/17/col/17" : 1,
-							"/row/17/col/18" : 0,
-							"/row/17/col/19" : 0,
-							"/row/17/col/20" : 0,
-							"/row/17/col/21" : 0,
-							"/row/17/col/22" : 0,
-							"/row/17/col/23" : 0,
-							"/row/17/col/24" : 0,
-							"/row/17/col/25" : 0,
-							"/row/17/col/26" : 0,
-							"/row/17/col/27" : 0,
-							"/row/17/col/28" : 0,
-							"/row/17/col/29" : 0,
-							"/row/17/col/30" : 0,
-							"/row/17/col/31" : 0,
-							"/row/17/col/32" : 0,
-							"/row/18/col/1" : 0,
-							"/row/18/col/2" : 0,
-							"/row/18/col/3" : 0,
-							"/row/18/col/4" : 0,
-							"/row/18/col/5" : 0,
-							"/row/18/col/6" : 0,
-							"/row/18/col/7" : 0,
-							"/row/18/col/8" : 0,
-							"/row/18/col/9" : 0,
-							"/row/18/col/10" : 0,
-							"/row/18/col/11" : 0,
-							"/row/18/col/12" : 0,
-							"/row/18/col/13" : 0,
-							"/row/18/col/14" : 0,
-							"/row/18/col/15" : 0,
-							"/row/18/col/16" : 0,
-							"/row/18/col/17" : 0,
-							"/row/18/col/18" : 1,
-							"/row/18/col/19" : 0,
-							"/row/18/col/20" : 0,
-							"/row/18/col/21" : 0,
-							"/row/18/col/22" : 0,
-							"/row/18/col/23" : 0,
-							"/row/18/col/24" : 0,
-							"/row/18/col/25" : 0,
-							"/row/18/col/26" : 0,
-							"/row/18/col/27" : 0,
-							"/row/18/col/28" : 0,
-							"/row/18/col/29" : 0,
-							"/row/18/col/30" : 0,
-							"/row/18/col/31" : 0,
-							"/row/18/col/32" : 0,
-							"/row/19/col/1" : 0,
-							"/row/19/col/2" : 0,
-							"/row/19/col/3" : 0,
-							"/row/19/col/4" : 0,
-							"/row/19/col/5" : 0,
-							"/row/19/col/6" : 0,
-							"/row/19/col/7" : 0,
-							"/row/19/col/8" : 0,
-							"/row/19/col/9" : 0,
-							"/row/19/col/10" : 0,
-							"/row/19/col/11" : 0,
-							"/row/19/col/12" : 0,
-							"/row/19/col/13" : 0,
-							"/row/19/col/14" : 0,
-							"/row/19/col/15" : 0,
-							"/row/19/col/16" : 0,
-							"/row/19/col/17" : 0,
-							"/row/19/col/18" : 0,
-							"/row/19/col/19" : 1,
-							"/row/19/col/20" : 0,
-							"/row/19/col/21" : 0,
-							"/row/19/col/22" : 0,
-							"/row/19/col/23" : 0,
-							"/row/19/col/24" : 0,
-							"/row/19/col/25" : 0,
-							"/row/19/col/26" : 0,
-							"/row/19/col/27" : 0,
-							"/row/19/col/28" : 0,
-							"/row/19/col/29" : 0,
-							"/row/19/col/30" : 0,
-							"/row/19/col/31" : 0,
-							"/row/19/col/32" : 0,
-							"/row/20/col/1" : 0,
-							"/row/20/col/2" : 0,
-							"/row/20/col/3" : 0,
-							"/row/20/col/4" : 0,
-							"/row/20/col/5" : 0,
-							"/row/20/col/6" : 0,
-							"/row/20/col/7" : 0,
-							"/row/20/col/8" : 0,
-							"/row/20/col/9" : 0,
-							"/row/20/col/10" : 0,
-							"/row/20/col/11" : 0,
-							"/row/20/col/12" : 0,
-							"/row/20/col/13" : 0,
-							"/row/20/col/14" : 0,
-							"/row/20/col/15" : 0,
-							"/row/20/col/16" : 0,
-							"/row/20/col/17" : 0,
-							"/row/20/col/18" : 0,
-							"/row/20/col/19" : 0,
-							"/row/20/col/20" : 1,
-							"/row/20/col/21" : 0,
-							"/row/20/col/22" : 0,
-							"/row/20/col/23" : 0,
-							"/row/20/col/24" : 0,
-							"/row/20/col/25" : 0,
-							"/row/20/col/26" : 0,
-							"/row/20/col/27" : 0,
-							"/row/20/col/28" : 0,
-							"/row/20/col/29" : 0,
-							"/row/20/col/30" : 0,
-							"/row/20/col/31" : 0,
-							"/row/20/col/32" : 0,
-							"/row/21/col/1" : 0,
-							"/row/21/col/2" : 0,
-							"/row/21/col/3" : 0,
-							"/row/21/col/4" : 0,
-							"/row/21/col/5" : 0,
-							"/row/21/col/6" : 0,
-							"/row/21/col/7" : 0,
-							"/row/21/col/8" : 0,
-							"/row/21/col/9" : 0,
-							"/row/21/col/10" : 0,
-							"/row/21/col/11" : 0,
-							"/row/21/col/12" : 0,
-							"/row/21/col/13" : 0,
-							"/row/21/col/14" : 0,
-							"/row/21/col/15" : 0,
-							"/row/21/col/16" : 0,
-							"/row/21/col/17" : 0,
-							"/row/21/col/18" : 0,
-							"/row/21/col/19" : 0,
-							"/row/21/col/20" : 0,
-							"/row/21/col/21" : 1,
-							"/row/21/col/22" : 0,
-							"/row/21/col/23" : 0,
-							"/row/21/col/24" : 0,
-							"/row/21/col/25" : 0,
-							"/row/21/col/26" : 0,
-							"/row/21/col/27" : 0,
-							"/row/21/col/28" : 0,
-							"/row/21/col/29" : 0,
-							"/row/21/col/30" : 0,
-							"/row/21/col/31" : 0,
-							"/row/21/col/32" : 0,
-							"/row/22/col/1" : 0,
-							"/row/22/col/2" : 0,
-							"/row/22/col/3" : 0,
-							"/row/22/col/4" : 0,
-							"/row/22/col/5" : 0,
-							"/row/22/col/6" : 0,
-							"/row/22/col/7" : 0,
-							"/row/22/col/8" : 0,
-							"/row/22/col/9" : 0,
-							"/row/22/col/10" : 0,
-							"/row/22/col/11" : 0,
-							"/row/22/col/12" : 0,
-							"/row/22/col/13" : 0,
-							"/row/22/col/14" : 0,
-							"/row/22/col/15" : 0,
-							"/row/22/col/16" : 0,
-							"/row/22/col/17" : 0,
-							"/row/22/col/18" : 0,
-							"/row/22/col/19" : 0,
-							"/row/22/col/20" : 0,
-							"/row/22/col/21" : 0,
-							"/row/22/col/22" : 1,
-							"/row/22/col/23" : 0,
-							"/row/22/col/24" : 0,
-							"/row/22/col/25" : 0,
-							"/row/22/col/26" : 0,
-							"/row/22/col/27" : 0,
-							"/row/22/col/28" : 0,
-							"/row/22/col/29" : 0,
-							"/row/22/col/30" : 0,
-							"/row/22/col/31" : 0,
-							"/row/22/col/32" : 0,
-							"/row/23/col/1" : 0,
-							"/row/23/col/2" : 0,
-							"/row/23/col/3" : 0,
-							"/row/23/col/4" : 0,
-							"/row/23/col/5" : 0,
-							"/row/23/col/6" : 0,
-							"/row/23/col/7" : 0,
-							"/row/23/col/8" : 0,
-							"/row/23/col/9" : 0,
-							"/row/23/col/10" : 0,
-							"/row/23/col/11" : 0,
-							"/row/23/col/12" : 0,
-							"/row/23/col/13" : 0,
-							"/row/23/col/14" : 0,
-							"/row/23/col/15" : 0,
-							"/row/23/col/16" : 0,
-							"/row/23/col/17" : 0,
-							"/row/23/col/18" : 0,
-							"/row/23/col/19" : 0,
-							"/row/23/col/20" : 0,
-							"/row/23/col/21" : 0,
-							"/row/23/col/22" : 0,
-							"/row/23/col/23" : 1,
-							"/row/23/col/24" : 0,
-							"/row/23/col/25" : 0,
-							"/row/23/col/26" : 0,
-							"/row/23/col/27" : 0,
-							"/row/23/col/28" : 0,
-							"/row/23/col/29" : 0,
-							"/row/23/col/30" : 0,
-							"/row/23/col/31" : 0,
-							"/row/23/col/32" : 0,
-							"/row/24/col/1" : 0,
-							"/row/24/col/2" : 0,
-							"/row/24/col/3" : 0,
-							"/row/24/col/4" : 0,
-							"/row/24/col/5" : 0,
-							"/row/24/col/6" : 0,
-							"/row/24/col/7" : 0,
-							"/row/24/col/8" : 0,
-							"/row/24/col/9" : 0,
-							"/row/24/col/10" : 0,
-							"/row/24/col/11" : 0,
-							"/row/24/col/12" : 0,
-							"/row/24/col/13" : 0,
-							"/row/24/col/14" : 0,
-							"/row/24/col/15" : 0,
-							"/row/24/col/16" : 0,
-							"/row/24/col/17" : 0,
-							"/row/24/col/18" : 0,
-							"/row/24/col/19" : 0,
-							"/row/24/col/20" : 0,
-							"/row/24/col/21" : 0,
-							"/row/24/col/22" : 0,
-							"/row/24/col/23" : 0,
-							"/row/24/col/24" : 1,
-							"/row/24/col/25" : 0,
-							"/row/24/col/26" : 0,
-							"/row/24/col/27" : 0,
-							"/row/24/col/28" : 0,
-							"/row/24/col/29" : 0,
-							"/row/24/col/30" : 0,
-							"/row/24/col/31" : 0,
-							"/row/24/col/32" : 0,
-							"/row/25/col/1" : 0,
-							"/row/25/col/2" : 0,
-							"/row/25/col/3" : 0,
-							"/row/25/col/4" : 0,
-							"/row/25/col/5" : 0,
-							"/row/25/col/6" : 0,
-							"/row/25/col/7" : 0,
-							"/row/25/col/8" : 0,
-							"/row/25/col/9" : 0,
-							"/row/25/col/10" : 0,
-							"/row/25/col/11" : 0,
-							"/row/25/col/12" : 0,
-							"/row/25/col/13" : 0,
-							"/row/25/col/14" : 0,
-							"/row/25/col/15" : 0,
-							"/row/25/col/16" : 0,
-							"/row/25/col/17" : 0,
-							"/row/25/col/18" : 0,
-							"/row/25/col/19" : 0,
-							"/row/25/col/20" : 0,
-							"/row/25/col/21" : 0,
-							"/row/25/col/22" : 0,
-							"/row/25/col/23" : 0,
-							"/row/25/col/24" : 0,
-							"/row/25/col/25" : 1,
-							"/row/25/col/26" : 0,
-							"/row/25/col/27" : 0,
-							"/row/25/col/28" : 0,
-							"/row/25/col/29" : 0,
-							"/row/25/col/30" : 0,
-							"/row/25/col/31" : 0,
-							"/row/25/col/32" : 0,
-							"/row/26/col/1" : 0,
-							"/row/26/col/2" : 0,
-							"/row/26/col/3" : 0,
-							"/row/26/col/4" : 0,
-							"/row/26/col/5" : 0,
-							"/row/26/col/6" : 0,
-							"/row/26/col/7" : 0,
-							"/row/26/col/8" : 0,
-							"/row/26/col/9" : 0,
-							"/row/26/col/10" : 0,
-							"/row/26/col/11" : 0,
-							"/row/26/col/12" : 0,
-							"/row/26/col/13" : 0,
-							"/row/26/col/14" : 0,
-							"/row/26/col/15" : 0,
-							"/row/26/col/16" : 0,
-							"/row/26/col/17" : 0,
-							"/row/26/col/18" : 0,
-							"/row/26/col/19" : 0,
-							"/row/26/col/20" : 0,
-							"/row/26/col/21" : 0,
-							"/row/26/col/22" : 0,
-							"/row/26/col/23" : 0,
-							"/row/26/col/24" : 0,
-							"/row/26/col/25" : 0,
-							"/row/26/col/26" : 1,
-							"/row/26/col/27" : 0,
-							"/row/26/col/28" : 0,
-							"/row/26/col/29" : 0,
-							"/row/26/col/30" : 0,
-							"/row/26/col/31" : 0,
-							"/row/26/col/32" : 0,
-							"/row/27/col/1" : 0,
-							"/row/27/col/2" : 0,
-							"/row/27/col/3" : 0,
-							"/row/27/col/4" : 0,
-							"/row/27/col/5" : 0,
-							"/row/27/col/6" : 0,
-							"/row/27/col/7" : 0,
-							"/row/27/col/8" : 0,
-							"/row/27/col/9" : 0,
-							"/row/27/col/10" : 0,
-							"/row/27/col/11" : 0,
-							"/row/27/col/12" : 0,
-							"/row/27/col/13" : 0,
-							"/row/27/col/14" : 0,
-							"/row/27/col/15" : 0,
-							"/row/27/col/16" : 0,
-							"/row/27/col/17" : 0,
-							"/row/27/col/18" : 0,
-							"/row/27/col/19" : 0,
-							"/row/27/col/20" : 0,
-							"/row/27/col/21" : 0,
-							"/row/27/col/22" : 0,
-							"/row/27/col/23" : 0,
-							"/row/27/col/24" : 0,
-							"/row/27/col/25" : 0,
-							"/row/27/col/26" : 0,
-							"/row/27/col/27" : 1,
-							"/row/27/col/28" : 0,
-							"/row/27/col/29" : 0,
-							"/row/27/col/30" : 0,
-							"/row/27/col/31" : 0,
-							"/row/27/col/32" : 0,
-							"/row/28/col/1" : 0,
-							"/row/28/col/2" : 0,
-							"/row/28/col/3" : 0,
-							"/row/28/col/4" : 0,
-							"/row/28/col/5" : 0,
-							"/row/28/col/6" : 0,
-							"/row/28/col/7" : 0,
-							"/row/28/col/8" : 0,
-							"/row/28/col/9" : 0,
-							"/row/28/col/10" : 0,
-							"/row/28/col/11" : 0,
-							"/row/28/col/12" : 0,
-							"/row/28/col/13" : 0,
-							"/row/28/col/14" : 0,
-							"/row/28/col/15" : 0,
-							"/row/28/col/16" : 0,
-							"/row/28/col/17" : 0,
-							"/row/28/col/18" : 0,
-							"/row/28/col/19" : 0,
-							"/row/28/col/20" : 0,
-							"/row/28/col/21" : 0,
-							"/row/28/col/22" : 0,
-							"/row/28/col/23" : 0,
-							"/row/28/col/24" : 0,
-							"/row/28/col/25" : 0,
-							"/row/28/col/26" : 0,
-							"/row/28/col/27" : 0,
-							"/row/28/col/28" : 1,
-							"/row/28/col/29" : 0,
-							"/row/28/col/30" : 0,
-							"/row/28/col/31" : 0,
-							"/row/28/col/32" : 0,
-							"/row/29/col/1" : 0,
-							"/row/29/col/2" : 0,
-							"/row/29/col/3" : 0,
-							"/row/29/col/4" : 0,
-							"/row/29/col/5" : 0,
-							"/row/29/col/6" : 0,
-							"/row/29/col/7" : 0,
-							"/row/29/col/8" : 0,
-							"/row/29/col/9" : 0,
-							"/row/29/col/10" : 0,
-							"/row/29/col/11" : 0,
-							"/row/29/col/12" : 0,
-							"/row/29/col/13" : 0,
-							"/row/29/col/14" : 0,
-							"/row/29/col/15" : 0,
-							"/row/29/col/16" : 0,
-							"/row/29/col/17" : 0,
-							"/row/29/col/18" : 0,
-							"/row/29/col/19" : 0,
-							"/row/29/col/20" : 0,
-							"/row/29/col/21" : 0,
-							"/row/29/col/22" : 0,
-							"/row/29/col/23" : 0,
-							"/row/29/col/24" : 0,
-							"/row/29/col/25" : 0,
-							"/row/29/col/26" : 0,
-							"/row/29/col/27" : 0,
-							"/row/29/col/28" : 0,
-							"/row/29/col/29" : 1,
-							"/row/29/col/30" : 0,
-							"/row/29/col/31" : 0,
-							"/row/29/col/32" : 0,
-							"/row/30/col/1" : 0,
-							"/row/30/col/2" : 0,
-							"/row/30/col/3" : 0,
-							"/row/30/col/4" : 0,
-							"/row/30/col/5" : 0,
-							"/row/30/col/6" : 0,
-							"/row/30/col/7" : 0,
-							"/row/30/col/8" : 0,
-							"/row/30/col/9" : 0,
-							"/row/30/col/10" : 0,
-							"/row/30/col/11" : 0,
-							"/row/30/col/12" : 0,
-							"/row/30/col/13" : 0,
-							"/row/30/col/14" : 0,
-							"/row/30/col/15" : 0,
-							"/row/30/col/16" : 0,
-							"/row/30/col/17" : 0,
-							"/row/30/col/18" : 0,
-							"/row/30/col/19" : 0,
-							"/row/30/col/20" : 0,
-							"/row/30/col/21" : 0,
-							"/row/30/col/22" : 0,
-							"/row/30/col/23" : 0,
-							"/row/30/col/24" : 0,
-							"/row/30/col/25" : 0,
-							"/row/30/col/26" : 0,
-							"/row/30/col/27" : 0,
-							"/row/30/col/28" : 0,
-							"/row/30/col/29" : 0,
-							"/row/30/col/30" : 1,
-							"/row/30/col/31" : 0,
-							"/row/30/col/32" : 0,
-							"/row/31/col/1" : 0,
-							"/row/31/col/2" : 0,
-							"/row/31/col/3" : 0,
-							"/row/31/col/4" : 0,
-							"/row/31/col/5" : 0,
-							"/row/31/col/6" : 0,
-							"/row/31/col/7" : 0,
-							"/row/31/col/8" : 0,
-							"/row/31/col/9" : 0,
-							"/row/31/col/10" : 0,
-							"/row/31/col/11" : 0,
-							"/row/31/col/12" : 0,
-							"/row/31/col/13" : 0,
-							"/row/31/col/14" : 0,
-							"/row/31/col/15" : 0,
-							"/row/31/col/16" : 0,
-							"/row/31/col/17" : 0,
-							"/row/31/col/18" : 0,
-							"/row/31/col/19" : 0,
-							"/row/31/col/20" : 0,
-							"/row/31/col/21" : 0,
-							"/row/31/col/22" : 0,
-							"/row/31/col/23" : 0,
-							"/row/31/col/24" : 0,
-							"/row/31/col/25" : 0,
-							"/row/31/col/26" : 0,
-							"/row/31/col/27" : 0,
-							"/row/31/col/28" : 0,
-							"/row/31/col/29" : 0,
-							"/row/31/col/30" : 0,
-							"/row/31/col/31" : 1,
-							"/row/31/col/32" : 0,
-							"/row/32/col/1" : 0,
-							"/row/32/col/2" : 0,
-							"/row/32/col/3" : 0,
-							"/row/32/col/4" : 0,
-							"/row/32/col/5" : 0,
-							"/row/32/col/6" : 0,
-							"/row/32/col/7" : 0,
-							"/row/32/col/8" : 0,
-							"/row/32/col/9" : 0,
-							"/row/32/col/10" : 0,
-							"/row/32/col/11" : 0,
-							"/row/32/col/12" : 0,
-							"/row/32/col/13" : 0,
-							"/row/32/col/14" : 0,
-							"/row/32/col/15" : 0,
-							"/row/32/col/16" : 0,
-							"/row/32/col/17" : 0,
-							"/row/32/col/18" : 0,
-							"/row/32/col/19" : 0,
-							"/row/32/col/20" : 0,
-							"/row/32/col/21" : 0,
-							"/row/32/col/22" : 0,
-							"/row/32/col/23" : 0,
-							"/row/32/col/24" : 0,
-							"/row/32/col/25" : 0,
-							"/row/32/col/26" : 0,
-							"/row/32/col/27" : 0,
-							"/row/32/col/28" : 0,
-							"/row/32/col/29" : 0,
-							"/row/32/col/30" : 0,
-							"/row/32/col/31" : 0,
-							"/row/32/col/32" : 1,
-							"/row/33/col/1" : 0,
-							"/row/33/col/2" : 0,
-							"/row/33/col/3" : 0,
-							"/row/33/col/4" : 0,
-							"/row/33/col/5" : 0,
-							"/row/33/col/6" : 0,
-							"/row/33/col/7" : 0,
-							"/row/33/col/8" : 0,
-							"/row/33/col/9" : 0,
-							"/row/33/col/10" : 0,
-							"/row/33/col/11" : 0,
-							"/row/33/col/12" : 0,
-							"/row/33/col/13" : 0,
-							"/row/33/col/14" : 0,
-							"/row/33/col/15" : 0,
-							"/row/33/col/16" : 0,
-							"/row/33/col/17" : 0,
-							"/row/33/col/18" : 0,
-							"/row/33/col/19" : 0,
-							"/row/33/col/20" : 0,
-							"/row/33/col/21" : 0,
-							"/row/33/col/22" : 0,
-							"/row/33/col/23" : 0,
-							"/row/33/col/24" : 0,
-							"/row/33/col/25" : 0,
-							"/row/33/col/26" : 0,
-							"/row/33/col/27" : 0,
-							"/row/33/col/28" : 0,
-							"/row/33/col/29" : 0,
-							"/row/33/col/30" : 0,
-							"/row/33/col/31" : 0,
-							"/row/33/col/32" : 0,
-							"/row/34/col/1" : 0,
-							"/row/34/col/2" : 0,
-							"/row/34/col/3" : 0,
-							"/row/34/col/4" : 0,
-							"/row/34/col/5" : 0,
-							"/row/34/col/6" : 0,
-							"/row/34/col/7" : 0,
-							"/row/34/col/8" : 0,
-							"/row/34/col/9" : 0,
-							"/row/34/col/10" : 0,
-							"/row/34/col/11" : 0,
-							"/row/34/col/12" : 0,
-							"/row/34/col/13" : 0,
-							"/row/34/col/14" : 0,
-							"/row/34/col/15" : 0,
-							"/row/34/col/16" : 0,
-							"/row/34/col/17" : 0,
-							"/row/34/col/18" : 0,
-							"/row/34/col/19" : 0,
-							"/row/34/col/20" : 0,
-							"/row/34/col/21" : 0,
-							"/row/34/col/22" : 0,
-							"/row/34/col/23" : 0,
-							"/row/34/col/24" : 0,
-							"/row/34/col/25" : 0,
-							"/row/34/col/26" : 0,
-							"/row/34/col/27" : 0,
-							"/row/34/col/28" : 0,
-							"/row/34/col/29" : 0,
-							"/row/34/col/30" : 0,
-							"/row/34/col/31" : 0,
-							"/row/34/col/32" : 0,
-							"/row/35/col/1" : 0,
-							"/row/35/col/2" : 0,
-							"/row/35/col/3" : 0,
-							"/row/35/col/4" : 0,
-							"/row/35/col/5" : 0,
-							"/row/35/col/6" : 0,
-							"/row/35/col/7" : 0,
-							"/row/35/col/8" : 0,
-							"/row/35/col/9" : 0,
-							"/row/35/col/10" : 0,
-							"/row/35/col/11" : 0,
-							"/row/35/col/12" : 0,
-							"/row/35/col/13" : 0,
-							"/row/35/col/14" : 0,
-							"/row/35/col/15" : 0,
-							"/row/35/col/16" : 0,
-							"/row/35/col/17" : 0,
-							"/row/35/col/18" : 0,
-							"/row/35/col/19" : 0,
-							"/row/35/col/20" : 0,
-							"/row/35/col/21" : 0,
-							"/row/35/col/22" : 0,
-							"/row/35/col/23" : 0,
-							"/row/35/col/24" : 0,
-							"/row/35/col/25" : 0,
-							"/row/35/col/26" : 0,
-							"/row/35/col/27" : 0,
-							"/row/35/col/28" : 0,
-							"/row/35/col/29" : 0,
-							"/row/35/col/30" : 0,
-							"/row/35/col/31" : 0,
-							"/row/35/col/32" : 0,
-							"/row/36/col/1" : 0,
-							"/row/36/col/2" : 0,
-							"/row/36/col/3" : 0,
-							"/row/36/col/4" : 0,
-							"/row/36/col/5" : 0,
-							"/row/36/col/6" : 0,
-							"/row/36/col/7" : 0,
-							"/row/36/col/8" : 0,
-							"/row/36/col/9" : 0,
-							"/row/36/col/10" : 0,
-							"/row/36/col/11" : 0,
-							"/row/36/col/12" : 0,
-							"/row/36/col/13" : 0,
-							"/row/36/col/14" : 0,
-							"/row/36/col/15" : 0,
-							"/row/36/col/16" : 0,
-							"/row/36/col/17" : 0,
-							"/row/36/col/18" : 0,
-							"/row/36/col/19" : 0,
-							"/row/36/col/20" : 0,
-							"/row/36/col/21" : 0,
-							"/row/36/col/22" : 0,
-							"/row/36/col/23" : 0,
-							"/row/36/col/24" : 0,
-							"/row/36/col/25" : 0,
-							"/row/36/col/26" : 0,
-							"/row/36/col/27" : 0,
-							"/row/36/col/28" : 0,
-							"/row/36/col/29" : 0,
-							"/row/36/col/30" : 0,
-							"/row/36/col/31" : 0,
-							"/row/36/col/32" : 0,
-							"/row/37/col/1" : 0,
-							"/row/37/col/2" : 0,
-							"/row/37/col/3" : 0,
-							"/row/37/col/4" : 0,
-							"/row/37/col/5" : 0,
-							"/row/37/col/6" : 0,
-							"/row/37/col/7" : 0,
-							"/row/37/col/8" : 0,
-							"/row/37/col/9" : 0,
-							"/row/37/col/10" : 0,
-							"/row/37/col/11" : 0,
-							"/row/37/col/12" : 0,
-							"/row/37/col/13" : 0,
-							"/row/37/col/14" : 0,
-							"/row/37/col/15" : 0,
-							"/row/37/col/16" : 0,
-							"/row/37/col/17" : 0,
-							"/row/37/col/18" : 0,
-							"/row/37/col/19" : 0,
-							"/row/37/col/20" : 0,
-							"/row/37/col/21" : 0,
-							"/row/37/col/22" : 0,
-							"/row/37/col/23" : 0,
-							"/row/37/col/24" : 0,
-							"/row/37/col/25" : 0,
-							"/row/37/col/26" : 0,
-							"/row/37/col/27" : 0,
-							"/row/37/col/28" : 0,
-							"/row/37/col/29" : 0,
-							"/row/37/col/30" : 0,
-							"/row/37/col/31" : 0,
-							"/row/37/col/32" : 0,
-							"/row/38/col/1" : 0,
-							"/row/38/col/2" : 0,
-							"/row/38/col/3" : 0,
-							"/row/38/col/4" : 0,
-							"/row/38/col/5" : 0,
-							"/row/38/col/6" : 0,
-							"/row/38/col/7" : 0,
-							"/row/38/col/8" : 0,
-							"/row/38/col/9" : 0,
-							"/row/38/col/10" : 0,
-							"/row/38/col/11" : 0,
-							"/row/38/col/12" : 0,
-							"/row/38/col/13" : 0,
-							"/row/38/col/14" : 0,
-							"/row/38/col/15" : 0,
-							"/row/38/col/16" : 0,
-							"/row/38/col/17" : 0,
-							"/row/38/col/18" : 0,
-							"/row/38/col/19" : 0,
-							"/row/38/col/20" : 0,
-							"/row/38/col/21" : 0,
-							"/row/38/col/22" : 0,
-							"/row/38/col/23" : 0,
-							"/row/38/col/24" : 0,
-							"/row/38/col/25" : 0,
-							"/row/38/col/26" : 0,
-							"/row/38/col/27" : 0,
-							"/row/38/col/28" : 0,
-							"/row/38/col/29" : 0,
-							"/row/38/col/30" : 0,
-							"/row/38/col/31" : 0,
-							"/row/38/col/32" : 0,
-							"/row/39/col/1" : 0,
-							"/row/39/col/2" : 0,
-							"/row/39/col/3" : 0,
-							"/row/39/col/4" : 0,
-							"/row/39/col/5" : 0,
-							"/row/39/col/6" : 0,
-							"/row/39/col/7" : 0,
-							"/row/39/col/8" : 0,
-							"/row/39/col/9" : 0,
-							"/row/39/col/10" : 0,
-							"/row/39/col/11" : 0,
-							"/row/39/col/12" : 0,
-							"/row/39/col/13" : 0,
-							"/row/39/col/14" : 0,
-							"/row/39/col/15" : 0,
-							"/row/39/col/16" : 0,
-							"/row/39/col/17" : 0,
-							"/row/39/col/18" : 0,
-							"/row/39/col/19" : 0,
-							"/row/39/col/20" : 0,
-							"/row/39/col/21" : 0,
-							"/row/39/col/22" : 0,
-							"/row/39/col/23" : 0,
-							"/row/39/col/24" : 0,
-							"/row/39/col/25" : 0,
-							"/row/39/col/26" : 0,
-							"/row/39/col/27" : 0,
-							"/row/39/col/28" : 0,
-							"/row/39/col/29" : 0,
-							"/row/39/col/30" : 0,
-							"/row/39/col/31" : 0,
-							"/row/39/col/32" : 0,
-							"/row/40/col/1" : 0,
-							"/row/40/col/2" : 0,
-							"/row/40/col/3" : 0,
-							"/row/40/col/4" : 0,
-							"/row/40/col/5" : 0,
-							"/row/40/col/6" : 0,
-							"/row/40/col/7" : 0,
-							"/row/40/col/8" : 0,
-							"/row/40/col/9" : 0,
-							"/row/40/col/10" : 0,
-							"/row/40/col/11" : 0,
-							"/row/40/col/12" : 0,
-							"/row/40/col/13" : 0,
-							"/row/40/col/14" : 0,
-							"/row/40/col/15" : 0,
-							"/row/40/col/16" : 0,
-							"/row/40/col/17" : 0,
-							"/row/40/col/18" : 0,
-							"/row/40/col/19" : 0,
-							"/row/40/col/20" : 0,
-							"/row/40/col/21" : 0,
-							"/row/40/col/22" : 0,
-							"/row/40/col/23" : 0,
-							"/row/40/col/24" : 0,
-							"/row/40/col/25" : 0,
-							"/row/40/col/26" : 0,
-							"/row/40/col/27" : 0,
-							"/row/40/col/28" : 0,
-							"/row/40/col/29" : 0,
-							"/row/40/col/30" : 0,
-							"/row/40/col/31" : 0,
-							"/row/40/col/32" : 0,
-							"/row/41/col/1" : 0,
-							"/row/41/col/2" : 0,
-							"/row/41/col/3" : 0,
-							"/row/41/col/4" : 0,
-							"/row/41/col/5" : 0,
-							"/row/41/col/6" : 0,
-							"/row/41/col/7" : 0,
-							"/row/41/col/8" : 0,
-							"/row/41/col/9" : 0,
-							"/row/41/col/10" : 0,
-							"/row/41/col/11" : 0,
-							"/row/41/col/12" : 0,
-							"/row/41/col/13" : 0,
-							"/row/41/col/14" : 0,
-							"/row/41/col/15" : 0,
-							"/row/41/col/16" : 0,
-							"/row/41/col/17" : 0,
-							"/row/41/col/18" : 0,
-							"/row/41/col/19" : 0,
-							"/row/41/col/20" : 0,
-							"/row/41/col/21" : 0,
-							"/row/41/col/22" : 0,
-							"/row/41/col/23" : 0,
-							"/row/41/col/24" : 0,
-							"/row/41/col/25" : 0,
-							"/row/41/col/26" : 0,
-							"/row/41/col/27" : 0,
-							"/row/41/col/28" : 0,
-							"/row/41/col/29" : 0,
-							"/row/41/col/30" : 0,
-							"/row/41/col/31" : 0,
-							"/row/41/col/32" : 0,
-							"/row/42/col/1" : 0,
-							"/row/42/col/2" : 0,
-							"/row/42/col/3" : 0,
-							"/row/42/col/4" : 0,
-							"/row/42/col/5" : 0,
-							"/row/42/col/6" : 0,
-							"/row/42/col/7" : 0,
-							"/row/42/col/8" : 0,
-							"/row/42/col/9" : 0,
-							"/row/42/col/10" : 0,
-							"/row/42/col/11" : 0,
-							"/row/42/col/12" : 0,
-							"/row/42/col/13" : 0,
-							"/row/42/col/14" : 0,
-							"/row/42/col/15" : 0,
-							"/row/42/col/16" : 0,
-							"/row/42/col/17" : 0,
-							"/row/42/col/18" : 0,
-							"/row/42/col/19" : 0,
-							"/row/42/col/20" : 0,
-							"/row/42/col/21" : 0,
-							"/row/42/col/22" : 0,
-							"/row/42/col/23" : 0,
-							"/row/42/col/24" : 0,
-							"/row/42/col/25" : 0,
-							"/row/42/col/26" : 0,
-							"/row/42/col/27" : 0,
-							"/row/42/col/28" : 0,
-							"/row/42/col/29" : 0,
-							"/row/42/col/30" : 0,
-							"/row/42/col/31" : 0,
-							"/row/42/col/32" : 0,
-							"/row/43/col/1" : 0,
-							"/row/43/col/2" : 0,
-							"/row/43/col/3" : 0,
-							"/row/43/col/4" : 0,
-							"/row/43/col/5" : 0,
-							"/row/43/col/6" : 0,
-							"/row/43/col/7" : 0,
-							"/row/43/col/8" : 0,
-							"/row/43/col/9" : 0,
-							"/row/43/col/10" : 0,
-							"/row/43/col/11" : 0,
-							"/row/43/col/12" : 0,
-							"/row/43/col/13" : 0,
-							"/row/43/col/14" : 0,
-							"/row/43/col/15" : 0,
-							"/row/43/col/16" : 0,
-							"/row/43/col/17" : 0,
-							"/row/43/col/18" : 0,
-							"/row/43/col/19" : 0,
-							"/row/43/col/20" : 0,
-							"/row/43/col/21" : 0,
-							"/row/43/col/22" : 0,
-							"/row/43/col/23" : 0,
-							"/row/43/col/24" : 0,
-							"/row/43/col/25" : 0,
-							"/row/43/col/26" : 0,
-							"/row/43/col/27" : 0,
-							"/row/43/col/28" : 0,
-							"/row/43/col/29" : 0,
-							"/row/43/col/30" : 0,
-							"/row/43/col/31" : 0,
-							"/row/43/col/32" : 0,
-							"/row/44/col/1" : 0,
-							"/row/44/col/2" : 0,
-							"/row/44/col/3" : 0,
-							"/row/44/col/4" : 0,
-							"/row/44/col/5" : 0,
-							"/row/44/col/6" : 0,
-							"/row/44/col/7" : 0,
-							"/row/44/col/8" : 0,
-							"/row/44/col/9" : 0,
-							"/row/44/col/10" : 0,
-							"/row/44/col/11" : 0,
-							"/row/44/col/12" : 0,
-							"/row/44/col/13" : 0,
-							"/row/44/col/14" : 0,
-							"/row/44/col/15" : 0,
-							"/row/44/col/16" : 0,
-							"/row/44/col/17" : 0,
-							"/row/44/col/18" : 0,
-							"/row/44/col/19" : 0,
-							"/row/44/col/20" : 0,
-							"/row/44/col/21" : 0,
-							"/row/44/col/22" : 0,
-							"/row/44/col/23" : 0,
-							"/row/44/col/24" : 0,
-							"/row/44/col/25" : 0,
-							"/row/44/col/26" : 0,
-							"/row/44/col/27" : 0,
-							"/row/44/col/28" : 0,
-							"/row/44/col/29" : 0,
-							"/row/44/col/30" : 0,
-							"/row/44/col/31" : 0,
-							"/row/44/col/32" : 0,
-							"/row/45/col/1" : 0,
-							"/row/45/col/2" : 0,
-							"/row/45/col/3" : 0,
-							"/row/45/col/4" : 0,
-							"/row/45/col/5" : 0,
-							"/row/45/col/6" : 0,
-							"/row/45/col/7" : 0,
-							"/row/45/col/8" : 0,
-							"/row/45/col/9" : 0,
-							"/row/45/col/10" : 0,
-							"/row/45/col/11" : 0,
-							"/row/45/col/12" : 0,
-							"/row/45/col/13" : 0,
-							"/row/45/col/14" : 0,
-							"/row/45/col/15" : 0,
-							"/row/45/col/16" : 0,
-							"/row/45/col/17" : 0,
-							"/row/45/col/18" : 0,
-							"/row/45/col/19" : 0,
-							"/row/45/col/20" : 0,
-							"/row/45/col/21" : 0,
-							"/row/45/col/22" : 0,
-							"/row/45/col/23" : 0,
-							"/row/45/col/24" : 0,
-							"/row/45/col/25" : 0,
-							"/row/45/col/26" : 0,
-							"/row/45/col/27" : 0,
-							"/row/45/col/28" : 0,
-							"/row/45/col/29" : 0,
-							"/row/45/col/30" : 0,
-							"/row/45/col/31" : 0,
-							"/row/45/col/32" : 0,
-							"/row/46/col/1" : 0,
-							"/row/46/col/2" : 0,
-							"/row/46/col/3" : 0,
-							"/row/46/col/4" : 0,
-							"/row/46/col/5" : 0,
-							"/row/46/col/6" : 0,
-							"/row/46/col/7" : 0,
-							"/row/46/col/8" : 0,
-							"/row/46/col/9" : 0,
-							"/row/46/col/10" : 0,
-							"/row/46/col/11" : 0,
-							"/row/46/col/12" : 0,
-							"/row/46/col/13" : 0,
-							"/row/46/col/14" : 0,
-							"/row/46/col/15" : 0,
-							"/row/46/col/16" : 0,
-							"/row/46/col/17" : 0,
-							"/row/46/col/18" : 0,
-							"/row/46/col/19" : 0,
-							"/row/46/col/20" : 0,
-							"/row/46/col/21" : 0,
-							"/row/46/col/22" : 0,
-							"/row/46/col/23" : 0,
-							"/row/46/col/24" : 0,
-							"/row/46/col/25" : 0,
-							"/row/46/col/26" : 0,
-							"/row/46/col/27" : 0,
-							"/row/46/col/28" : 0,
-							"/row/46/col/29" : 0,
-							"/row/46/col/30" : 0,
-							"/row/46/col/31" : 0,
-							"/row/46/col/32" : 0,
-							"/row/47/col/1" : 0,
-							"/row/47/col/2" : 0,
-							"/row/47/col/3" : 0,
-							"/row/47/col/4" : 0,
-							"/row/47/col/5" : 0,
-							"/row/47/col/6" : 0,
-							"/row/47/col/7" : 0,
-							"/row/47/col/8" : 0,
-							"/row/47/col/9" : 0,
-							"/row/47/col/10" : 0,
-							"/row/47/col/11" : 0,
-							"/row/47/col/12" : 0,
-							"/row/47/col/13" : 0,
-							"/row/47/col/14" : 0,
-							"/row/47/col/15" : 0,
-							"/row/47/col/16" : 0,
-							"/row/47/col/17" : 0,
-							"/row/47/col/18" : 0,
-							"/row/47/col/19" : 0,
-							"/row/47/col/20" : 0,
-							"/row/47/col/21" : 0,
-							"/row/47/col/22" : 0,
-							"/row/47/col/23" : 0,
-							"/row/47/col/24" : 0,
-							"/row/47/col/25" : 0,
-							"/row/47/col/26" : 0,
-							"/row/47/col/27" : 0,
-							"/row/47/col/28" : 0,
-							"/row/47/col/29" : 0,
-							"/row/47/col/30" : 0,
-							"/row/47/col/31" : 0,
-							"/row/47/col/32" : 0,
-							"/row/48/col/1" : 0,
-							"/row/48/col/2" : 0,
-							"/row/48/col/3" : 0,
-							"/row/48/col/4" : 0,
-							"/row/48/col/5" : 0,
-							"/row/48/col/6" : 0,
-							"/row/48/col/7" : 0,
-							"/row/48/col/8" : 0,
-							"/row/48/col/9" : 0,
-							"/row/48/col/10" : 0,
-							"/row/48/col/11" : 0,
-							"/row/48/col/12" : 0,
-							"/row/48/col/13" : 0,
-							"/row/48/col/14" : 0,
-							"/row/48/col/15" : 0,
-							"/row/48/col/16" : 0,
-							"/row/48/col/17" : 0,
-							"/row/48/col/18" : 0,
-							"/row/48/col/19" : 0,
-							"/row/48/col/20" : 0,
-							"/row/48/col/21" : 0,
-							"/row/48/col/22" : 0,
-							"/row/48/col/23" : 0,
-							"/row/48/col/24" : 0,
-							"/row/48/col/25" : 0,
-							"/row/48/col/26" : 0,
-							"/row/48/col/27" : 0,
-							"/row/48/col/28" : 0,
-							"/row/48/col/29" : 0,
-							"/row/48/col/30" : 0,
-							"/row/48/col/31" : 0,
-							"/row/48/col/32" : 0,
-							"/row/49/col/1" : 0,
-							"/row/49/col/2" : 0,
-							"/row/49/col/3" : 0,
-							"/row/49/col/4" : 0,
-							"/row/49/col/5" : 0,
-							"/row/49/col/6" : 0,
-							"/row/49/col/7" : 0,
-							"/row/49/col/8" : 0,
-							"/row/49/col/9" : 0,
-							"/row/49/col/10" : 0,
-							"/row/49/col/11" : 0,
-							"/row/49/col/12" : 0,
-							"/row/49/col/13" : 0,
-							"/row/49/col/14" : 0,
-							"/row/49/col/15" : 0,
-							"/row/49/col/16" : 0,
-							"/row/49/col/17" : 0,
-							"/row/49/col/18" : 0,
-							"/row/49/col/19" : 0,
-							"/row/49/col/20" : 0,
-							"/row/49/col/21" : 0,
-							"/row/49/col/22" : 0,
-							"/row/49/col/23" : 0,
-							"/row/49/col/24" : 0,
-							"/row/49/col/25" : 0,
-							"/row/49/col/26" : 0,
-							"/row/49/col/27" : 0,
-							"/row/49/col/28" : 0,
-							"/row/49/col/29" : 0,
-							"/row/49/col/30" : 0,
-							"/row/49/col/31" : 0,
-							"/row/49/col/32" : 0,
-							"/row/50/col/1" : 0,
-							"/row/50/col/2" : 0,
-							"/row/50/col/3" : 0,
-							"/row/50/col/4" : 0,
-							"/row/50/col/5" : 0,
-							"/row/50/col/6" : 0,
-							"/row/50/col/7" : 0,
-							"/row/50/col/8" : 0,
-							"/row/50/col/9" : 0,
-							"/row/50/col/10" : 0,
-							"/row/50/col/11" : 0,
-							"/row/50/col/12" : 0,
-							"/row/50/col/13" : 0,
-							"/row/50/col/14" : 0,
-							"/row/50/col/15" : 0,
-							"/row/50/col/16" : 0,
-							"/row/50/col/17" : 0,
-							"/row/50/col/18" : 0,
-							"/row/50/col/19" : 0,
-							"/row/50/col/20" : 0,
-							"/row/50/col/21" : 0,
-							"/row/50/col/22" : 0,
-							"/row/50/col/23" : 0,
-							"/row/50/col/24" : 0,
-							"/row/50/col/25" : 0,
-							"/row/50/col/26" : 0,
-							"/row/50/col/27" : 0,
-							"/row/50/col/28" : 0,
-							"/row/50/col/29" : 0,
-							"/row/50/col/30" : 0,
-							"/row/50/col/31" : 0,
-							"/row/50/col/32" : 0,
-							"/row/51/col/1" : 0,
-							"/row/51/col/2" : 0,
-							"/row/51/col/3" : 0,
-							"/row/51/col/4" : 0,
-							"/row/51/col/5" : 0,
-							"/row/51/col/6" : 0,
-							"/row/51/col/7" : 0,
-							"/row/51/col/8" : 0,
-							"/row/51/col/9" : 0,
-							"/row/51/col/10" : 0,
-							"/row/51/col/11" : 0,
-							"/row/51/col/12" : 0,
-							"/row/51/col/13" : 0,
-							"/row/51/col/14" : 0,
-							"/row/51/col/15" : 0,
-							"/row/51/col/16" : 0,
-							"/row/51/col/17" : 0,
-							"/row/51/col/18" : 0,
-							"/row/51/col/19" : 0,
-							"/row/51/col/20" : 0,
-							"/row/51/col/21" : 0,
-							"/row/51/col/22" : 0,
-							"/row/51/col/23" : 0,
-							"/row/51/col/24" : 0,
-							"/row/51/col/25" : 0,
-							"/row/51/col/26" : 0,
-							"/row/51/col/27" : 0,
-							"/row/51/col/28" : 0,
-							"/row/51/col/29" : 0,
-							"/row/51/col/30" : 0,
-							"/row/51/col/31" : 0,
-							"/row/51/col/32" : 0,
-							"/row/52/col/1" : 0,
-							"/row/52/col/2" : 0,
-							"/row/52/col/3" : 0,
-							"/row/52/col/4" : 0,
-							"/row/52/col/5" : 0,
-							"/row/52/col/6" : 0,
-							"/row/52/col/7" : 0,
-							"/row/52/col/8" : 0,
-							"/row/52/col/9" : 0,
-							"/row/52/col/10" : 0,
-							"/row/52/col/11" : 0,
-							"/row/52/col/12" : 0,
-							"/row/52/col/13" : 0,
-							"/row/52/col/14" : 0,
-							"/row/52/col/15" : 0,
-							"/row/52/col/16" : 0,
-							"/row/52/col/17" : 0,
-							"/row/52/col/18" : 0,
-							"/row/52/col/19" : 0,
-							"/row/52/col/20" : 0,
-							"/row/52/col/21" : 0,
-							"/row/52/col/22" : 0,
-							"/row/52/col/23" : 0,
-							"/row/52/col/24" : 0,
-							"/row/52/col/25" : 0,
-							"/row/52/col/26" : 0,
-							"/row/52/col/27" : 0,
-							"/row/52/col/28" : 0,
-							"/row/52/col/29" : 0,
-							"/row/52/col/30" : 0,
-							"/row/52/col/31" : 0,
-							"/row/52/col/32" : 0,
-							"/row/53/col/1" : 0,
-							"/row/53/col/2" : 0,
-							"/row/53/col/3" : 0,
-							"/row/53/col/4" : 0,
-							"/row/53/col/5" : 0,
-							"/row/53/col/6" : 0,
-							"/row/53/col/7" : 0,
-							"/row/53/col/8" : 0,
-							"/row/53/col/9" : 0,
-							"/row/53/col/10" : 0,
-							"/row/53/col/11" : 0,
-							"/row/53/col/12" : 0,
-							"/row/53/col/13" : 0,
-							"/row/53/col/14" : 0,
-							"/row/53/col/15" : 0,
-							"/row/53/col/16" : 0,
-							"/row/53/col/17" : 0,
-							"/row/53/col/18" : 0,
-							"/row/53/col/19" : 0,
-							"/row/53/col/20" : 0,
-							"/row/53/col/21" : 0,
-							"/row/53/col/22" : 0,
-							"/row/53/col/23" : 0,
-							"/row/53/col/24" : 0,
-							"/row/53/col/25" : 0,
-							"/row/53/col/26" : 0,
-							"/row/53/col/27" : 0,
-							"/row/53/col/28" : 0,
-							"/row/53/col/29" : 0,
-							"/row/53/col/30" : 0,
-							"/row/53/col/31" : 0,
-							"/row/53/col/32" : 0,
-							"/row/54/col/1" : 0,
-							"/row/54/col/2" : 0,
-							"/row/54/col/3" : 0,
-							"/row/54/col/4" : 0,
-							"/row/54/col/5" : 0,
-							"/row/54/col/6" : 0,
-							"/row/54/col/7" : 0,
-							"/row/54/col/8" : 0,
-							"/row/54/col/9" : 0,
-							"/row/54/col/10" : 0,
-							"/row/54/col/11" : 0,
-							"/row/54/col/12" : 0,
-							"/row/54/col/13" : 0,
-							"/row/54/col/14" : 0,
-							"/row/54/col/15" : 0,
-							"/row/54/col/16" : 0,
-							"/row/54/col/17" : 0,
-							"/row/54/col/18" : 0,
-							"/row/54/col/19" : 0,
-							"/row/54/col/20" : 0,
-							"/row/54/col/21" : 0,
-							"/row/54/col/22" : 0,
-							"/row/54/col/23" : 0,
-							"/row/54/col/24" : 0,
-							"/row/54/col/25" : 0,
-							"/row/54/col/26" : 0,
-							"/row/54/col/27" : 0,
-							"/row/54/col/28" : 0,
-							"/row/54/col/29" : 0,
-							"/row/54/col/30" : 0,
-							"/row/54/col/31" : 0,
-							"/row/54/col/32" : 0,
-							"/row/55/col/1" : 0,
-							"/row/55/col/2" : 0,
-							"/row/55/col/3" : 0,
-							"/row/55/col/4" : 0,
-							"/row/55/col/5" : 0,
-							"/row/55/col/6" : 0,
-							"/row/55/col/7" : 0,
-							"/row/55/col/8" : 0,
-							"/row/55/col/9" : 0,
-							"/row/55/col/10" : 0,
-							"/row/55/col/11" : 0,
-							"/row/55/col/12" : 0,
-							"/row/55/col/13" : 0,
-							"/row/55/col/14" : 0,
-							"/row/55/col/15" : 0,
-							"/row/55/col/16" : 0,
-							"/row/55/col/17" : 0,
-							"/row/55/col/18" : 0,
-							"/row/55/col/19" : 0,
-							"/row/55/col/20" : 0,
-							"/row/55/col/21" : 0,
-							"/row/55/col/22" : 0,
-							"/row/55/col/23" : 0,
-							"/row/55/col/24" : 0,
-							"/row/55/col/25" : 0,
-							"/row/55/col/26" : 0,
-							"/row/55/col/27" : 0,
-							"/row/55/col/28" : 0,
-							"/row/55/col/29" : 0,
-							"/row/55/col/30" : 0,
-							"/row/55/col/31" : 0,
-							"/row/55/col/32" : 0,
-							"/row/56/col/1" : 0,
-							"/row/56/col/2" : 0,
-							"/row/56/col/3" : 0,
-							"/row/56/col/4" : 0,
-							"/row/56/col/5" : 0,
-							"/row/56/col/6" : 0,
-							"/row/56/col/7" : 0,
-							"/row/56/col/8" : 0,
-							"/row/56/col/9" : 0,
-							"/row/56/col/10" : 0,
-							"/row/56/col/11" : 0,
-							"/row/56/col/12" : 0,
-							"/row/56/col/13" : 0,
-							"/row/56/col/14" : 0,
-							"/row/56/col/15" : 0,
-							"/row/56/col/16" : 0,
-							"/row/56/col/17" : 0,
-							"/row/56/col/18" : 0,
-							"/row/56/col/19" : 0,
-							"/row/56/col/20" : 0,
-							"/row/56/col/21" : 0,
-							"/row/56/col/22" : 0,
-							"/row/56/col/23" : 0,
-							"/row/56/col/24" : 0,
-							"/row/56/col/25" : 0,
-							"/row/56/col/26" : 0,
-							"/row/56/col/27" : 0,
-							"/row/56/col/28" : 0,
-							"/row/56/col/29" : 0,
-							"/row/56/col/30" : 0,
-							"/row/56/col/31" : 0,
-							"/row/56/col/32" : 0,
-							"/row/57/col/1" : 0,
-							"/row/57/col/2" : 0,
-							"/row/57/col/3" : 0,
-							"/row/57/col/4" : 0,
-							"/row/57/col/5" : 0,
-							"/row/57/col/6" : 0,
-							"/row/57/col/7" : 0,
-							"/row/57/col/8" : 0,
-							"/row/57/col/9" : 0,
-							"/row/57/col/10" : 0,
-							"/row/57/col/11" : 0,
-							"/row/57/col/12" : 0,
-							"/row/57/col/13" : 0,
-							"/row/57/col/14" : 0,
-							"/row/57/col/15" : 0,
-							"/row/57/col/16" : 0,
-							"/row/57/col/17" : 0,
-							"/row/57/col/18" : 0,
-							"/row/57/col/19" : 0,
-							"/row/57/col/20" : 0,
-							"/row/57/col/21" : 0,
-							"/row/57/col/22" : 0,
-							"/row/57/col/23" : 0,
-							"/row/57/col/24" : 0,
-							"/row/57/col/25" : 0,
-							"/row/57/col/26" : 0,
-							"/row/57/col/27" : 0,
-							"/row/57/col/28" : 0,
-							"/row/57/col/29" : 0,
-							"/row/57/col/30" : 0,
-							"/row/57/col/31" : 0,
-							"/row/57/col/32" : 0,
-							"/row/58/col/1" : 0,
-							"/row/58/col/2" : 0,
-							"/row/58/col/3" : 0,
-							"/row/58/col/4" : 0,
-							"/row/58/col/5" : 0,
-							"/row/58/col/6" : 0,
-							"/row/58/col/7" : 0,
-							"/row/58/col/8" : 0,
-							"/row/58/col/9" : 0,
-							"/row/58/col/10" : 0,
-							"/row/58/col/11" : 0,
-							"/row/58/col/12" : 0,
-							"/row/58/col/13" : 0,
-							"/row/58/col/14" : 0,
-							"/row/58/col/15" : 0,
-							"/row/58/col/16" : 0,
-							"/row/58/col/17" : 0,
-							"/row/58/col/18" : 0,
-							"/row/58/col/19" : 0,
-							"/row/58/col/20" : 0,
-							"/row/58/col/21" : 0,
-							"/row/58/col/22" : 0,
-							"/row/58/col/23" : 0,
-							"/row/58/col/24" : 0,
-							"/row/58/col/25" : 0,
-							"/row/58/col/26" : 0,
-							"/row/58/col/27" : 0,
-							"/row/58/col/28" : 0,
-							"/row/58/col/29" : 0,
-							"/row/58/col/30" : 0,
-							"/row/58/col/31" : 0,
-							"/row/58/col/32" : 0,
-							"/row/59/col/1" : 0,
-							"/row/59/col/2" : 0,
-							"/row/59/col/3" : 0,
-							"/row/59/col/4" : 0,
-							"/row/59/col/5" : 0,
-							"/row/59/col/6" : 0,
-							"/row/59/col/7" : 0,
-							"/row/59/col/8" : 0,
-							"/row/59/col/9" : 0,
-							"/row/59/col/10" : 0,
-							"/row/59/col/11" : 0,
-							"/row/59/col/12" : 0,
-							"/row/59/col/13" : 0,
-							"/row/59/col/14" : 0,
-							"/row/59/col/15" : 0,
-							"/row/59/col/16" : 0,
-							"/row/59/col/17" : 0,
-							"/row/59/col/18" : 0,
-							"/row/59/col/19" : 0,
-							"/row/59/col/20" : 0,
-							"/row/59/col/21" : 0,
-							"/row/59/col/22" : 0,
-							"/row/59/col/23" : 0,
-							"/row/59/col/24" : 0,
-							"/row/59/col/25" : 0,
-							"/row/59/col/26" : 0,
-							"/row/59/col/27" : 0,
-							"/row/59/col/28" : 0,
-							"/row/59/col/29" : 0,
-							"/row/59/col/30" : 0,
-							"/row/59/col/31" : 0,
-							"/row/59/col/32" : 0,
-							"/row/60/col/1" : 0,
-							"/row/60/col/2" : 0,
-							"/row/60/col/3" : 0,
-							"/row/60/col/4" : 0,
-							"/row/60/col/5" : 0,
-							"/row/60/col/6" : 0,
-							"/row/60/col/7" : 0,
-							"/row/60/col/8" : 0,
-							"/row/60/col/9" : 0,
-							"/row/60/col/10" : 0,
-							"/row/60/col/11" : 0,
-							"/row/60/col/12" : 0,
-							"/row/60/col/13" : 0,
-							"/row/60/col/14" : 0,
-							"/row/60/col/15" : 0,
-							"/row/60/col/16" : 0,
-							"/row/60/col/17" : 0,
-							"/row/60/col/18" : 0,
-							"/row/60/col/19" : 0,
-							"/row/60/col/20" : 0,
-							"/row/60/col/21" : 0,
-							"/row/60/col/22" : 0,
-							"/row/60/col/23" : 0,
-							"/row/60/col/24" : 0,
-							"/row/60/col/25" : 0,
-							"/row/60/col/26" : 0,
-							"/row/60/col/27" : 0,
-							"/row/60/col/28" : 0,
-							"/row/60/col/29" : 0,
-							"/row/60/col/30" : 0,
-							"/row/60/col/31" : 0,
-							"/row/60/col/32" : 0,
-							"/row/61/col/1" : 0,
-							"/row/61/col/2" : 0,
-							"/row/61/col/3" : 0,
-							"/row/61/col/4" : 0,
-							"/row/61/col/5" : 0,
-							"/row/61/col/6" : 0,
-							"/row/61/col/7" : 0,
-							"/row/61/col/8" : 0,
-							"/row/61/col/9" : 0,
-							"/row/61/col/10" : 0,
-							"/row/61/col/11" : 0,
-							"/row/61/col/12" : 0,
-							"/row/61/col/13" : 0,
-							"/row/61/col/14" : 0,
-							"/row/61/col/15" : 0,
-							"/row/61/col/16" : 0,
-							"/row/61/col/17" : 0,
-							"/row/61/col/18" : 0,
-							"/row/61/col/19" : 0,
-							"/row/61/col/20" : 0,
-							"/row/61/col/21" : 0,
-							"/row/61/col/22" : 0,
-							"/row/61/col/23" : 0,
-							"/row/61/col/24" : 0,
-							"/row/61/col/25" : 0,
-							"/row/61/col/26" : 0,
-							"/row/61/col/27" : 0,
-							"/row/61/col/28" : 0,
-							"/row/61/col/29" : 0,
-							"/row/61/col/30" : 0,
-							"/row/61/col/31" : 0,
-							"/row/61/col/32" : 0,
-							"/row/62/col/1" : 0,
-							"/row/62/col/2" : 0,
-							"/row/62/col/3" : 0,
-							"/row/62/col/4" : 0,
-							"/row/62/col/5" : 0,
-							"/row/62/col/6" : 0,
-							"/row/62/col/7" : 0,
-							"/row/62/col/8" : 0,
-							"/row/62/col/9" : 0,
-							"/row/62/col/10" : 0,
-							"/row/62/col/11" : 0,
-							"/row/62/col/12" : 0,
-							"/row/62/col/13" : 0,
-							"/row/62/col/14" : 0,
-							"/row/62/col/15" : 0,
-							"/row/62/col/16" : 0,
-							"/row/62/col/17" : 0,
-							"/row/62/col/18" : 0,
-							"/row/62/col/19" : 0,
-							"/row/62/col/20" : 0,
-							"/row/62/col/21" : 0,
-							"/row/62/col/22" : 0,
-							"/row/62/col/23" : 0,
-							"/row/62/col/24" : 0,
-							"/row/62/col/25" : 0,
-							"/row/62/col/26" : 0,
-							"/row/62/col/27" : 0,
-							"/row/62/col/28" : 0,
-							"/row/62/col/29" : 0,
-							"/row/62/col/30" : 0,
-							"/row/62/col/31" : 0,
-							"/row/62/col/32" : 0,
-							"/row/63/col/1" : 0,
-							"/row/63/col/2" : 0,
-							"/row/63/col/3" : 0,
-							"/row/63/col/4" : 0,
-							"/row/63/col/5" : 0,
-							"/row/63/col/6" : 0,
-							"/row/63/col/7" : 0,
-							"/row/63/col/8" : 0,
-							"/row/63/col/9" : 0,
-							"/row/63/col/10" : 0,
-							"/row/63/col/11" : 0,
-							"/row/63/col/12" : 0,
-							"/row/63/col/13" : 0,
-							"/row/63/col/14" : 0,
-							"/row/63/col/15" : 0,
-							"/row/63/col/16" : 0,
-							"/row/63/col/17" : 0,
-							"/row/63/col/18" : 0,
-							"/row/63/col/19" : 0,
-							"/row/63/col/20" : 0,
-							"/row/63/col/21" : 0,
-							"/row/63/col/22" : 0,
-							"/row/63/col/23" : 0,
-							"/row/63/col/24" : 0,
-							"/row/63/col/25" : 0,
-							"/row/63/col/26" : 0,
-							"/row/63/col/27" : 0,
-							"/row/63/col/28" : 0,
-							"/row/63/col/29" : 0,
-							"/row/63/col/30" : 0,
-							"/row/63/col/31" : 0,
-							"/row/63/col/32" : 0,
-							"/row/64/col/1" : 0,
-							"/row/64/col/2" : 0,
-							"/row/64/col/3" : 0,
-							"/row/64/col/4" : 0,
-							"/row/64/col/5" : 0,
-							"/row/64/col/6" : 0,
-							"/row/64/col/7" : 0,
-							"/row/64/col/8" : 0,
-							"/row/64/col/9" : 0,
-							"/row/64/col/10" : 0,
-							"/row/64/col/11" : 0,
-							"/row/64/col/12" : 0,
-							"/row/64/col/13" : 0,
-							"/row/64/col/14" : 0,
-							"/row/64/col/15" : 0,
-							"/row/64/col/16" : 0,
-							"/row/64/col/17" : 0,
-							"/row/64/col/18" : 0,
-							"/row/64/col/19" : 0,
-							"/row/64/col/20" : 0,
-							"/row/64/col/21" : 0,
-							"/row/64/col/22" : 0,
-							"/row/64/col/23" : 0,
-							"/row/64/col/24" : 0,
-							"/row/64/col/25" : 0,
-							"/row/64/col/26" : 0,
-							"/row/64/col/27" : 0,
-							"/row/64/col/28" : 0,
-							"/row/64/col/29" : 0,
-							"/row/64/col/30" : 0,
-							"/row/64/col/31" : 0,
-							"/row/64/col/32" : 0,
 							"/constraints/oneperrow" : 0,
 							"/constraints/onepercol" : 1,
 							"/constraints/onepermatrix" : 0,
@@ -5510,130 +3490,6 @@
 							"/row/1/color" : [ 1.0, 0.0, 0.0, 1.0 ],
 							"/row/2/name" : "2 Input 2",
 							"/row/2/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/3/name" : "3 Input 3",
-							"/row/3/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/4/name" : "4 Input 4",
-							"/row/4/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/5/name" : "5 Input 5",
-							"/row/5/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/6/name" : "6 Input 6",
-							"/row/6/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/7/name" : "7 Input 7",
-							"/row/7/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/8/name" : "8 Input 8",
-							"/row/8/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/9/name" : "9 Input 9",
-							"/row/9/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/10/name" : "10 Input 10",
-							"/row/10/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/11/name" : "11 Input 11",
-							"/row/11/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/12/name" : "12 Input 12",
-							"/row/12/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/13/name" : "13 Input 13",
-							"/row/13/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/14/name" : "14 Input 14",
-							"/row/14/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/15/name" : "15 Input 15",
-							"/row/15/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/16/name" : "16 Input 16",
-							"/row/16/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/17/name" : "17 Input 17",
-							"/row/17/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/18/name" : "18 Input 18",
-							"/row/18/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/19/name" : "19 Input 19",
-							"/row/19/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/20/name" : "20 Input 20",
-							"/row/20/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/21/name" : "21 Input 21",
-							"/row/21/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/22/name" : "22 Input 22",
-							"/row/22/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/23/name" : "23 Input 23",
-							"/row/23/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/24/name" : "24 Input 24",
-							"/row/24/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/25/name" : "25 Input 25",
-							"/row/25/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/26/name" : "26 Input 26",
-							"/row/26/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/27/name" : "27 Input 27",
-							"/row/27/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/28/name" : "28 Input 28",
-							"/row/28/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/29/name" : "29 Input 29",
-							"/row/29/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/30/name" : "30 Input 30",
-							"/row/30/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/31/name" : "31 Input 31",
-							"/row/31/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/32/name" : "32 Input 32",
-							"/row/32/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/33/name" : "33 Input 33",
-							"/row/33/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/34/name" : "34 Input 34",
-							"/row/34/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/35/name" : "35 Input 35",
-							"/row/35/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/36/name" : "36 Input 36",
-							"/row/36/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/37/name" : "37 Input 37",
-							"/row/37/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/38/name" : "38 Input 38",
-							"/row/38/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/39/name" : "39 Input 39",
-							"/row/39/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/40/name" : "40 Input 40",
-							"/row/40/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/41/name" : "41 Input 41",
-							"/row/41/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/42/name" : "42 Input 42",
-							"/row/42/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/43/name" : "43 Input 43",
-							"/row/43/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/44/name" : "44 Input 44",
-							"/row/44/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/45/name" : "45 Input 45",
-							"/row/45/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/46/name" : "46 Input 46",
-							"/row/46/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/47/name" : "47 Input 47",
-							"/row/47/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/48/name" : "48 Input 48",
-							"/row/48/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/49/name" : "49 Input 49",
-							"/row/49/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/50/name" : "50 Input 50",
-							"/row/50/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/51/name" : "51 Input 51",
-							"/row/51/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/52/name" : "52 Input 52",
-							"/row/52/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/53/name" : "53 Input 53",
-							"/row/53/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/54/name" : "54 Input 54",
-							"/row/54/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/55/name" : "55 Input 55",
-							"/row/55/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/56/name" : "56 Input 56",
-							"/row/56/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/57/name" : "57 Input 57",
-							"/row/57/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/58/name" : "58 Input 58",
-							"/row/58/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/59/name" : "59 Input 59",
-							"/row/59/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/60/name" : "60 Input 60",
-							"/row/60/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/61/name" : "61 Input 61",
-							"/row/61/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/62/name" : "62 Input 62",
-							"/row/62/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/63/name" : "63 Input 63",
-							"/row/63/color" : [ 1.0, 0.0, 0.0, 1.0 ],
-							"/row/64/name" : "64 Input 64",
-							"/row/64/color" : [ 1.0, 0.0, 0.0, 1.0 ],
 							"/col/1/name" : "spat_input1",
 							"/col/1/color" : [ 0.0, 0.0, 1.0, 1.0 ],
 							"/col/2/name" : "spat_input2",
@@ -5740,7 +3596,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 851.0, 126.0, 1292.0, 883.0 ],
+						"rect" : [ -85.0, 129.0, 1292.0, 883.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5769,6 +3625,76 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 455.5, 379.0, 41.0, 22.0 ],
+									"presentation_rect" : [ 466.0, 350.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "$2 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 407.0, 570.0, 41.0, 22.0 ],
+									"style" : "",
+									"text" : "$2 $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 167.5, 470.0, 110.0, 35.0 ],
+									"presentation_rect" : [ 217.5, 455.292725, 0.0, 0.0 ],
+									"style" : "",
+									"text" : ";\rdsp inremap $3 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 167.5, 388.292725, 117.0, 22.0 ],
+									"presentation_rect" : [ 217.5, 388.292725, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "spat5.osc.unslashify"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 167.5, 424.292725, 61.0, 22.0 ],
+									"presentation_rect" : [ 217.5, 424.292725, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "route row"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -5787,47 +3713,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 414.0, 572.0, 48.0, 22.0 ],
+									"patching_rect" : [ 407.0, 609.0, 48.0, 22.0 ],
 									"style" : "",
 									"text" : "route 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-83",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 353.0, 129.0, 22.0 ],
-									"style" : "",
-									"text" : "s dumpInputMappings"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-82",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "stop" ],
-									"patching_rect" : [ 36.5, 248.0, 46.0, 22.0 ],
-									"style" : "",
-									"text" : "t l stop"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-81",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 101.0, 306.0, 63.0, 22.0 ],
-									"style" : "",
-									"text" : "delay 100"
 								}
 
 							}
@@ -5954,7 +3842,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 32"
+																	"text" : "32 $1"
 																}
 
 															}
@@ -5982,7 +3870,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 31"
+																	"text" : "31 $1"
 																}
 
 															}
@@ -6097,9 +3985,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -6108,9 +3996,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -6304,7 +4192,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1258.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 30"
+																	"text" : "30 $1"
 																}
 
 															}
@@ -6332,7 +4220,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1133.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 29"
+																	"text" : "29 $1"
 																}
 
 															}
@@ -6360,7 +4248,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1008.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 28"
+																	"text" : "28 $1"
 																}
 
 															}
@@ -6388,7 +4276,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 883.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 27"
+																	"text" : "27 $1"
 																}
 
 															}
@@ -6416,7 +4304,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 758.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 26"
+																	"text" : "26 $1"
 																}
 
 															}
@@ -6444,7 +4332,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 633.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 25"
+																	"text" : "25 $1"
 																}
 
 															}
@@ -6472,7 +4360,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 508.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 24"
+																	"text" : "24 $1"
 																}
 
 															}
@@ -6500,7 +4388,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 383.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 23"
+																	"text" : "23 $1"
 																}
 
 															}
@@ -6528,7 +4416,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 22"
+																	"text" : "22 $1"
 																}
 
 															}
@@ -6556,7 +4444,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 21"
+																	"text" : "21 $1"
 																}
 
 															}
@@ -6847,9 +4735,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -6858,9 +4746,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -7054,7 +4942,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1258.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 20"
+																	"text" : "20 $1"
 																}
 
 															}
@@ -7082,7 +4970,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1133.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 19"
+																	"text" : "19 $1"
 																}
 
 															}
@@ -7110,7 +4998,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1008.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 18"
+																	"text" : "18 $1"
 																}
 
 															}
@@ -7138,7 +5026,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 883.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 17"
+																	"text" : "17 $1"
 																}
 
 															}
@@ -7166,7 +5054,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 758.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 16"
+																	"text" : "16 $1"
 																}
 
 															}
@@ -7194,7 +5082,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 633.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 15"
+																	"text" : "15 $1"
 																}
 
 															}
@@ -7222,7 +5110,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 508.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 14"
+																	"text" : "14 $1"
 																}
 
 															}
@@ -7250,7 +5138,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 383.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 13"
+																	"text" : "13 $1"
 																}
 
 															}
@@ -7278,7 +5166,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 40.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 12"
+																	"text" : "12 $1"
 																}
 
 															}
@@ -7306,7 +5194,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 38.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 11"
+																	"text" : "11 $1"
 																}
 
 															}
@@ -7597,9 +5485,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -7608,9 +5496,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -7742,7 +5630,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ -42.0, 164.0, 1332.0, 480.0 ],
+														"rect" : [ 34.0, 164.0, 1332.0, 480.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -7804,7 +5692,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1258.0, 136.0, 41.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 10"
+																	"text" : "10 $1"
 																}
 
 															}
@@ -7832,7 +5720,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1133.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 9"
+																	"text" : "9 $1"
 																}
 
 															}
@@ -7860,7 +5748,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 1008.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 8"
+																	"text" : "8 $1"
 																}
 
 															}
@@ -7888,7 +5776,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 883.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 7"
+																	"text" : "7 $1"
 																}
 
 															}
@@ -7916,7 +5804,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 758.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 6"
+																	"text" : "6 $1"
 																}
 
 															}
@@ -7944,7 +5832,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 633.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 5"
+																	"text" : "5 $1"
 																}
 
 															}
@@ -7972,7 +5860,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 508.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 4"
+																	"text" : "4 $1"
 																}
 
 															}
@@ -8000,7 +5888,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 383.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 3"
+																	"text" : "3 $1"
 																}
 
 															}
@@ -8028,7 +5916,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 258.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 2"
+																	"text" : "2 $1"
 																}
 
 															}
@@ -8056,7 +5944,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 133.0, 136.0, 34.0, 22.0 ],
 																	"style" : "",
-																	"text" : "$1 1"
+																	"text" : "1 $1"
 																}
 
 															}
@@ -8347,9 +6235,9 @@
 , 															{
 																"name" : "Default M4L",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 11.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -8358,9 +6246,9 @@
 , 															{
 																"name" : "Default M4L Poletti",
 																"default" : 																{
+																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 																	"fontsize" : [ 10.0 ],
-																	"fontname" : [ "Arial Bold" ],
-																	"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -8536,19 +6424,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-68",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 85.0, 202.5, 161.0, 33.0 ],
-									"style" : "",
-									"text" : "if 0 not followed by 1, dump all inputs again"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-59",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
@@ -8580,22 +6455,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 469.0, 635.0, 29.5, 22.0 ],
+									"patching_rect" : [ 483.25, 579.0, 29.5, 22.0 ],
 									"style" : "",
-									"text" : "$2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-43",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 443.0, 604.0, 29.5, 22.0 ],
-									"style" : "",
-									"text" : "t l l"
+									"text" : "$1"
 								}
 
 							}
@@ -8606,7 +6468,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 474.0, 668.0, 149.0, 22.0 ],
+									"patching_rect" : [ 488.25, 609.0, 149.0, 22.0 ],
 									"style" : "",
 									"text" : "sprintf /set/row/*/col/%ld 0"
 								}
@@ -8700,19 +6562,6 @@
 									"patching_rect" : [ 427.5, 421.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "t l l"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 438.0, 139.292725, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "$2 $1"
 								}
 
 							}
@@ -8849,7 +6698,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.5, 455.292725, 110.0, 35.0 ],
+									"patching_rect" : [ 36.5, 470.0, 110.0, 35.0 ],
 									"style" : "",
 									"text" : ";\rdsp inremap $3 $1"
 								}
@@ -9065,7 +6914,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "Off", ",", 1, "Input 1", ",", 2, "Input 2", ",", 3, "Input 3", ",", 4, "Input 4", ",", 5, "Input 5", ",", 6, "Input 6", ",", 7, "Input 7", ",", 8, "Input 8", ",", 9, "Input 9", ",", 10, "Input 10", ",", 11, "Input 11", ",", 12, "Input 12", ",", 13, "Input 13", ",", 14, "Input 14", ",", 15, "Input 15", ",", 16, "Input 16", ",", 17, "Input 17", ",", 18, "Input 18", ",", 19, "Input 19", ",", 20, "Input 20", ",", 21, "Input 21", ",", 22, "Input 22", ",", 23, "Input 23", ",", 24, "Input 24", ",", 25, "Input 25", ",", 26, "Input 26", ",", 27, "Input 27", ",", 28, "Input 28", ",", 29, "Input 29", ",", 30, "Input 30", ",", 31, "Input 31", ",", 32, "Input 32", ",", 33, "Input 33", ",", 34, "Input 34", ",", 35, "Input 35", ",", 36, "Input 36", ",", 37, "Input 37", ",", 38, "Input 38", ",", 39, "Input 39", ",", 40, "Input 40", ",", 41, "Input 41", ",", 42, "Input 42", ",", 43, "Input 43", ",", 44, "Input 44", ",", 45, "Input 45", ",", 46, "Input 46", ",", 47, "Input 47", ",", 48, "Input 48", ",", 49, "Input 49", ",", 50, "Input 50", ",", 51, "Input 51", ",", 52, "Input 52", ",", 53, "Input 53", ",", 54, "Input 54", ",", 55, "Input 55", ",", 56, "Input 56", ",", 57, "Input 57", ",", 58, "Input 58", ",", 59, "Input 59", ",", 60, "Input 60", ",", 61, "Input 61", ",", 62, "Input 62", ",", 63, "Input 63", ",", 64, "Input 64" ],
+									"items" : [ "Off", ",", 1, "Input 1", ",", 2, "Input 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -9389,9 +7238,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -9400,9 +7249,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -9562,7 +7411,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-1", 1 ]
 								}
 
@@ -9576,15 +7425,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
+									"destination" : [ "obj-44", 0 ],
 									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -9803,7 +7645,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-89", 0 ],
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"order" : 1,
 									"source" : [ "obj-40", 0 ]
 								}
 
@@ -9811,14 +7661,22 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-46", 0 ],
-									"source" : [ "obj-43", 1 ]
+									"order" : 0,
+									"source" : [ "obj-40", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-48", 0 ],
-									"source" : [ "obj-43", 0 ]
+									"destination" : [ "obj-89", 0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-44", 0 ]
 								}
 
 							}
@@ -9929,14 +7787,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-62", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-82", 0 ],
+									"destination" : [ "obj-55", 0 ],
 									"source" : [ "obj-62", 0 ]
 								}
 
@@ -9964,29 +7822,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-83", 0 ],
-									"source" : [ "obj-81", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-55", 0 ],
-									"source" : [ "obj-82", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-82", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-43", 0 ],
+									"destination" : [ "obj-48", 0 ],
 									"source" : [ "obj-89", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -10021,9 +7865,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -10032,9 +7876,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -10303,13 +8147,13 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
 			"obj-31" : [ "live.text[33]", "live.text[8]", 0 ],
 			"obj-8::obj-606" : [ "live.text[2]", "live.text", 0 ],
 			"obj-8::obj-11" : [ "live.text[4]", "live.text", 0 ],
 			"obj-28" : [ "live.text[32]", "live.text[8]", 0 ],
-			"obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
-			"obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ],
-			"obj-8::obj-55" : [ "live.text[3]", "live.text", 0 ]
+			"obj-8::obj-55" : [ "live.text[3]", "live.text", 0 ],
+			"obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -10377,9 +8221,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -10388,9 +8232,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
