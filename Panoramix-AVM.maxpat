@@ -9020,7 +9020,7 @@
 							"/group/1/affects/solo" : 1,
 							"/group/1/affects/send" : 1,
 							"/group/1/track" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
-							"/group/1/active" : 0,
+							"/group/1/active" : 1,
 							"/group/2/name" : "all mono",
 							"/group/2/affects/mute" : 1,
 							"/group/2/affects/solo" : 1,
