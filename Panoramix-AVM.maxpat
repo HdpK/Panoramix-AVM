@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -2.0, 45.0, 359.0, 391.0 ],
+		"rect" : [ 0.0, 45.0, 357.0, 544.0 ],
 		"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,165 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-46",
+					"maxclass" : "number",
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1320.0, 95.0, 50.0, 21.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1320.0, 140.0, 171.0, 26.0 ],
+					"style" : "",
+					"text" : "spat5.multi.connect 64"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"channels" : 16,
+					"id" : "obj-37",
+					"maxclass" : "live.gain~",
+					"numinlets" : 16,
+					"numoutlets" : 19,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 374.25769, 721.5, 280.0, 150.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 96.233551, 309.0, 160.0, 150.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[3]",
+							"parameter_shortname" : "loudspeakers",
+							"parameter_type" : 0,
+							"parameter_mmin" : -70.0,
+							"parameter_mmax" : 6.0,
+							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ -90 ],
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 660.0, 721.5, 60.0, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 266.0, 309.0, 60.0, 151.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_shortname" : "headphones",
+							"parameter_type" : 0,
+							"parameter_mmin" : -70.0,
+							"parameter_mmax" : 6.0,
+							"parameter_initial_enable" : 1,
+							"parameter_initial" : [ -90 ],
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.0, 220.0, 150.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 10.0, 289.471649, 110.0, 19.0 ],
+					"style" : "",
+					"text" : "esc = stop/run audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1222.439331, 290.0, 40.0, 21.0 ],
+					"style" : "",
+					"text" : "sel 27"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "int", "int", "int" ],
+					"patching_rect" : [ 1222.439331, 260.0, 50.5, 21.0 ],
+					"style" : "",
+					"text" : "key"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-18",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 30.0, 10.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 16.108551, 98.5, 100.0, 20.0 ],
+					"style" : "",
+					"text" : "close window"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 106.0, 48.0, 21.0 ],
+					"style" : "",
+					"text" : "dispose"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-162",
@@ -90,7 +249,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 784.0, 550.0, 120.0, 30.0 ],
+					"patching_rect" : [ 971.5, 519.0, 120.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 133.75, 267.76416, 122.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
@@ -126,7 +285,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 4.0, 626.0, 333.0, 144.0 ],
+						"rect" : [ 0.0, 653.0, 333.0, 144.0 ],
 						"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -164,13 +323,13 @@
 									"parameter_enable" : 1,
 									"patching_rect" : [ 70.0, 209.0, 60.0, 15.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 25.5, 87.0, 67.0, 15.0 ],
+									"presentation_rect" : [ 25.5, 87.0, 73.0, 15.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "live.menu[2]",
 											"parameter_shortname" : "live.menu",
 											"parameter_type" : 2,
-											"parameter_enum" : [ "none", "inlet #1", "inlet #2", "inlet #3", "inlet #4", "inlet #5", "inlet #6", "inlet #7", "inlet #8", "inlet #9", "inlet #10", "inlet #11", "inlet #12", "inlet #13", "inlet #14", "inlet #15", "inlet #16", "inlet #17", "inlet #18" ]
+											"parameter_enum" : [ "none", "output #1", "output #2", "output #3", "output #4", "output #5", "output #6", "output #7", "output #8", "output #9", "output #10", "output #11", "output #12", "output #13", "output #14", "output #15", "output #16", "output #17", "output #18" ]
 										}
 
 									}
@@ -807,7 +966,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 779.5, 638.0, 344.5, 21.0 ],
+					"patching_rect" : [ 971.5, 600.0, 344.5, 21.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -830,7 +989,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 784.0, 600.5, 33.0, 21.0 ],
+					"patching_rect" : [ 971.5, 569.5, 33.0, 21.0 ],
 					"presentation_rect" : [ 795.0, 408.5, 33.0, 21.0 ],
 					"style" : "",
 					"text" : "front"
@@ -875,7 +1034,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1295.0, 950.0, 50.0, 21.0 ],
+					"patching_rect" : [ 1512.5, 749.0, 50.0, 21.0 ],
 					"style" : "",
 					"text" : "pcontrol"
 				}
@@ -891,7 +1050,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1260.0, 870.0, 68.0, 34.0 ],
+					"patching_rect" : [ 1477.5, 669.0, 68.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 266.0, 250.0, 76.467102, 27.0 ],
 					"saved_attribute_attributes" : 					{
@@ -919,7 +1078,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1261.5, 917.5, 35.0, 21.0 ],
+					"patching_rect" : [ 1479.0, 716.5, 35.0, 21.0 ],
 					"presentation_rect" : [ 1016.0, 432.0, 33.0, 21.0 ],
 					"style" : "",
 					"text" : "open"
@@ -942,7 +1101,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 88.0, 73.0, 544.0, 345.0 ],
+						"rect" : [ 358.0, 72.0, 544.0, 345.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -958,7 +1117,7 @@
 						"toptoolbarpinned" : 2,
 						"righttoolbarpinned" : 2,
 						"bottomtoolbarpinned" : 2,
-						"toolbars_unpinned_last_save" : 0,
+						"toolbars_unpinned_last_save" : 15,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
 						"enablehscroll" : 1,
@@ -4577,7 +4736,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 740.0, 960.0, 533.5, 21.0 ],
+					"patching_rect" : [ 957.5, 759.0, 533.5, 21.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4611,7 +4770,7 @@
 							"/master/dynamics/lookahead" : 0.0,
 							"/master/dynamics/compressor/threshold" : -30.0,
 							"/master/dynamics/compressor/ratio" : 1.0,
-							"/master/dynamics/expander/threshold" : -60.0,
+							"/master/dynamics/expander/threshold" : -30.0,
 							"/master/dynamics/expander/ratio" : 1.0,
 							"/master/dynamics/makeup" : 0.0,
 							"/master/dynamics/link" : 0,
@@ -4657,14 +4816,16 @@
 							"/master/equalizer/filter/8/active" : 0,
 							"/master/equalizer/filter/8/freq" : 16000.0,
 							"/master/equalizer/filter/8/order" : 2,
-							"/master/gain" : 0.0,
+							"/master/gain" : -17.299999,
 							"/master/gain/ramptime" : 20.0,
 							"/master/mute" : 0,
 							"/master/annotation" : "",
 							"/master/levels/input/visible" : 1,
 							"/master/levels/input/post" : 0,
+							"/master/levels/input/mode" : "rms",
 							"/master/levels/output/visible" : 1,
 							"/master/levels/output/post" : 1,
+							"/master/levels/output/mode" : "rms",
 							"/master/dim" : 0,
 							"/master/lock" : 0,
 							"/monitoring/name" : "Monitoring",
@@ -4678,7 +4839,7 @@
 							"/monitoring/dynamics/lookahead" : 0.0,
 							"/monitoring/dynamics/compressor/threshold" : -30.0,
 							"/monitoring/dynamics/compressor/ratio" : 1.0,
-							"/monitoring/dynamics/expander/threshold" : -60.0,
+							"/monitoring/dynamics/expander/threshold" : -30.0,
 							"/monitoring/dynamics/expander/ratio" : 1.0,
 							"/monitoring/dynamics/makeup" : 0.0,
 							"/monitoring/dynamics/link" : 0,
@@ -4730,8 +4891,10 @@
 							"/monitoring/annotation" : "",
 							"/monitoring/levels/input/visible" : 1,
 							"/monitoring/levels/input/post" : 0,
+							"/monitoring/levels/input/mode" : "rms",
 							"/monitoring/levels/output/visible" : 1,
 							"/monitoring/levels/output/post" : 1,
+							"/monitoring/levels/output/mode" : "rms",
 							"/monitoring/dim" : 0,
 							"/monitoring/itd/scaling" : 100.0,
 							"/monitoring/hrtf" : "",
@@ -4753,7 +4916,7 @@
 							"/bus/1/dynamics/lookahead" : 0.0,
 							"/bus/1/dynamics/compressor/threshold" : -30.0,
 							"/bus/1/dynamics/compressor/ratio" : 1.0,
-							"/bus/1/dynamics/expander/threshold" : -60.0,
+							"/bus/1/dynamics/expander/threshold" : -30.0,
 							"/bus/1/dynamics/expander/ratio" : 1.0,
 							"/bus/1/dynamics/makeup" : 0.0,
 							"/bus/1/dynamics/link" : 0,
@@ -4805,8 +4968,10 @@
 							"/bus/1/annotation" : "",
 							"/bus/1/levels/input/visible" : 1,
 							"/bus/1/levels/input/post" : 0,
+							"/bus/1/levels/input/mode" : "rms",
 							"/bus/1/levels/output/visible" : 1,
 							"/bus/1/levels/output/post" : 1,
+							"/bus/1/levels/output/mode" : "rms",
 							"/bus/1/speaker/number" : 11,
 							"/bus/1/speakers/correction/delay" : "off",
 							"/bus/1/speakers/correction/gain" : "off",
@@ -4837,19 +5002,23 @@
 							"/bus/1/routing/output/1/master" : 1,
 							"/bus/1/routing/output/2/master" : 2,
 							"/bus/1/routing/output/3/master" : 3,
-							"/bus/1/routing/output/4/master" : 6,
-							"/bus/1/routing/output/5/master" : 7,
-							"/bus/1/routing/output/6/master" : 8,
-							"/bus/1/routing/output/7/master" : 9,
-							"/bus/1/routing/output/8/master" : [  ],
-							"/bus/1/routing/output/9/master" : 10,
-							"/bus/1/routing/output/10/master" : 11,
-							"/bus/1/routing/output/11/master" : 12,
+							"/bus/1/routing/output/4/master" : 4,
+							"/bus/1/routing/output/5/master" : 5,
+							"/bus/1/routing/output/6/master" : 6,
+							"/bus/1/routing/output/7/master" : 7,
+							"/bus/1/routing/output/8/master" : 8,
+							"/bus/1/routing/output/9/master" : 9,
+							"/bus/1/routing/output/10/master" : 10,
+							"/bus/1/routing/output/11/master" : 11,
 							"/bus/1/lock" : 0,
 							"/bus/1/delay" : 0.0,
+							"/bus/1/delay/bypass" : 0,
 							"/bus/1/spread" : 0.0,
+							"/bus/1/spread/bypass" : 0,
 							"/bus/1/monitor" : 1,
 							"/bus/1/interpolation/time" : 30.0,
+							"/bus/1/phantom/zenith" : 0,
+							"/bus/1/phantom/nadir" : 0,
 							"/reverb/1/name" : "VBAP Reverb 1",
 							"/reverb/1/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
 							"/reverb/1/numinputs" : 8,
@@ -4861,7 +5030,7 @@
 							"/reverb/1/dynamics/lookahead" : 0.0,
 							"/reverb/1/dynamics/compressor/threshold" : -30.0,
 							"/reverb/1/dynamics/compressor/ratio" : 1.0,
-							"/reverb/1/dynamics/expander/threshold" : -60.0,
+							"/reverb/1/dynamics/expander/threshold" : -30.0,
 							"/reverb/1/dynamics/expander/ratio" : 1.0,
 							"/reverb/1/dynamics/makeup" : 0.0,
 							"/reverb/1/dynamics/link" : 0,
@@ -4907,14 +5076,16 @@
 							"/reverb/1/equalizer/filter/8/active" : 0,
 							"/reverb/1/equalizer/filter/8/freq" : 16000.0,
 							"/reverb/1/equalizer/filter/8/order" : 2,
-							"/reverb/1/gain" : 0.0,
+							"/reverb/1/gain" : -14.7,
 							"/reverb/1/gain/ramptime" : 20.0,
 							"/reverb/1/mute" : 0,
 							"/reverb/1/annotation" : "",
 							"/reverb/1/levels/input/visible" : 1,
 							"/reverb/1/levels/input/post" : 0,
+							"/reverb/1/levels/input/mode" : "rms",
 							"/reverb/1/levels/output/visible" : 1,
 							"/reverb/1/levels/output/post" : 1,
+							"/reverb/1/levels/output/mode" : "rms",
 							"/reverb/1/lock" : 0,
 							"/reverb/1/cluster/gain/value" : -6.0,
 							"/reverb/1/cluster/filter/bypass" : 1,
@@ -4928,7 +5099,7 @@
 							"/reverb/1/tr0" : 1.995,
 							"/reverb/1/trl" : 1.0,
 							"/reverb/1/trm" : 1.0,
-							"/reverb/1/trh" : 0.5,
+							"/reverb/1/trh" : 0.8,
 							"/reverb/1/fl" : 250.0,
 							"/reverb/1/fh" : 8000.0,
 							"/reverb/1/air" : 1,
@@ -4944,7 +5115,7 @@
 							"/lfe/dynamics/lookahead" : 0.0,
 							"/lfe/dynamics/compressor/threshold" : -30.0,
 							"/lfe/dynamics/compressor/ratio" : 1.0,
-							"/lfe/dynamics/expander/threshold" : -60.0,
+							"/lfe/dynamics/expander/threshold" : -30.0,
 							"/lfe/dynamics/expander/ratio" : 1.0,
 							"/lfe/dynamics/makeup" : 0.0,
 							"/lfe/dynamics/link" : 0,
@@ -4996,13 +5167,15 @@
 							"/lfe/annotation" : "",
 							"/lfe/levels/input/visible" : 1,
 							"/lfe/levels/input/post" : 0,
+							"/lfe/levels/input/mode" : "rms",
 							"/lfe/levels/output/visible" : 1,
 							"/lfe/levels/output/post" : 1,
+							"/lfe/levels/output/mode" : "rms",
 							"/lfe/routing/output/empty" : [  ],
 							"/lfe/lock" : 0,
 							"/lfe/cutoff" : 50.0,
-							"/track/number" : 1,
-							"/track/indices" : 1,
+							"/track/number" : 16,
+							"/track/indices" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
 							"/multi/number" : 0,
 							"/multi/indices" : [  ],
 							"/eigenmike/number" : 0,
@@ -5017,7 +5190,7 @@
 							"/d2m/indices" : [  ],
 							"/d2b/number" : 0,
 							"/d2b/indices" : [  ],
-							"/track/1/name" : "Mono 1",
+							"/track/1/name" : "MainL",
 							"/track/1/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/1/numinputs" : 1,
 							"/track/1/visible" : 1,
@@ -5027,7 +5200,7 @@
 							"/track/1/dynamics/lookahead" : 0.0,
 							"/track/1/dynamics/compressor/threshold" : -30.0,
 							"/track/1/dynamics/compressor/ratio" : 1.0,
-							"/track/1/dynamics/expander/threshold" : -60.0,
+							"/track/1/dynamics/expander/threshold" : -30.0,
 							"/track/1/dynamics/expander/ratio" : 1.0,
 							"/track/1/dynamics/makeup" : 0.0,
 							"/track/1/dynamics/link" : 0,
@@ -5039,7 +5212,7 @@
 							"/track/1/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/1/dynamics/curve/thickness" : 1.0,
 							"/track/1/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/1/dynamics/title" : "Mono 1",
+							"/track/1/dynamics/title" : "MainL",
 							"/track/1/equalizer/samplerate" : 44100.0,
 							"/track/1/equalizer/bypass" : 1,
 							"/track/1/equalizer/gain" : 0.0,
@@ -5079,21 +5252,29 @@
 							"/track/1/annotation" : "",
 							"/track/1/levels/input/visible" : 1,
 							"/track/1/levels/input/post" : 0,
+							"/track/1/levels/input/mode" : "rms",
 							"/track/1/levels/output/visible" : 1,
 							"/track/1/levels/output/post" : 1,
+							"/track/1/levels/output/mode" : "rms",
 							"/track/1/solo" : 0,
 							"/track/1/bus/A/destination" : "VBAP Bus 1",
 							"/track/1/bus/B/destination" : "----",
 							"/track/1/bus/C/destination" : "----",
 							"/track/1/bus/D/destination" : "----",
+							"/track/1/bus/E/destination" : "----",
+							"/track/1/bus/F/destination" : "----",
 							"/track/1/bus/A/mute" : 0,
 							"/track/1/bus/B/mute" : 0,
 							"/track/1/bus/C/mute" : 0,
 							"/track/1/bus/D/mute" : 0,
+							"/track/1/bus/E/mute" : 0,
+							"/track/1/bus/F/mute" : 0,
 							"/track/1/bus/A/gain" : 0.0,
 							"/track/1/bus/B/gain" : 0.0,
 							"/track/1/bus/C/gain" : 0.0,
 							"/track/1/bus/D/gain" : 0.0,
+							"/track/1/bus/E/gain" : 0.0,
+							"/track/1/bus/F/gain" : 0.0,
 							"/track/1/bus/display" : "A",
 							"/track/1/routing/input/1/adc" : 1,
 							"/track/1/lfe/send" : 0.0,
@@ -5101,55 +5282,1990 @@
 							"/track/1/doppler" : 0,
 							"/track/1/air" : 0,
 							"/track/1/phaseinvert" : 0,
-							"/track/1/azim" : -33.939999,
-							"/track/1/elev" : 0.0,
-							"/track/1/dist" : 1.83,
+							"/track/1/azim" : -120.0,
+							"/track/1/elev" : -90.0,
+							"/track/1/dist" : 1.0,
 							"/track/1/delay/linkedtodistance" : 0,
 							"/track/1/direct/linkedtodistance" : 1,
 							"/track/1/early/linkedtodistance" : 1,
 							"/track/1/reverb/linkedtodistance" : 1,
 							"/track/1/delay" : 0.0,
-							"/track/1/direct/gain" : -5.9,
+							"/track/1/direct/gain" : -0.7,
 							"/track/1/direct/gain/low" : 0.0,
 							"/track/1/direct/gain/med" : 0.0,
 							"/track/1/direct/gain/high" : 0.0,
 							"/track/1/direct/freq/low" : 250.0,
 							"/track/1/direct/freq/high" : 4000.0,
 							"/track/1/direct/filter/bypass" : 1,
-							"/track/1/early/gain" : -13.5,
+							"/track/1/early/gain" : -8.3,
 							"/track/1/early/gain/low" : 0.0,
 							"/track/1/early/gain/med" : 0.0,
 							"/track/1/early/gain/high" : 0.0,
 							"/track/1/early/freq/low" : 250.0,
 							"/track/1/early/freq/high" : 4000.0,
 							"/track/1/early/filter/bypass" : 1,
-							"/track/1/reverb/send" : -10.1,
+							"/track/1/reverb/send" : -7.5,
 							"/track/1/reverb/send/ramptime" : 20.0,
 							"/track/1/early/width" : 30.0,
 							"/track/1/direct/mute" : 0,
-							"/track/1/early/mute" : 0,
+							"/track/1/early/mute" : 1,
 							"/track/1/reverb/mute" : 0,
-							"/track/1/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
+							"/track/1/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
 							"/track/1/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
+							"/track/1/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
 							"/track/1/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
+							"/track/1/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
 							"/track/1/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
+							"/track/1/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
 							"/track/1/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/1/lock" : 0,
+							"/track/2/name" : "MainR",
+							"/track/2/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/2/numinputs" : 1,
+							"/track/2/visible" : 1,
+							"/track/2/trim" : 0.0,
+							"/track/2/dynamics/attack" : 10.01,
+							"/track/2/dynamics/release" : 30.0,
+							"/track/2/dynamics/lookahead" : 0.0,
+							"/track/2/dynamics/compressor/threshold" : -30.0,
+							"/track/2/dynamics/compressor/ratio" : 1.0,
+							"/track/2/dynamics/expander/threshold" : -30.0,
+							"/track/2/dynamics/expander/ratio" : 1.0,
+							"/track/2/dynamics/makeup" : 0.0,
+							"/track/2/dynamics/link" : 0,
+							"/track/2/dynamics/bypass" : 1,
+							"/track/2/dynamics/grid/visible" : 1,
+							"/track/2/dynamics/curve/fill" : 1,
+							"/track/2/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/2/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/2/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/2/dynamics/curve/thickness" : 1.0,
+							"/track/2/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/2/dynamics/title" : "MainR",
+							"/track/2/equalizer/samplerate" : 44100.0,
+							"/track/2/equalizer/bypass" : 1,
+							"/track/2/equalizer/gain" : 0.0,
+							"/track/2/equalizer/filter/1/active" : 0,
+							"/track/2/equalizer/filter/1/freq" : 50.0,
+							"/track/2/equalizer/filter/1/order" : 2,
+							"/track/2/equalizer/filter/2/active" : 1,
+							"/track/2/equalizer/filter/2/freq" : 100.0,
+							"/track/2/equalizer/filter/2/gain" : 0.0,
+							"/track/2/equalizer/filter/2/q" : 1.0,
+							"/track/2/equalizer/filter/3/active" : 1,
+							"/track/2/equalizer/filter/3/freq" : 500.0,
+							"/track/2/equalizer/filter/3/gain" : 0.0,
+							"/track/2/equalizer/filter/3/q" : 1.0,
+							"/track/2/equalizer/filter/4/active" : 1,
+							"/track/2/equalizer/filter/4/freq" : 1000.0,
+							"/track/2/equalizer/filter/4/gain" : 0.0,
+							"/track/2/equalizer/filter/4/q" : 1.0,
+							"/track/2/equalizer/filter/5/active" : 1,
+							"/track/2/equalizer/filter/5/freq" : 2000.0,
+							"/track/2/equalizer/filter/5/gain" : 0.0,
+							"/track/2/equalizer/filter/5/q" : 1.0,
+							"/track/2/equalizer/filter/6/active" : 1,
+							"/track/2/equalizer/filter/6/freq" : 5000.0,
+							"/track/2/equalizer/filter/6/gain" : 0.0,
+							"/track/2/equalizer/filter/6/q" : 1.0,
+							"/track/2/equalizer/filter/7/active" : 1,
+							"/track/2/equalizer/filter/7/freq" : 10000.0,
+							"/track/2/equalizer/filter/7/gain" : 0.0,
+							"/track/2/equalizer/filter/7/q" : 1.0,
+							"/track/2/equalizer/filter/8/active" : 0,
+							"/track/2/equalizer/filter/8/freq" : 16000.0,
+							"/track/2/equalizer/filter/8/order" : 2,
+							"/track/2/gain" : 0.0,
+							"/track/2/gain/ramptime" : 20.0,
+							"/track/2/mute" : 0,
+							"/track/2/annotation" : "",
+							"/track/2/levels/input/visible" : 1,
+							"/track/2/levels/input/post" : 0,
+							"/track/2/levels/input/mode" : "rms",
+							"/track/2/levels/output/visible" : 1,
+							"/track/2/levels/output/post" : 1,
+							"/track/2/levels/output/mode" : "rms",
+							"/track/2/solo" : 0,
+							"/track/2/bus/A/destination" : "VBAP Bus 1",
+							"/track/2/bus/B/destination" : "----",
+							"/track/2/bus/C/destination" : "----",
+							"/track/2/bus/D/destination" : "----",
+							"/track/2/bus/E/destination" : "----",
+							"/track/2/bus/F/destination" : "----",
+							"/track/2/bus/A/mute" : 0,
+							"/track/2/bus/B/mute" : 0,
+							"/track/2/bus/C/mute" : 0,
+							"/track/2/bus/D/mute" : 0,
+							"/track/2/bus/E/mute" : 0,
+							"/track/2/bus/F/mute" : 0,
+							"/track/2/bus/A/gain" : 0.0,
+							"/track/2/bus/B/gain" : 0.0,
+							"/track/2/bus/C/gain" : 0.0,
+							"/track/2/bus/D/gain" : 0.0,
+							"/track/2/bus/E/gain" : 0.0,
+							"/track/2/bus/F/gain" : 0.0,
+							"/track/2/bus/display" : "A",
+							"/track/2/routing/input/1/adc" : 2,
+							"/track/2/lfe/send" : 0.0,
+							"/track/2/lfe/mute" : 0,
+							"/track/2/doppler" : 0,
+							"/track/2/air" : 0,
+							"/track/2/phaseinvert" : 0,
+							"/track/2/azim" : 120.0,
+							"/track/2/elev" : -90.0,
+							"/track/2/dist" : 1.0,
+							"/track/2/delay/linkedtodistance" : 0,
+							"/track/2/direct/linkedtodistance" : 1,
+							"/track/2/early/linkedtodistance" : 1,
+							"/track/2/reverb/linkedtodistance" : 1,
+							"/track/2/delay" : 0.0,
+							"/track/2/direct/gain" : -0.7,
+							"/track/2/direct/gain/low" : 0.0,
+							"/track/2/direct/gain/med" : 0.0,
+							"/track/2/direct/gain/high" : 0.0,
+							"/track/2/direct/freq/low" : 250.0,
+							"/track/2/direct/freq/high" : 4000.0,
+							"/track/2/direct/filter/bypass" : 1,
+							"/track/2/early/gain" : -8.3,
+							"/track/2/early/gain/low" : 0.0,
+							"/track/2/early/gain/med" : 0.0,
+							"/track/2/early/gain/high" : 0.0,
+							"/track/2/early/freq/low" : 250.0,
+							"/track/2/early/freq/high" : 4000.0,
+							"/track/2/early/filter/bypass" : 1,
+							"/track/2/reverb/send" : -7.5,
+							"/track/2/reverb/send/ramptime" : 20.0,
+							"/track/2/early/width" : 30.0,
+							"/track/2/direct/mute" : 0,
+							"/track/2/early/mute" : 1,
+							"/track/2/reverb/mute" : 0,
+							"/track/2/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/2/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/2/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/2/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/2/lock" : 0,
+							"/track/3/name" : "Cl",
+							"/track/3/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/3/numinputs" : 1,
+							"/track/3/visible" : 1,
+							"/track/3/trim" : 0.0,
+							"/track/3/dynamics/attack" : 10.01,
+							"/track/3/dynamics/release" : 30.0,
+							"/track/3/dynamics/lookahead" : 0.0,
+							"/track/3/dynamics/compressor/threshold" : -30.0,
+							"/track/3/dynamics/compressor/ratio" : 1.0,
+							"/track/3/dynamics/expander/threshold" : -30.0,
+							"/track/3/dynamics/expander/ratio" : 1.0,
+							"/track/3/dynamics/makeup" : 0.0,
+							"/track/3/dynamics/link" : 0,
+							"/track/3/dynamics/bypass" : 1,
+							"/track/3/dynamics/grid/visible" : 1,
+							"/track/3/dynamics/curve/fill" : 1,
+							"/track/3/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/3/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/3/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/3/dynamics/curve/thickness" : 1.0,
+							"/track/3/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/3/dynamics/title" : "Cl",
+							"/track/3/equalizer/samplerate" : 44100.0,
+							"/track/3/equalizer/bypass" : 1,
+							"/track/3/equalizer/gain" : 0.0,
+							"/track/3/equalizer/filter/1/active" : 0,
+							"/track/3/equalizer/filter/1/freq" : 50.0,
+							"/track/3/equalizer/filter/1/order" : 2,
+							"/track/3/equalizer/filter/2/active" : 1,
+							"/track/3/equalizer/filter/2/freq" : 100.0,
+							"/track/3/equalizer/filter/2/gain" : 0.0,
+							"/track/3/equalizer/filter/2/q" : 1.0,
+							"/track/3/equalizer/filter/3/active" : 1,
+							"/track/3/equalizer/filter/3/freq" : 500.0,
+							"/track/3/equalizer/filter/3/gain" : 0.0,
+							"/track/3/equalizer/filter/3/q" : 1.0,
+							"/track/3/equalizer/filter/4/active" : 1,
+							"/track/3/equalizer/filter/4/freq" : 1000.0,
+							"/track/3/equalizer/filter/4/gain" : 0.0,
+							"/track/3/equalizer/filter/4/q" : 1.0,
+							"/track/3/equalizer/filter/5/active" : 1,
+							"/track/3/equalizer/filter/5/freq" : 2000.0,
+							"/track/3/equalizer/filter/5/gain" : 0.0,
+							"/track/3/equalizer/filter/5/q" : 1.0,
+							"/track/3/equalizer/filter/6/active" : 1,
+							"/track/3/equalizer/filter/6/freq" : 5000.0,
+							"/track/3/equalizer/filter/6/gain" : 0.0,
+							"/track/3/equalizer/filter/6/q" : 1.0,
+							"/track/3/equalizer/filter/7/active" : 1,
+							"/track/3/equalizer/filter/7/freq" : 10000.0,
+							"/track/3/equalizer/filter/7/gain" : 0.0,
+							"/track/3/equalizer/filter/7/q" : 1.0,
+							"/track/3/equalizer/filter/8/active" : 0,
+							"/track/3/equalizer/filter/8/freq" : 16000.0,
+							"/track/3/equalizer/filter/8/order" : 2,
+							"/track/3/gain" : 0.0,
+							"/track/3/gain/ramptime" : 20.0,
+							"/track/3/mute" : 0,
+							"/track/3/annotation" : "",
+							"/track/3/levels/input/visible" : 1,
+							"/track/3/levels/input/post" : 0,
+							"/track/3/levels/input/mode" : "rms",
+							"/track/3/levels/output/visible" : 1,
+							"/track/3/levels/output/post" : 1,
+							"/track/3/levels/output/mode" : "rms",
+							"/track/3/solo" : 0,
+							"/track/3/bus/A/destination" : "VBAP Bus 1",
+							"/track/3/bus/B/destination" : "----",
+							"/track/3/bus/C/destination" : "----",
+							"/track/3/bus/D/destination" : "----",
+							"/track/3/bus/E/destination" : "----",
+							"/track/3/bus/F/destination" : "----",
+							"/track/3/bus/A/mute" : 0,
+							"/track/3/bus/B/mute" : 0,
+							"/track/3/bus/C/mute" : 0,
+							"/track/3/bus/D/mute" : 0,
+							"/track/3/bus/E/mute" : 0,
+							"/track/3/bus/F/mute" : 0,
+							"/track/3/bus/A/gain" : 0.0,
+							"/track/3/bus/B/gain" : 0.0,
+							"/track/3/bus/C/gain" : 0.0,
+							"/track/3/bus/D/gain" : 0.0,
+							"/track/3/bus/E/gain" : 0.0,
+							"/track/3/bus/F/gain" : 0.0,
+							"/track/3/bus/display" : "A",
+							"/track/3/routing/input/1/adc" : 3,
+							"/track/3/lfe/send" : 0.0,
+							"/track/3/lfe/mute" : 0,
+							"/track/3/doppler" : 0,
+							"/track/3/air" : 0,
+							"/track/3/phaseinvert" : 0,
+							"/track/3/azim" : -144.949997,
+							"/track/3/elev" : 0.0,
+							"/track/3/dist" : 1.0,
+							"/track/3/delay/linkedtodistance" : 0,
+							"/track/3/direct/linkedtodistance" : 1,
+							"/track/3/early/linkedtodistance" : 1,
+							"/track/3/reverb/linkedtodistance" : 1,
+							"/track/3/delay" : 0.0,
+							"/track/3/direct/gain" : -0.7,
+							"/track/3/direct/gain/low" : 0.0,
+							"/track/3/direct/gain/med" : 0.0,
+							"/track/3/direct/gain/high" : 0.0,
+							"/track/3/direct/freq/low" : 250.0,
+							"/track/3/direct/freq/high" : 4000.0,
+							"/track/3/direct/filter/bypass" : 1,
+							"/track/3/early/gain" : -8.3,
+							"/track/3/early/gain/low" : 0.0,
+							"/track/3/early/gain/med" : 0.0,
+							"/track/3/early/gain/high" : 0.0,
+							"/track/3/early/freq/low" : 250.0,
+							"/track/3/early/freq/high" : 4000.0,
+							"/track/3/early/filter/bypass" : 1,
+							"/track/3/reverb/send" : -7.5,
+							"/track/3/reverb/send/ramptime" : 20.0,
+							"/track/3/early/width" : 30.0,
+							"/track/3/direct/mute" : 0,
+							"/track/3/early/mute" : 1,
+							"/track/3/reverb/mute" : 0,
+							"/track/3/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/3/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/3/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/3/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/3/lock" : 0,
+							"/track/4/name" : "BasSx",
+							"/track/4/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/4/numinputs" : 1,
+							"/track/4/visible" : 1,
+							"/track/4/trim" : 0.0,
+							"/track/4/dynamics/attack" : 10.01,
+							"/track/4/dynamics/release" : 30.0,
+							"/track/4/dynamics/lookahead" : 0.0,
+							"/track/4/dynamics/compressor/threshold" : -30.0,
+							"/track/4/dynamics/compressor/ratio" : 1.0,
+							"/track/4/dynamics/expander/threshold" : -30.0,
+							"/track/4/dynamics/expander/ratio" : 1.0,
+							"/track/4/dynamics/makeup" : 0.0,
+							"/track/4/dynamics/link" : 0,
+							"/track/4/dynamics/bypass" : 1,
+							"/track/4/dynamics/grid/visible" : 1,
+							"/track/4/dynamics/curve/fill" : 1,
+							"/track/4/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/4/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/4/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/4/dynamics/curve/thickness" : 1.0,
+							"/track/4/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/4/dynamics/title" : "BasSx",
+							"/track/4/equalizer/samplerate" : 44100.0,
+							"/track/4/equalizer/bypass" : 1,
+							"/track/4/equalizer/gain" : 0.0,
+							"/track/4/equalizer/filter/1/active" : 0,
+							"/track/4/equalizer/filter/1/freq" : 50.0,
+							"/track/4/equalizer/filter/1/order" : 2,
+							"/track/4/equalizer/filter/2/active" : 1,
+							"/track/4/equalizer/filter/2/freq" : 100.0,
+							"/track/4/equalizer/filter/2/gain" : 0.0,
+							"/track/4/equalizer/filter/2/q" : 1.0,
+							"/track/4/equalizer/filter/3/active" : 1,
+							"/track/4/equalizer/filter/3/freq" : 500.0,
+							"/track/4/equalizer/filter/3/gain" : 0.0,
+							"/track/4/equalizer/filter/3/q" : 1.0,
+							"/track/4/equalizer/filter/4/active" : 1,
+							"/track/4/equalizer/filter/4/freq" : 1000.0,
+							"/track/4/equalizer/filter/4/gain" : 0.0,
+							"/track/4/equalizer/filter/4/q" : 1.0,
+							"/track/4/equalizer/filter/5/active" : 1,
+							"/track/4/equalizer/filter/5/freq" : 2000.0,
+							"/track/4/equalizer/filter/5/gain" : 0.0,
+							"/track/4/equalizer/filter/5/q" : 1.0,
+							"/track/4/equalizer/filter/6/active" : 1,
+							"/track/4/equalizer/filter/6/freq" : 5000.0,
+							"/track/4/equalizer/filter/6/gain" : 0.0,
+							"/track/4/equalizer/filter/6/q" : 1.0,
+							"/track/4/equalizer/filter/7/active" : 1,
+							"/track/4/equalizer/filter/7/freq" : 10000.0,
+							"/track/4/equalizer/filter/7/gain" : 0.0,
+							"/track/4/equalizer/filter/7/q" : 1.0,
+							"/track/4/equalizer/filter/8/active" : 0,
+							"/track/4/equalizer/filter/8/freq" : 16000.0,
+							"/track/4/equalizer/filter/8/order" : 2,
+							"/track/4/gain" : 0.0,
+							"/track/4/gain/ramptime" : 20.0,
+							"/track/4/mute" : 0,
+							"/track/4/annotation" : "",
+							"/track/4/levels/input/visible" : 1,
+							"/track/4/levels/input/post" : 0,
+							"/track/4/levels/input/mode" : "rms",
+							"/track/4/levels/output/visible" : 1,
+							"/track/4/levels/output/post" : 1,
+							"/track/4/levels/output/mode" : "rms",
+							"/track/4/solo" : 0,
+							"/track/4/bus/A/destination" : "VBAP Bus 1",
+							"/track/4/bus/B/destination" : "----",
+							"/track/4/bus/C/destination" : "----",
+							"/track/4/bus/D/destination" : "----",
+							"/track/4/bus/E/destination" : "----",
+							"/track/4/bus/F/destination" : "----",
+							"/track/4/bus/A/mute" : 0,
+							"/track/4/bus/B/mute" : 0,
+							"/track/4/bus/C/mute" : 0,
+							"/track/4/bus/D/mute" : 0,
+							"/track/4/bus/E/mute" : 0,
+							"/track/4/bus/F/mute" : 0,
+							"/track/4/bus/A/gain" : 0.0,
+							"/track/4/bus/B/gain" : 0.0,
+							"/track/4/bus/C/gain" : 0.0,
+							"/track/4/bus/D/gain" : 0.0,
+							"/track/4/bus/E/gain" : 0.0,
+							"/track/4/bus/F/gain" : 0.0,
+							"/track/4/bus/display" : "A",
+							"/track/4/routing/input/1/adc" : 4,
+							"/track/4/lfe/send" : 0.0,
+							"/track/4/lfe/mute" : 0,
+							"/track/4/doppler" : 0,
+							"/track/4/air" : 0,
+							"/track/4/phaseinvert" : 0,
+							"/track/4/azim" : -152.919998,
+							"/track/4/elev" : 0.0,
+							"/track/4/dist" : 1.08,
+							"/track/4/delay/linkedtodistance" : 0,
+							"/track/4/direct/linkedtodistance" : 1,
+							"/track/4/early/linkedtodistance" : 1,
+							"/track/4/reverb/linkedtodistance" : 1,
+							"/track/4/delay" : 0.0,
+							"/track/4/direct/gain" : -1.4,
+							"/track/4/direct/gain/low" : 0.0,
+							"/track/4/direct/gain/med" : 0.0,
+							"/track/4/direct/gain/high" : 0.0,
+							"/track/4/direct/freq/low" : 250.0,
+							"/track/4/direct/freq/high" : 4000.0,
+							"/track/4/direct/filter/bypass" : 1,
+							"/track/4/early/gain" : -9.0,
+							"/track/4/early/gain/low" : 0.0,
+							"/track/4/early/gain/med" : 0.0,
+							"/track/4/early/gain/high" : 0.0,
+							"/track/4/early/freq/low" : 250.0,
+							"/track/4/early/freq/high" : 4000.0,
+							"/track/4/early/filter/bypass" : 1,
+							"/track/4/reverb/send" : -7.8,
+							"/track/4/reverb/send/ramptime" : 20.0,
+							"/track/4/early/width" : 30.0,
+							"/track/4/direct/mute" : 0,
+							"/track/4/early/mute" : 1,
+							"/track/4/reverb/mute" : 0,
+							"/track/4/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/4/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/4/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/4/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/4/lock" : 0,
+							"/track/5/name" : "BasCl",
+							"/track/5/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/5/numinputs" : 1,
+							"/track/5/visible" : 1,
+							"/track/5/trim" : 0.0,
+							"/track/5/dynamics/attack" : 10.01,
+							"/track/5/dynamics/release" : 30.0,
+							"/track/5/dynamics/lookahead" : 0.0,
+							"/track/5/dynamics/compressor/threshold" : -30.0,
+							"/track/5/dynamics/compressor/ratio" : 1.0,
+							"/track/5/dynamics/expander/threshold" : -30.0,
+							"/track/5/dynamics/expander/ratio" : 1.0,
+							"/track/5/dynamics/makeup" : 0.0,
+							"/track/5/dynamics/link" : 0,
+							"/track/5/dynamics/bypass" : 1,
+							"/track/5/dynamics/grid/visible" : 1,
+							"/track/5/dynamics/curve/fill" : 1,
+							"/track/5/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/5/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/5/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/5/dynamics/curve/thickness" : 1.0,
+							"/track/5/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/5/dynamics/title" : "BasCl",
+							"/track/5/equalizer/samplerate" : 44100.0,
+							"/track/5/equalizer/bypass" : 1,
+							"/track/5/equalizer/gain" : 0.0,
+							"/track/5/equalizer/filter/1/active" : 0,
+							"/track/5/equalizer/filter/1/freq" : 50.0,
+							"/track/5/equalizer/filter/1/order" : 2,
+							"/track/5/equalizer/filter/2/active" : 1,
+							"/track/5/equalizer/filter/2/freq" : 100.0,
+							"/track/5/equalizer/filter/2/gain" : 0.0,
+							"/track/5/equalizer/filter/2/q" : 1.0,
+							"/track/5/equalizer/filter/3/active" : 1,
+							"/track/5/equalizer/filter/3/freq" : 500.0,
+							"/track/5/equalizer/filter/3/gain" : 0.0,
+							"/track/5/equalizer/filter/3/q" : 1.0,
+							"/track/5/equalizer/filter/4/active" : 1,
+							"/track/5/equalizer/filter/4/freq" : 1000.0,
+							"/track/5/equalizer/filter/4/gain" : 0.0,
+							"/track/5/equalizer/filter/4/q" : 1.0,
+							"/track/5/equalizer/filter/5/active" : 1,
+							"/track/5/equalizer/filter/5/freq" : 2000.0,
+							"/track/5/equalizer/filter/5/gain" : 0.0,
+							"/track/5/equalizer/filter/5/q" : 1.0,
+							"/track/5/equalizer/filter/6/active" : 1,
+							"/track/5/equalizer/filter/6/freq" : 5000.0,
+							"/track/5/equalizer/filter/6/gain" : 0.0,
+							"/track/5/equalizer/filter/6/q" : 1.0,
+							"/track/5/equalizer/filter/7/active" : 1,
+							"/track/5/equalizer/filter/7/freq" : 10000.0,
+							"/track/5/equalizer/filter/7/gain" : 0.0,
+							"/track/5/equalizer/filter/7/q" : 1.0,
+							"/track/5/equalizer/filter/8/active" : 0,
+							"/track/5/equalizer/filter/8/freq" : 16000.0,
+							"/track/5/equalizer/filter/8/order" : 2,
+							"/track/5/gain" : 0.0,
+							"/track/5/gain/ramptime" : 20.0,
+							"/track/5/mute" : 0,
+							"/track/5/annotation" : "",
+							"/track/5/levels/input/visible" : 1,
+							"/track/5/levels/input/post" : 0,
+							"/track/5/levels/input/mode" : "rms",
+							"/track/5/levels/output/visible" : 1,
+							"/track/5/levels/output/post" : 1,
+							"/track/5/levels/output/mode" : "rms",
+							"/track/5/solo" : 0,
+							"/track/5/bus/A/destination" : "VBAP Bus 1",
+							"/track/5/bus/B/destination" : "----",
+							"/track/5/bus/C/destination" : "----",
+							"/track/5/bus/D/destination" : "----",
+							"/track/5/bus/E/destination" : "----",
+							"/track/5/bus/F/destination" : "----",
+							"/track/5/bus/A/mute" : 0,
+							"/track/5/bus/B/mute" : 0,
+							"/track/5/bus/C/mute" : 0,
+							"/track/5/bus/D/mute" : 0,
+							"/track/5/bus/E/mute" : 0,
+							"/track/5/bus/F/mute" : 0,
+							"/track/5/bus/A/gain" : 0.0,
+							"/track/5/bus/B/gain" : 0.0,
+							"/track/5/bus/C/gain" : 0.0,
+							"/track/5/bus/D/gain" : 0.0,
+							"/track/5/bus/E/gain" : 0.0,
+							"/track/5/bus/F/gain" : 0.0,
+							"/track/5/bus/display" : "A",
+							"/track/5/routing/input/1/adc" : 5,
+							"/track/5/lfe/send" : 0.0,
+							"/track/5/lfe/mute" : 0,
+							"/track/5/doppler" : 0,
+							"/track/5/air" : 0,
+							"/track/5/phaseinvert" : 0,
+							"/track/5/azim" : -156.570007,
+							"/track/5/elev" : 0.0,
+							"/track/5/dist" : 1.0,
+							"/track/5/delay/linkedtodistance" : 0,
+							"/track/5/direct/linkedtodistance" : 1,
+							"/track/5/early/linkedtodistance" : 1,
+							"/track/5/reverb/linkedtodistance" : 1,
+							"/track/5/delay" : 0.0,
+							"/track/5/direct/gain" : -0.7,
+							"/track/5/direct/gain/low" : 0.0,
+							"/track/5/direct/gain/med" : 0.0,
+							"/track/5/direct/gain/high" : 0.0,
+							"/track/5/direct/freq/low" : 250.0,
+							"/track/5/direct/freq/high" : 4000.0,
+							"/track/5/direct/filter/bypass" : 1,
+							"/track/5/early/gain" : -8.3,
+							"/track/5/early/gain/low" : 0.0,
+							"/track/5/early/gain/med" : 0.0,
+							"/track/5/early/gain/high" : 0.0,
+							"/track/5/early/freq/low" : 250.0,
+							"/track/5/early/freq/high" : 4000.0,
+							"/track/5/early/filter/bypass" : 1,
+							"/track/5/reverb/send" : -7.5,
+							"/track/5/reverb/send/ramptime" : 20.0,
+							"/track/5/early/width" : 30.0,
+							"/track/5/direct/mute" : 0,
+							"/track/5/early/mute" : 1,
+							"/track/5/reverb/mute" : 0,
+							"/track/5/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/5/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/5/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/5/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/5/lock" : 0,
+							"/track/6/name" : "Tb",
+							"/track/6/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/6/numinputs" : 1,
+							"/track/6/visible" : 1,
+							"/track/6/trim" : 0.0,
+							"/track/6/dynamics/attack" : 10.01,
+							"/track/6/dynamics/release" : 30.0,
+							"/track/6/dynamics/lookahead" : 0.0,
+							"/track/6/dynamics/compressor/threshold" : -30.0,
+							"/track/6/dynamics/compressor/ratio" : 1.0,
+							"/track/6/dynamics/expander/threshold" : -30.0,
+							"/track/6/dynamics/expander/ratio" : 1.0,
+							"/track/6/dynamics/makeup" : 0.0,
+							"/track/6/dynamics/link" : 0,
+							"/track/6/dynamics/bypass" : 1,
+							"/track/6/dynamics/grid/visible" : 1,
+							"/track/6/dynamics/curve/fill" : 1,
+							"/track/6/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/6/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/6/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/6/dynamics/curve/thickness" : 1.0,
+							"/track/6/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/6/dynamics/title" : "Tb",
+							"/track/6/equalizer/samplerate" : 44100.0,
+							"/track/6/equalizer/bypass" : 1,
+							"/track/6/equalizer/gain" : 0.0,
+							"/track/6/equalizer/filter/1/active" : 0,
+							"/track/6/equalizer/filter/1/freq" : 50.0,
+							"/track/6/equalizer/filter/1/order" : 2,
+							"/track/6/equalizer/filter/2/active" : 1,
+							"/track/6/equalizer/filter/2/freq" : 100.0,
+							"/track/6/equalizer/filter/2/gain" : 0.0,
+							"/track/6/equalizer/filter/2/q" : 1.0,
+							"/track/6/equalizer/filter/3/active" : 1,
+							"/track/6/equalizer/filter/3/freq" : 500.0,
+							"/track/6/equalizer/filter/3/gain" : 0.0,
+							"/track/6/equalizer/filter/3/q" : 1.0,
+							"/track/6/equalizer/filter/4/active" : 1,
+							"/track/6/equalizer/filter/4/freq" : 1000.0,
+							"/track/6/equalizer/filter/4/gain" : 0.0,
+							"/track/6/equalizer/filter/4/q" : 1.0,
+							"/track/6/equalizer/filter/5/active" : 1,
+							"/track/6/equalizer/filter/5/freq" : 2000.0,
+							"/track/6/equalizer/filter/5/gain" : 0.0,
+							"/track/6/equalizer/filter/5/q" : 1.0,
+							"/track/6/equalizer/filter/6/active" : 1,
+							"/track/6/equalizer/filter/6/freq" : 5000.0,
+							"/track/6/equalizer/filter/6/gain" : 0.0,
+							"/track/6/equalizer/filter/6/q" : 1.0,
+							"/track/6/equalizer/filter/7/active" : 1,
+							"/track/6/equalizer/filter/7/freq" : 10000.0,
+							"/track/6/equalizer/filter/7/gain" : 0.0,
+							"/track/6/equalizer/filter/7/q" : 1.0,
+							"/track/6/equalizer/filter/8/active" : 0,
+							"/track/6/equalizer/filter/8/freq" : 16000.0,
+							"/track/6/equalizer/filter/8/order" : 2,
+							"/track/6/gain" : 0.0,
+							"/track/6/gain/ramptime" : 20.0,
+							"/track/6/mute" : 0,
+							"/track/6/annotation" : "",
+							"/track/6/levels/input/visible" : 1,
+							"/track/6/levels/input/post" : 0,
+							"/track/6/levels/input/mode" : "rms",
+							"/track/6/levels/output/visible" : 1,
+							"/track/6/levels/output/post" : 1,
+							"/track/6/levels/output/mode" : "rms",
+							"/track/6/solo" : 0,
+							"/track/6/bus/A/destination" : "VBAP Bus 1",
+							"/track/6/bus/B/destination" : "----",
+							"/track/6/bus/C/destination" : "----",
+							"/track/6/bus/D/destination" : "----",
+							"/track/6/bus/E/destination" : "----",
+							"/track/6/bus/F/destination" : "----",
+							"/track/6/bus/A/mute" : 0,
+							"/track/6/bus/B/mute" : 0,
+							"/track/6/bus/C/mute" : 0,
+							"/track/6/bus/D/mute" : 0,
+							"/track/6/bus/E/mute" : 0,
+							"/track/6/bus/F/mute" : 0,
+							"/track/6/bus/A/gain" : 0.0,
+							"/track/6/bus/B/gain" : 0.0,
+							"/track/6/bus/C/gain" : 0.0,
+							"/track/6/bus/D/gain" : 0.0,
+							"/track/6/bus/E/gain" : 0.0,
+							"/track/6/bus/F/gain" : 0.0,
+							"/track/6/bus/display" : "A",
+							"/track/6/routing/input/1/adc" : 6,
+							"/track/6/lfe/send" : 0.0,
+							"/track/6/lfe/mute" : 0,
+							"/track/6/doppler" : 0,
+							"/track/6/air" : 0,
+							"/track/6/phaseinvert" : 0,
+							"/track/6/azim" : 132.0,
+							"/track/6/elev" : 0.0,
+							"/track/6/dist" : 1.0,
+							"/track/6/delay/linkedtodistance" : 0,
+							"/track/6/direct/linkedtodistance" : 1,
+							"/track/6/early/linkedtodistance" : 1,
+							"/track/6/reverb/linkedtodistance" : 1,
+							"/track/6/delay" : 0.0,
+							"/track/6/direct/gain" : -0.7,
+							"/track/6/direct/gain/low" : 0.0,
+							"/track/6/direct/gain/med" : 0.0,
+							"/track/6/direct/gain/high" : 0.0,
+							"/track/6/direct/freq/low" : 250.0,
+							"/track/6/direct/freq/high" : 4000.0,
+							"/track/6/direct/filter/bypass" : 1,
+							"/track/6/early/gain" : -8.3,
+							"/track/6/early/gain/low" : 0.0,
+							"/track/6/early/gain/med" : 0.0,
+							"/track/6/early/gain/high" : 0.0,
+							"/track/6/early/freq/low" : 250.0,
+							"/track/6/early/freq/high" : 4000.0,
+							"/track/6/early/filter/bypass" : 1,
+							"/track/6/reverb/send" : -7.5,
+							"/track/6/reverb/send/ramptime" : 20.0,
+							"/track/6/early/width" : 30.0,
+							"/track/6/direct/mute" : 0,
+							"/track/6/early/mute" : 1,
+							"/track/6/reverb/mute" : 0,
+							"/track/6/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/6/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/6/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/6/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/6/lock" : 0,
+							"/track/7/name" : "Tp",
+							"/track/7/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/7/numinputs" : 1,
+							"/track/7/visible" : 1,
+							"/track/7/trim" : 0.0,
+							"/track/7/dynamics/attack" : 10.01,
+							"/track/7/dynamics/release" : 30.0,
+							"/track/7/dynamics/lookahead" : 0.0,
+							"/track/7/dynamics/compressor/threshold" : -30.0,
+							"/track/7/dynamics/compressor/ratio" : 1.0,
+							"/track/7/dynamics/expander/threshold" : -30.0,
+							"/track/7/dynamics/expander/ratio" : 1.0,
+							"/track/7/dynamics/makeup" : 0.0,
+							"/track/7/dynamics/link" : 0,
+							"/track/7/dynamics/bypass" : 1,
+							"/track/7/dynamics/grid/visible" : 1,
+							"/track/7/dynamics/curve/fill" : 1,
+							"/track/7/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/7/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/7/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/7/dynamics/curve/thickness" : 1.0,
+							"/track/7/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/7/dynamics/title" : "Tp",
+							"/track/7/equalizer/samplerate" : 44100.0,
+							"/track/7/equalizer/bypass" : 1,
+							"/track/7/equalizer/gain" : 0.0,
+							"/track/7/equalizer/filter/1/active" : 0,
+							"/track/7/equalizer/filter/1/freq" : 50.0,
+							"/track/7/equalizer/filter/1/order" : 2,
+							"/track/7/equalizer/filter/2/active" : 1,
+							"/track/7/equalizer/filter/2/freq" : 100.0,
+							"/track/7/equalizer/filter/2/gain" : 0.0,
+							"/track/7/equalizer/filter/2/q" : 1.0,
+							"/track/7/equalizer/filter/3/active" : 1,
+							"/track/7/equalizer/filter/3/freq" : 500.0,
+							"/track/7/equalizer/filter/3/gain" : 0.0,
+							"/track/7/equalizer/filter/3/q" : 1.0,
+							"/track/7/equalizer/filter/4/active" : 1,
+							"/track/7/equalizer/filter/4/freq" : 1000.0,
+							"/track/7/equalizer/filter/4/gain" : 0.0,
+							"/track/7/equalizer/filter/4/q" : 1.0,
+							"/track/7/equalizer/filter/5/active" : 1,
+							"/track/7/equalizer/filter/5/freq" : 2000.0,
+							"/track/7/equalizer/filter/5/gain" : 0.0,
+							"/track/7/equalizer/filter/5/q" : 1.0,
+							"/track/7/equalizer/filter/6/active" : 1,
+							"/track/7/equalizer/filter/6/freq" : 5000.0,
+							"/track/7/equalizer/filter/6/gain" : 0.0,
+							"/track/7/equalizer/filter/6/q" : 1.0,
+							"/track/7/equalizer/filter/7/active" : 1,
+							"/track/7/equalizer/filter/7/freq" : 10000.0,
+							"/track/7/equalizer/filter/7/gain" : 0.0,
+							"/track/7/equalizer/filter/7/q" : 1.0,
+							"/track/7/equalizer/filter/8/active" : 0,
+							"/track/7/equalizer/filter/8/freq" : 16000.0,
+							"/track/7/equalizer/filter/8/order" : 2,
+							"/track/7/gain" : 0.0,
+							"/track/7/gain/ramptime" : 20.0,
+							"/track/7/mute" : 0,
+							"/track/7/annotation" : "",
+							"/track/7/levels/input/visible" : 1,
+							"/track/7/levels/input/post" : 0,
+							"/track/7/levels/input/mode" : "rms",
+							"/track/7/levels/output/visible" : 1,
+							"/track/7/levels/output/post" : 1,
+							"/track/7/levels/output/mode" : "rms",
+							"/track/7/solo" : 0,
+							"/track/7/bus/A/destination" : "VBAP Bus 1",
+							"/track/7/bus/B/destination" : "----",
+							"/track/7/bus/C/destination" : "----",
+							"/track/7/bus/D/destination" : "----",
+							"/track/7/bus/E/destination" : "----",
+							"/track/7/bus/F/destination" : "----",
+							"/track/7/bus/A/mute" : 0,
+							"/track/7/bus/B/mute" : 0,
+							"/track/7/bus/C/mute" : 0,
+							"/track/7/bus/D/mute" : 0,
+							"/track/7/bus/E/mute" : 0,
+							"/track/7/bus/F/mute" : 0,
+							"/track/7/bus/A/gain" : 0.0,
+							"/track/7/bus/B/gain" : 0.0,
+							"/track/7/bus/C/gain" : 0.0,
+							"/track/7/bus/D/gain" : 0.0,
+							"/track/7/bus/E/gain" : 0.0,
+							"/track/7/bus/F/gain" : 0.0,
+							"/track/7/bus/display" : "A",
+							"/track/7/routing/input/1/adc" : 7,
+							"/track/7/lfe/send" : 0.0,
+							"/track/7/lfe/mute" : 0,
+							"/track/7/doppler" : 0,
+							"/track/7/air" : 0,
+							"/track/7/phaseinvert" : 0,
+							"/track/7/azim" : 134.210007,
+							"/track/7/elev" : 0.0,
+							"/track/7/dist" : 1.0,
+							"/track/7/delay/linkedtodistance" : 0,
+							"/track/7/direct/linkedtodistance" : 1,
+							"/track/7/early/linkedtodistance" : 1,
+							"/track/7/reverb/linkedtodistance" : 1,
+							"/track/7/delay" : 0.0,
+							"/track/7/direct/gain" : -0.7,
+							"/track/7/direct/gain/low" : 0.0,
+							"/track/7/direct/gain/med" : 0.0,
+							"/track/7/direct/gain/high" : 0.0,
+							"/track/7/direct/freq/low" : 250.0,
+							"/track/7/direct/freq/high" : 4000.0,
+							"/track/7/direct/filter/bypass" : 1,
+							"/track/7/early/gain" : -8.3,
+							"/track/7/early/gain/low" : 0.0,
+							"/track/7/early/gain/med" : 0.0,
+							"/track/7/early/gain/high" : 0.0,
+							"/track/7/early/freq/low" : 250.0,
+							"/track/7/early/freq/high" : 4000.0,
+							"/track/7/early/filter/bypass" : 1,
+							"/track/7/reverb/send" : -7.5,
+							"/track/7/reverb/send/ramptime" : 20.0,
+							"/track/7/early/width" : 30.0,
+							"/track/7/direct/mute" : 0,
+							"/track/7/early/mute" : 1,
+							"/track/7/reverb/mute" : 0,
+							"/track/7/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/7/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/7/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/7/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/7/lock" : 0,
+							"/track/8/name" : "HammL",
+							"/track/8/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/8/numinputs" : 1,
+							"/track/8/visible" : 1,
+							"/track/8/trim" : 0.0,
+							"/track/8/dynamics/attack" : 10.01,
+							"/track/8/dynamics/release" : 30.0,
+							"/track/8/dynamics/lookahead" : 0.0,
+							"/track/8/dynamics/compressor/threshold" : -30.0,
+							"/track/8/dynamics/compressor/ratio" : 1.0,
+							"/track/8/dynamics/expander/threshold" : -30.0,
+							"/track/8/dynamics/expander/ratio" : 1.0,
+							"/track/8/dynamics/makeup" : 0.0,
+							"/track/8/dynamics/link" : 0,
+							"/track/8/dynamics/bypass" : 1,
+							"/track/8/dynamics/grid/visible" : 1,
+							"/track/8/dynamics/curve/fill" : 1,
+							"/track/8/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/8/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/8/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/8/dynamics/curve/thickness" : 1.0,
+							"/track/8/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/8/dynamics/title" : "HammL",
+							"/track/8/equalizer/samplerate" : 44100.0,
+							"/track/8/equalizer/bypass" : 1,
+							"/track/8/equalizer/gain" : 0.0,
+							"/track/8/equalizer/filter/1/active" : 0,
+							"/track/8/equalizer/filter/1/freq" : 50.0,
+							"/track/8/equalizer/filter/1/order" : 2,
+							"/track/8/equalizer/filter/2/active" : 1,
+							"/track/8/equalizer/filter/2/freq" : 100.0,
+							"/track/8/equalizer/filter/2/gain" : 0.0,
+							"/track/8/equalizer/filter/2/q" : 1.0,
+							"/track/8/equalizer/filter/3/active" : 1,
+							"/track/8/equalizer/filter/3/freq" : 500.0,
+							"/track/8/equalizer/filter/3/gain" : 0.0,
+							"/track/8/equalizer/filter/3/q" : 1.0,
+							"/track/8/equalizer/filter/4/active" : 1,
+							"/track/8/equalizer/filter/4/freq" : 1000.0,
+							"/track/8/equalizer/filter/4/gain" : 0.0,
+							"/track/8/equalizer/filter/4/q" : 1.0,
+							"/track/8/equalizer/filter/5/active" : 1,
+							"/track/8/equalizer/filter/5/freq" : 2000.0,
+							"/track/8/equalizer/filter/5/gain" : 0.0,
+							"/track/8/equalizer/filter/5/q" : 1.0,
+							"/track/8/equalizer/filter/6/active" : 1,
+							"/track/8/equalizer/filter/6/freq" : 5000.0,
+							"/track/8/equalizer/filter/6/gain" : 0.0,
+							"/track/8/equalizer/filter/6/q" : 1.0,
+							"/track/8/equalizer/filter/7/active" : 1,
+							"/track/8/equalizer/filter/7/freq" : 10000.0,
+							"/track/8/equalizer/filter/7/gain" : 0.0,
+							"/track/8/equalizer/filter/7/q" : 1.0,
+							"/track/8/equalizer/filter/8/active" : 0,
+							"/track/8/equalizer/filter/8/freq" : 16000.0,
+							"/track/8/equalizer/filter/8/order" : 2,
+							"/track/8/gain" : 0.0,
+							"/track/8/gain/ramptime" : 20.0,
+							"/track/8/mute" : 0,
+							"/track/8/annotation" : "",
+							"/track/8/levels/input/visible" : 1,
+							"/track/8/levels/input/post" : 0,
+							"/track/8/levels/input/mode" : "rms",
+							"/track/8/levels/output/visible" : 1,
+							"/track/8/levels/output/post" : 1,
+							"/track/8/levels/output/mode" : "rms",
+							"/track/8/solo" : 0,
+							"/track/8/bus/A/destination" : "VBAP Bus 1",
+							"/track/8/bus/B/destination" : "----",
+							"/track/8/bus/C/destination" : "----",
+							"/track/8/bus/D/destination" : "----",
+							"/track/8/bus/E/destination" : "----",
+							"/track/8/bus/F/destination" : "----",
+							"/track/8/bus/A/mute" : 0,
+							"/track/8/bus/B/mute" : 0,
+							"/track/8/bus/C/mute" : 0,
+							"/track/8/bus/D/mute" : 0,
+							"/track/8/bus/E/mute" : 0,
+							"/track/8/bus/F/mute" : 0,
+							"/track/8/bus/A/gain" : 0.0,
+							"/track/8/bus/B/gain" : 0.0,
+							"/track/8/bus/C/gain" : 0.0,
+							"/track/8/bus/D/gain" : 0.0,
+							"/track/8/bus/E/gain" : 0.0,
+							"/track/8/bus/F/gain" : 0.0,
+							"/track/8/bus/display" : "A",
+							"/track/8/routing/input/1/adc" : 8,
+							"/track/8/lfe/send" : 0.0,
+							"/track/8/lfe/mute" : 0,
+							"/track/8/doppler" : 0,
+							"/track/8/air" : 0,
+							"/track/8/phaseinvert" : 0,
+							"/track/8/azim" : -120.0,
+							"/track/8/elev" : 0.0,
+							"/track/8/dist" : 1.0,
+							"/track/8/delay/linkedtodistance" : 0,
+							"/track/8/direct/linkedtodistance" : 1,
+							"/track/8/early/linkedtodistance" : 1,
+							"/track/8/reverb/linkedtodistance" : 1,
+							"/track/8/delay" : 0.0,
+							"/track/8/direct/gain" : -0.7,
+							"/track/8/direct/gain/low" : 0.0,
+							"/track/8/direct/gain/med" : 0.0,
+							"/track/8/direct/gain/high" : 0.0,
+							"/track/8/direct/freq/low" : 250.0,
+							"/track/8/direct/freq/high" : 4000.0,
+							"/track/8/direct/filter/bypass" : 1,
+							"/track/8/early/gain" : -8.3,
+							"/track/8/early/gain/low" : 0.0,
+							"/track/8/early/gain/med" : 0.0,
+							"/track/8/early/gain/high" : 0.0,
+							"/track/8/early/freq/low" : 250.0,
+							"/track/8/early/freq/high" : 4000.0,
+							"/track/8/early/filter/bypass" : 1,
+							"/track/8/reverb/send" : -7.5,
+							"/track/8/reverb/send/ramptime" : 20.0,
+							"/track/8/early/width" : 30.0,
+							"/track/8/direct/mute" : 0,
+							"/track/8/early/mute" : 1,
+							"/track/8/reverb/mute" : 0,
+							"/track/8/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/8/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/8/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/8/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/8/lock" : 0,
+							"/track/9/name" : "HammR",
+							"/track/9/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/9/numinputs" : 1,
+							"/track/9/visible" : 1,
+							"/track/9/trim" : 0.0,
+							"/track/9/dynamics/attack" : 10.01,
+							"/track/9/dynamics/release" : 30.0,
+							"/track/9/dynamics/lookahead" : 0.0,
+							"/track/9/dynamics/compressor/threshold" : -30.0,
+							"/track/9/dynamics/compressor/ratio" : 1.0,
+							"/track/9/dynamics/expander/threshold" : -30.0,
+							"/track/9/dynamics/expander/ratio" : 1.0,
+							"/track/9/dynamics/makeup" : 0.0,
+							"/track/9/dynamics/link" : 0,
+							"/track/9/dynamics/bypass" : 1,
+							"/track/9/dynamics/grid/visible" : 1,
+							"/track/9/dynamics/curve/fill" : 1,
+							"/track/9/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/9/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/9/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/9/dynamics/curve/thickness" : 1.0,
+							"/track/9/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/9/dynamics/title" : "HammR",
+							"/track/9/equalizer/samplerate" : 44100.0,
+							"/track/9/equalizer/bypass" : 1,
+							"/track/9/equalizer/gain" : 0.0,
+							"/track/9/equalizer/filter/1/active" : 0,
+							"/track/9/equalizer/filter/1/freq" : 50.0,
+							"/track/9/equalizer/filter/1/order" : 2,
+							"/track/9/equalizer/filter/2/active" : 1,
+							"/track/9/equalizer/filter/2/freq" : 100.0,
+							"/track/9/equalizer/filter/2/gain" : 0.0,
+							"/track/9/equalizer/filter/2/q" : 1.0,
+							"/track/9/equalizer/filter/3/active" : 1,
+							"/track/9/equalizer/filter/3/freq" : 500.0,
+							"/track/9/equalizer/filter/3/gain" : 0.0,
+							"/track/9/equalizer/filter/3/q" : 1.0,
+							"/track/9/equalizer/filter/4/active" : 1,
+							"/track/9/equalizer/filter/4/freq" : 1000.0,
+							"/track/9/equalizer/filter/4/gain" : 0.0,
+							"/track/9/equalizer/filter/4/q" : 1.0,
+							"/track/9/equalizer/filter/5/active" : 1,
+							"/track/9/equalizer/filter/5/freq" : 2000.0,
+							"/track/9/equalizer/filter/5/gain" : 0.0,
+							"/track/9/equalizer/filter/5/q" : 1.0,
+							"/track/9/equalizer/filter/6/active" : 1,
+							"/track/9/equalizer/filter/6/freq" : 5000.0,
+							"/track/9/equalizer/filter/6/gain" : 0.0,
+							"/track/9/equalizer/filter/6/q" : 1.0,
+							"/track/9/equalizer/filter/7/active" : 1,
+							"/track/9/equalizer/filter/7/freq" : 10000.0,
+							"/track/9/equalizer/filter/7/gain" : 0.0,
+							"/track/9/equalizer/filter/7/q" : 1.0,
+							"/track/9/equalizer/filter/8/active" : 0,
+							"/track/9/equalizer/filter/8/freq" : 16000.0,
+							"/track/9/equalizer/filter/8/order" : 2,
+							"/track/9/gain" : 0.0,
+							"/track/9/gain/ramptime" : 20.0,
+							"/track/9/mute" : 0,
+							"/track/9/annotation" : "",
+							"/track/9/levels/input/visible" : 1,
+							"/track/9/levels/input/post" : 0,
+							"/track/9/levels/input/mode" : "rms",
+							"/track/9/levels/output/visible" : 1,
+							"/track/9/levels/output/post" : 1,
+							"/track/9/levels/output/mode" : "rms",
+							"/track/9/solo" : 0,
+							"/track/9/bus/A/destination" : "VBAP Bus 1",
+							"/track/9/bus/B/destination" : "----",
+							"/track/9/bus/C/destination" : "----",
+							"/track/9/bus/D/destination" : "----",
+							"/track/9/bus/E/destination" : "----",
+							"/track/9/bus/F/destination" : "----",
+							"/track/9/bus/A/mute" : 0,
+							"/track/9/bus/B/mute" : 0,
+							"/track/9/bus/C/mute" : 0,
+							"/track/9/bus/D/mute" : 0,
+							"/track/9/bus/E/mute" : 0,
+							"/track/9/bus/F/mute" : 0,
+							"/track/9/bus/A/gain" : 0.0,
+							"/track/9/bus/B/gain" : 0.0,
+							"/track/9/bus/C/gain" : 0.0,
+							"/track/9/bus/D/gain" : 0.0,
+							"/track/9/bus/E/gain" : 0.0,
+							"/track/9/bus/F/gain" : 0.0,
+							"/track/9/bus/display" : "A",
+							"/track/9/routing/input/1/adc" : 9,
+							"/track/9/lfe/send" : 0.0,
+							"/track/9/lfe/mute" : 0,
+							"/track/9/doppler" : 0,
+							"/track/9/air" : 0,
+							"/track/9/phaseinvert" : 0,
+							"/track/9/azim" : -60.0,
+							"/track/9/elev" : 0.0,
+							"/track/9/dist" : 1.0,
+							"/track/9/delay/linkedtodistance" : 0,
+							"/track/9/direct/linkedtodistance" : 1,
+							"/track/9/early/linkedtodistance" : 1,
+							"/track/9/reverb/linkedtodistance" : 1,
+							"/track/9/delay" : 0.0,
+							"/track/9/direct/gain" : -0.7,
+							"/track/9/direct/gain/low" : 0.0,
+							"/track/9/direct/gain/med" : 0.0,
+							"/track/9/direct/gain/high" : 0.0,
+							"/track/9/direct/freq/low" : 250.0,
+							"/track/9/direct/freq/high" : 4000.0,
+							"/track/9/direct/filter/bypass" : 1,
+							"/track/9/early/gain" : -8.3,
+							"/track/9/early/gain/low" : 0.0,
+							"/track/9/early/gain/med" : 0.0,
+							"/track/9/early/gain/high" : 0.0,
+							"/track/9/early/freq/low" : 250.0,
+							"/track/9/early/freq/high" : 4000.0,
+							"/track/9/early/filter/bypass" : 1,
+							"/track/9/reverb/send" : -7.5,
+							"/track/9/reverb/send/ramptime" : 20.0,
+							"/track/9/early/width" : 30.0,
+							"/track/9/direct/mute" : 0,
+							"/track/9/early/mute" : 1,
+							"/track/9/reverb/mute" : 0,
+							"/track/9/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/9/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/9/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/9/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/9/lock" : 0,
+							"/track/10/name" : "ClaviL",
+							"/track/10/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/10/numinputs" : 1,
+							"/track/10/visible" : 1,
+							"/track/10/trim" : 0.0,
+							"/track/10/dynamics/attack" : 10.01,
+							"/track/10/dynamics/release" : 30.0,
+							"/track/10/dynamics/lookahead" : 0.0,
+							"/track/10/dynamics/compressor/threshold" : -30.0,
+							"/track/10/dynamics/compressor/ratio" : 1.0,
+							"/track/10/dynamics/expander/threshold" : -30.0,
+							"/track/10/dynamics/expander/ratio" : 1.0,
+							"/track/10/dynamics/makeup" : 0.0,
+							"/track/10/dynamics/link" : 0,
+							"/track/10/dynamics/bypass" : 1,
+							"/track/10/dynamics/grid/visible" : 1,
+							"/track/10/dynamics/curve/fill" : 1,
+							"/track/10/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/10/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/10/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/10/dynamics/curve/thickness" : 1.0,
+							"/track/10/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/10/dynamics/title" : "ClaviL",
+							"/track/10/equalizer/samplerate" : 44100.0,
+							"/track/10/equalizer/bypass" : 1,
+							"/track/10/equalizer/gain" : 0.0,
+							"/track/10/equalizer/filter/1/active" : 0,
+							"/track/10/equalizer/filter/1/freq" : 50.0,
+							"/track/10/equalizer/filter/1/order" : 2,
+							"/track/10/equalizer/filter/2/active" : 1,
+							"/track/10/equalizer/filter/2/freq" : 100.0,
+							"/track/10/equalizer/filter/2/gain" : 0.0,
+							"/track/10/equalizer/filter/2/q" : 1.0,
+							"/track/10/equalizer/filter/3/active" : 1,
+							"/track/10/equalizer/filter/3/freq" : 500.0,
+							"/track/10/equalizer/filter/3/gain" : 0.0,
+							"/track/10/equalizer/filter/3/q" : 1.0,
+							"/track/10/equalizer/filter/4/active" : 1,
+							"/track/10/equalizer/filter/4/freq" : 1000.0,
+							"/track/10/equalizer/filter/4/gain" : 0.0,
+							"/track/10/equalizer/filter/4/q" : 1.0,
+							"/track/10/equalizer/filter/5/active" : 1,
+							"/track/10/equalizer/filter/5/freq" : 2000.0,
+							"/track/10/equalizer/filter/5/gain" : 0.0,
+							"/track/10/equalizer/filter/5/q" : 1.0,
+							"/track/10/equalizer/filter/6/active" : 1,
+							"/track/10/equalizer/filter/6/freq" : 5000.0,
+							"/track/10/equalizer/filter/6/gain" : 0.0,
+							"/track/10/equalizer/filter/6/q" : 1.0,
+							"/track/10/equalizer/filter/7/active" : 1,
+							"/track/10/equalizer/filter/7/freq" : 10000.0,
+							"/track/10/equalizer/filter/7/gain" : 0.0,
+							"/track/10/equalizer/filter/7/q" : 1.0,
+							"/track/10/equalizer/filter/8/active" : 0,
+							"/track/10/equalizer/filter/8/freq" : 16000.0,
+							"/track/10/equalizer/filter/8/order" : 2,
+							"/track/10/gain" : 0.0,
+							"/track/10/gain/ramptime" : 20.0,
+							"/track/10/mute" : 0,
+							"/track/10/annotation" : "",
+							"/track/10/levels/input/visible" : 1,
+							"/track/10/levels/input/post" : 0,
+							"/track/10/levels/input/mode" : "rms",
+							"/track/10/levels/output/visible" : 1,
+							"/track/10/levels/output/post" : 1,
+							"/track/10/levels/output/mode" : "rms",
+							"/track/10/solo" : 0,
+							"/track/10/bus/A/destination" : "VBAP Bus 1",
+							"/track/10/bus/B/destination" : "----",
+							"/track/10/bus/C/destination" : "----",
+							"/track/10/bus/D/destination" : "----",
+							"/track/10/bus/E/destination" : "----",
+							"/track/10/bus/F/destination" : "----",
+							"/track/10/bus/A/mute" : 0,
+							"/track/10/bus/B/mute" : 0,
+							"/track/10/bus/C/mute" : 0,
+							"/track/10/bus/D/mute" : 0,
+							"/track/10/bus/E/mute" : 0,
+							"/track/10/bus/F/mute" : 0,
+							"/track/10/bus/A/gain" : 0.0,
+							"/track/10/bus/B/gain" : 0.0,
+							"/track/10/bus/C/gain" : 0.0,
+							"/track/10/bus/D/gain" : 0.0,
+							"/track/10/bus/E/gain" : 0.0,
+							"/track/10/bus/F/gain" : 0.0,
+							"/track/10/bus/display" : "A",
+							"/track/10/routing/input/1/adc" : 10,
+							"/track/10/lfe/send" : 0.0,
+							"/track/10/lfe/mute" : 0,
+							"/track/10/doppler" : 0,
+							"/track/10/air" : 0,
+							"/track/10/phaseinvert" : 0,
+							"/track/10/azim" : 60.0,
+							"/track/10/elev" : 0.0,
+							"/track/10/dist" : 1.0,
+							"/track/10/delay/linkedtodistance" : 0,
+							"/track/10/direct/linkedtodistance" : 1,
+							"/track/10/early/linkedtodistance" : 1,
+							"/track/10/reverb/linkedtodistance" : 1,
+							"/track/10/delay" : 0.0,
+							"/track/10/direct/gain" : -0.7,
+							"/track/10/direct/gain/low" : 0.0,
+							"/track/10/direct/gain/med" : 0.0,
+							"/track/10/direct/gain/high" : 0.0,
+							"/track/10/direct/freq/low" : 250.0,
+							"/track/10/direct/freq/high" : 4000.0,
+							"/track/10/direct/filter/bypass" : 1,
+							"/track/10/early/gain" : -8.3,
+							"/track/10/early/gain/low" : 0.0,
+							"/track/10/early/gain/med" : 0.0,
+							"/track/10/early/gain/high" : 0.0,
+							"/track/10/early/freq/low" : 250.0,
+							"/track/10/early/freq/high" : 4000.0,
+							"/track/10/early/filter/bypass" : 1,
+							"/track/10/reverb/send" : -7.5,
+							"/track/10/reverb/send/ramptime" : 20.0,
+							"/track/10/early/width" : 30.0,
+							"/track/10/direct/mute" : 0,
+							"/track/10/early/mute" : 1,
+							"/track/10/reverb/mute" : 0,
+							"/track/10/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/10/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/10/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/10/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/10/lock" : 0,
+							"/track/11/name" : "ClaviR",
+							"/track/11/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/11/numinputs" : 1,
+							"/track/11/visible" : 1,
+							"/track/11/trim" : 0.0,
+							"/track/11/dynamics/attack" : 10.01,
+							"/track/11/dynamics/release" : 30.0,
+							"/track/11/dynamics/lookahead" : 0.0,
+							"/track/11/dynamics/compressor/threshold" : -30.0,
+							"/track/11/dynamics/compressor/ratio" : 1.0,
+							"/track/11/dynamics/expander/threshold" : -30.0,
+							"/track/11/dynamics/expander/ratio" : 1.0,
+							"/track/11/dynamics/makeup" : 0.0,
+							"/track/11/dynamics/link" : 0,
+							"/track/11/dynamics/bypass" : 1,
+							"/track/11/dynamics/grid/visible" : 1,
+							"/track/11/dynamics/curve/fill" : 1,
+							"/track/11/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/11/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/11/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/11/dynamics/curve/thickness" : 1.0,
+							"/track/11/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/11/dynamics/title" : "ClaviR",
+							"/track/11/equalizer/samplerate" : 44100.0,
+							"/track/11/equalizer/bypass" : 1,
+							"/track/11/equalizer/gain" : 0.0,
+							"/track/11/equalizer/filter/1/active" : 0,
+							"/track/11/equalizer/filter/1/freq" : 50.0,
+							"/track/11/equalizer/filter/1/order" : 2,
+							"/track/11/equalizer/filter/2/active" : 1,
+							"/track/11/equalizer/filter/2/freq" : 100.0,
+							"/track/11/equalizer/filter/2/gain" : 0.0,
+							"/track/11/equalizer/filter/2/q" : 1.0,
+							"/track/11/equalizer/filter/3/active" : 1,
+							"/track/11/equalizer/filter/3/freq" : 500.0,
+							"/track/11/equalizer/filter/3/gain" : 0.0,
+							"/track/11/equalizer/filter/3/q" : 1.0,
+							"/track/11/equalizer/filter/4/active" : 1,
+							"/track/11/equalizer/filter/4/freq" : 1000.0,
+							"/track/11/equalizer/filter/4/gain" : 0.0,
+							"/track/11/equalizer/filter/4/q" : 1.0,
+							"/track/11/equalizer/filter/5/active" : 1,
+							"/track/11/equalizer/filter/5/freq" : 2000.0,
+							"/track/11/equalizer/filter/5/gain" : 0.0,
+							"/track/11/equalizer/filter/5/q" : 1.0,
+							"/track/11/equalizer/filter/6/active" : 1,
+							"/track/11/equalizer/filter/6/freq" : 5000.0,
+							"/track/11/equalizer/filter/6/gain" : 0.0,
+							"/track/11/equalizer/filter/6/q" : 1.0,
+							"/track/11/equalizer/filter/7/active" : 1,
+							"/track/11/equalizer/filter/7/freq" : 10000.0,
+							"/track/11/equalizer/filter/7/gain" : 0.0,
+							"/track/11/equalizer/filter/7/q" : 1.0,
+							"/track/11/equalizer/filter/8/active" : 0,
+							"/track/11/equalizer/filter/8/freq" : 16000.0,
+							"/track/11/equalizer/filter/8/order" : 2,
+							"/track/11/gain" : 0.0,
+							"/track/11/gain/ramptime" : 20.0,
+							"/track/11/mute" : 0,
+							"/track/11/annotation" : "",
+							"/track/11/levels/input/visible" : 1,
+							"/track/11/levels/input/post" : 0,
+							"/track/11/levels/input/mode" : "rms",
+							"/track/11/levels/output/visible" : 1,
+							"/track/11/levels/output/post" : 1,
+							"/track/11/levels/output/mode" : "rms",
+							"/track/11/solo" : 0,
+							"/track/11/bus/A/destination" : "VBAP Bus 1",
+							"/track/11/bus/B/destination" : "----",
+							"/track/11/bus/C/destination" : "----",
+							"/track/11/bus/D/destination" : "----",
+							"/track/11/bus/E/destination" : "----",
+							"/track/11/bus/F/destination" : "----",
+							"/track/11/bus/A/mute" : 0,
+							"/track/11/bus/B/mute" : 0,
+							"/track/11/bus/C/mute" : 0,
+							"/track/11/bus/D/mute" : 0,
+							"/track/11/bus/E/mute" : 0,
+							"/track/11/bus/F/mute" : 0,
+							"/track/11/bus/A/gain" : 0.0,
+							"/track/11/bus/B/gain" : 0.0,
+							"/track/11/bus/C/gain" : 0.0,
+							"/track/11/bus/D/gain" : 0.0,
+							"/track/11/bus/E/gain" : 0.0,
+							"/track/11/bus/F/gain" : 0.0,
+							"/track/11/bus/display" : "A",
+							"/track/11/routing/input/1/adc" : 11,
+							"/track/11/lfe/send" : 0.0,
+							"/track/11/lfe/mute" : 0,
+							"/track/11/doppler" : 0,
+							"/track/11/air" : 0,
+							"/track/11/phaseinvert" : 0,
+							"/track/11/azim" : 120.0,
+							"/track/11/elev" : 0.0,
+							"/track/11/dist" : 1.0,
+							"/track/11/delay/linkedtodistance" : 0,
+							"/track/11/direct/linkedtodistance" : 1,
+							"/track/11/early/linkedtodistance" : 1,
+							"/track/11/reverb/linkedtodistance" : 1,
+							"/track/11/delay" : 0.0,
+							"/track/11/direct/gain" : -0.7,
+							"/track/11/direct/gain/low" : 0.0,
+							"/track/11/direct/gain/med" : 0.0,
+							"/track/11/direct/gain/high" : 0.0,
+							"/track/11/direct/freq/low" : 250.0,
+							"/track/11/direct/freq/high" : 4000.0,
+							"/track/11/direct/filter/bypass" : 1,
+							"/track/11/early/gain" : -8.3,
+							"/track/11/early/gain/low" : 0.0,
+							"/track/11/early/gain/med" : 0.0,
+							"/track/11/early/gain/high" : 0.0,
+							"/track/11/early/freq/low" : 250.0,
+							"/track/11/early/freq/high" : 4000.0,
+							"/track/11/early/filter/bypass" : 1,
+							"/track/11/reverb/send" : -7.5,
+							"/track/11/reverb/send/ramptime" : 20.0,
+							"/track/11/early/width" : 30.0,
+							"/track/11/direct/mute" : 0,
+							"/track/11/early/mute" : 1,
+							"/track/11/reverb/mute" : 0,
+							"/track/11/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/11/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/11/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/11/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/11/lock" : 0,
+							"/track/12/name" : "Kick",
+							"/track/12/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/12/numinputs" : 1,
+							"/track/12/visible" : 1,
+							"/track/12/trim" : 0.0,
+							"/track/12/dynamics/attack" : 10.01,
+							"/track/12/dynamics/release" : 30.0,
+							"/track/12/dynamics/lookahead" : 0.0,
+							"/track/12/dynamics/compressor/threshold" : -30.0,
+							"/track/12/dynamics/compressor/ratio" : 1.0,
+							"/track/12/dynamics/expander/threshold" : -30.0,
+							"/track/12/dynamics/expander/ratio" : 1.0,
+							"/track/12/dynamics/makeup" : 0.0,
+							"/track/12/dynamics/link" : 0,
+							"/track/12/dynamics/bypass" : 1,
+							"/track/12/dynamics/grid/visible" : 1,
+							"/track/12/dynamics/curve/fill" : 1,
+							"/track/12/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/12/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/12/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/12/dynamics/curve/thickness" : 1.0,
+							"/track/12/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/12/dynamics/title" : "Kick",
+							"/track/12/equalizer/samplerate" : 44100.0,
+							"/track/12/equalizer/bypass" : 1,
+							"/track/12/equalizer/gain" : 0.0,
+							"/track/12/equalizer/filter/1/active" : 0,
+							"/track/12/equalizer/filter/1/freq" : 50.0,
+							"/track/12/equalizer/filter/1/order" : 2,
+							"/track/12/equalizer/filter/2/active" : 1,
+							"/track/12/equalizer/filter/2/freq" : 100.0,
+							"/track/12/equalizer/filter/2/gain" : 0.0,
+							"/track/12/equalizer/filter/2/q" : 1.0,
+							"/track/12/equalizer/filter/3/active" : 1,
+							"/track/12/equalizer/filter/3/freq" : 500.0,
+							"/track/12/equalizer/filter/3/gain" : 0.0,
+							"/track/12/equalizer/filter/3/q" : 1.0,
+							"/track/12/equalizer/filter/4/active" : 1,
+							"/track/12/equalizer/filter/4/freq" : 1000.0,
+							"/track/12/equalizer/filter/4/gain" : 0.0,
+							"/track/12/equalizer/filter/4/q" : 1.0,
+							"/track/12/equalizer/filter/5/active" : 1,
+							"/track/12/equalizer/filter/5/freq" : 2000.0,
+							"/track/12/equalizer/filter/5/gain" : 0.0,
+							"/track/12/equalizer/filter/5/q" : 1.0,
+							"/track/12/equalizer/filter/6/active" : 1,
+							"/track/12/equalizer/filter/6/freq" : 5000.0,
+							"/track/12/equalizer/filter/6/gain" : 0.0,
+							"/track/12/equalizer/filter/6/q" : 1.0,
+							"/track/12/equalizer/filter/7/active" : 1,
+							"/track/12/equalizer/filter/7/freq" : 10000.0,
+							"/track/12/equalizer/filter/7/gain" : 0.0,
+							"/track/12/equalizer/filter/7/q" : 1.0,
+							"/track/12/equalizer/filter/8/active" : 0,
+							"/track/12/equalizer/filter/8/freq" : 16000.0,
+							"/track/12/equalizer/filter/8/order" : 2,
+							"/track/12/gain" : 0.0,
+							"/track/12/gain/ramptime" : 20.0,
+							"/track/12/mute" : 0,
+							"/track/12/annotation" : "",
+							"/track/12/levels/input/visible" : 1,
+							"/track/12/levels/input/post" : 0,
+							"/track/12/levels/input/mode" : "rms",
+							"/track/12/levels/output/visible" : 1,
+							"/track/12/levels/output/post" : 1,
+							"/track/12/levels/output/mode" : "rms",
+							"/track/12/solo" : 0,
+							"/track/12/bus/A/destination" : "VBAP Bus 1",
+							"/track/12/bus/B/destination" : "----",
+							"/track/12/bus/C/destination" : "----",
+							"/track/12/bus/D/destination" : "----",
+							"/track/12/bus/E/destination" : "----",
+							"/track/12/bus/F/destination" : "----",
+							"/track/12/bus/A/mute" : 0,
+							"/track/12/bus/B/mute" : 0,
+							"/track/12/bus/C/mute" : 0,
+							"/track/12/bus/D/mute" : 0,
+							"/track/12/bus/E/mute" : 0,
+							"/track/12/bus/F/mute" : 0,
+							"/track/12/bus/A/gain" : 0.0,
+							"/track/12/bus/B/gain" : 0.0,
+							"/track/12/bus/C/gain" : 0.0,
+							"/track/12/bus/D/gain" : 0.0,
+							"/track/12/bus/E/gain" : 0.0,
+							"/track/12/bus/F/gain" : 0.0,
+							"/track/12/bus/display" : "A",
+							"/track/12/routing/input/1/adc" : 12,
+							"/track/12/lfe/send" : 0.0,
+							"/track/12/lfe/mute" : 0,
+							"/track/12/doppler" : 0,
+							"/track/12/air" : 0,
+							"/track/12/phaseinvert" : 0,
+							"/track/12/azim" : 0.0,
+							"/track/12/elev" : 10.0,
+							"/track/12/dist" : 1.0,
+							"/track/12/delay/linkedtodistance" : 0,
+							"/track/12/direct/linkedtodistance" : 1,
+							"/track/12/early/linkedtodistance" : 1,
+							"/track/12/reverb/linkedtodistance" : 1,
+							"/track/12/delay" : 0.0,
+							"/track/12/direct/gain" : -0.7,
+							"/track/12/direct/gain/low" : 0.0,
+							"/track/12/direct/gain/med" : 0.0,
+							"/track/12/direct/gain/high" : 0.0,
+							"/track/12/direct/freq/low" : 250.0,
+							"/track/12/direct/freq/high" : 4000.0,
+							"/track/12/direct/filter/bypass" : 1,
+							"/track/12/early/gain" : -8.3,
+							"/track/12/early/gain/low" : 0.0,
+							"/track/12/early/gain/med" : 0.0,
+							"/track/12/early/gain/high" : 0.0,
+							"/track/12/early/freq/low" : 250.0,
+							"/track/12/early/freq/high" : 4000.0,
+							"/track/12/early/filter/bypass" : 1,
+							"/track/12/reverb/send" : -7.5,
+							"/track/12/reverb/send/ramptime" : 20.0,
+							"/track/12/early/width" : 30.0,
+							"/track/12/direct/mute" : 0,
+							"/track/12/early/mute" : 1,
+							"/track/12/reverb/mute" : 0,
+							"/track/12/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/12/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/12/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/12/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/12/lock" : 0,
+							"/track/13/name" : "Snare",
+							"/track/13/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/13/numinputs" : 1,
+							"/track/13/visible" : 1,
+							"/track/13/trim" : 0.0,
+							"/track/13/dynamics/attack" : 10.01,
+							"/track/13/dynamics/release" : 30.0,
+							"/track/13/dynamics/lookahead" : 0.0,
+							"/track/13/dynamics/compressor/threshold" : -30.0,
+							"/track/13/dynamics/compressor/ratio" : 1.0,
+							"/track/13/dynamics/expander/threshold" : -30.0,
+							"/track/13/dynamics/expander/ratio" : 1.0,
+							"/track/13/dynamics/makeup" : 0.0,
+							"/track/13/dynamics/link" : 0,
+							"/track/13/dynamics/bypass" : 1,
+							"/track/13/dynamics/grid/visible" : 1,
+							"/track/13/dynamics/curve/fill" : 1,
+							"/track/13/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/13/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/13/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/13/dynamics/curve/thickness" : 1.0,
+							"/track/13/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/13/dynamics/title" : "Snare",
+							"/track/13/equalizer/samplerate" : 44100.0,
+							"/track/13/equalizer/bypass" : 1,
+							"/track/13/equalizer/gain" : 0.0,
+							"/track/13/equalizer/filter/1/active" : 0,
+							"/track/13/equalizer/filter/1/freq" : 50.0,
+							"/track/13/equalizer/filter/1/order" : 2,
+							"/track/13/equalizer/filter/2/active" : 1,
+							"/track/13/equalizer/filter/2/freq" : 100.0,
+							"/track/13/equalizer/filter/2/gain" : 0.0,
+							"/track/13/equalizer/filter/2/q" : 1.0,
+							"/track/13/equalizer/filter/3/active" : 1,
+							"/track/13/equalizer/filter/3/freq" : 500.0,
+							"/track/13/equalizer/filter/3/gain" : 0.0,
+							"/track/13/equalizer/filter/3/q" : 1.0,
+							"/track/13/equalizer/filter/4/active" : 1,
+							"/track/13/equalizer/filter/4/freq" : 1000.0,
+							"/track/13/equalizer/filter/4/gain" : 0.0,
+							"/track/13/equalizer/filter/4/q" : 1.0,
+							"/track/13/equalizer/filter/5/active" : 1,
+							"/track/13/equalizer/filter/5/freq" : 2000.0,
+							"/track/13/equalizer/filter/5/gain" : 0.0,
+							"/track/13/equalizer/filter/5/q" : 1.0,
+							"/track/13/equalizer/filter/6/active" : 1,
+							"/track/13/equalizer/filter/6/freq" : 5000.0,
+							"/track/13/equalizer/filter/6/gain" : 0.0,
+							"/track/13/equalizer/filter/6/q" : 1.0,
+							"/track/13/equalizer/filter/7/active" : 1,
+							"/track/13/equalizer/filter/7/freq" : 10000.0,
+							"/track/13/equalizer/filter/7/gain" : 0.0,
+							"/track/13/equalizer/filter/7/q" : 1.0,
+							"/track/13/equalizer/filter/8/active" : 0,
+							"/track/13/equalizer/filter/8/freq" : 16000.0,
+							"/track/13/equalizer/filter/8/order" : 2,
+							"/track/13/gain" : 0.0,
+							"/track/13/gain/ramptime" : 20.0,
+							"/track/13/mute" : 0,
+							"/track/13/annotation" : "",
+							"/track/13/levels/input/visible" : 1,
+							"/track/13/levels/input/post" : 0,
+							"/track/13/levels/input/mode" : "rms",
+							"/track/13/levels/output/visible" : 1,
+							"/track/13/levels/output/post" : 1,
+							"/track/13/levels/output/mode" : "rms",
+							"/track/13/solo" : 0,
+							"/track/13/bus/A/destination" : "VBAP Bus 1",
+							"/track/13/bus/B/destination" : "----",
+							"/track/13/bus/C/destination" : "----",
+							"/track/13/bus/D/destination" : "----",
+							"/track/13/bus/E/destination" : "----",
+							"/track/13/bus/F/destination" : "----",
+							"/track/13/bus/A/mute" : 0,
+							"/track/13/bus/B/mute" : 0,
+							"/track/13/bus/C/mute" : 0,
+							"/track/13/bus/D/mute" : 0,
+							"/track/13/bus/E/mute" : 0,
+							"/track/13/bus/F/mute" : 0,
+							"/track/13/bus/A/gain" : 0.0,
+							"/track/13/bus/B/gain" : 0.0,
+							"/track/13/bus/C/gain" : 0.0,
+							"/track/13/bus/D/gain" : 0.0,
+							"/track/13/bus/E/gain" : 0.0,
+							"/track/13/bus/F/gain" : 0.0,
+							"/track/13/bus/display" : "A",
+							"/track/13/routing/input/1/adc" : 13,
+							"/track/13/lfe/send" : 0.0,
+							"/track/13/lfe/mute" : 0,
+							"/track/13/doppler" : 0,
+							"/track/13/air" : 0,
+							"/track/13/phaseinvert" : 0,
+							"/track/13/azim" : 0.0,
+							"/track/13/elev" : 10.0,
+							"/track/13/dist" : 1.38,
+							"/track/13/delay/linkedtodistance" : 0,
+							"/track/13/direct/linkedtodistance" : 1,
+							"/track/13/early/linkedtodistance" : 1,
+							"/track/13/reverb/linkedtodistance" : 1,
+							"/track/13/delay" : 0.0,
+							"/track/13/direct/gain" : -3.5,
+							"/track/13/direct/gain/low" : 0.0,
+							"/track/13/direct/gain/med" : 0.0,
+							"/track/13/direct/gain/high" : 0.0,
+							"/track/13/direct/freq/low" : 250.0,
+							"/track/13/direct/freq/high" : 4000.0,
+							"/track/13/direct/filter/bypass" : 1,
+							"/track/13/early/gain" : -11.1,
+							"/track/13/early/gain/low" : 0.0,
+							"/track/13/early/gain/med" : 0.0,
+							"/track/13/early/gain/high" : 0.0,
+							"/track/13/early/freq/low" : 250.0,
+							"/track/13/early/freq/high" : 4000.0,
+							"/track/13/early/filter/bypass" : 1,
+							"/track/13/reverb/send" : -8.9,
+							"/track/13/reverb/send/ramptime" : 20.0,
+							"/track/13/early/width" : 30.0,
+							"/track/13/direct/mute" : 0,
+							"/track/13/early/mute" : 1,
+							"/track/13/reverb/mute" : 0,
+							"/track/13/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/13/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/13/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/13/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/13/lock" : 0,
+							"/track/14/name" : "Amp",
+							"/track/14/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/14/numinputs" : 1,
+							"/track/14/visible" : 1,
+							"/track/14/trim" : 0.0,
+							"/track/14/dynamics/attack" : 10.01,
+							"/track/14/dynamics/release" : 30.0,
+							"/track/14/dynamics/lookahead" : 0.0,
+							"/track/14/dynamics/compressor/threshold" : -30.0,
+							"/track/14/dynamics/compressor/ratio" : 1.0,
+							"/track/14/dynamics/expander/threshold" : -30.0,
+							"/track/14/dynamics/expander/ratio" : 1.0,
+							"/track/14/dynamics/makeup" : 0.0,
+							"/track/14/dynamics/link" : 0,
+							"/track/14/dynamics/bypass" : 1,
+							"/track/14/dynamics/grid/visible" : 1,
+							"/track/14/dynamics/curve/fill" : 1,
+							"/track/14/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/14/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/14/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/14/dynamics/curve/thickness" : 1.0,
+							"/track/14/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/14/dynamics/title" : "Amp",
+							"/track/14/equalizer/samplerate" : 44100.0,
+							"/track/14/equalizer/bypass" : 1,
+							"/track/14/equalizer/gain" : 0.0,
+							"/track/14/equalizer/filter/1/active" : 0,
+							"/track/14/equalizer/filter/1/freq" : 50.0,
+							"/track/14/equalizer/filter/1/order" : 2,
+							"/track/14/equalizer/filter/2/active" : 1,
+							"/track/14/equalizer/filter/2/freq" : 100.0,
+							"/track/14/equalizer/filter/2/gain" : 0.0,
+							"/track/14/equalizer/filter/2/q" : 1.0,
+							"/track/14/equalizer/filter/3/active" : 1,
+							"/track/14/equalizer/filter/3/freq" : 500.0,
+							"/track/14/equalizer/filter/3/gain" : 0.0,
+							"/track/14/equalizer/filter/3/q" : 1.0,
+							"/track/14/equalizer/filter/4/active" : 1,
+							"/track/14/equalizer/filter/4/freq" : 1000.0,
+							"/track/14/equalizer/filter/4/gain" : 0.0,
+							"/track/14/equalizer/filter/4/q" : 1.0,
+							"/track/14/equalizer/filter/5/active" : 1,
+							"/track/14/equalizer/filter/5/freq" : 2000.0,
+							"/track/14/equalizer/filter/5/gain" : 0.0,
+							"/track/14/equalizer/filter/5/q" : 1.0,
+							"/track/14/equalizer/filter/6/active" : 1,
+							"/track/14/equalizer/filter/6/freq" : 5000.0,
+							"/track/14/equalizer/filter/6/gain" : 0.0,
+							"/track/14/equalizer/filter/6/q" : 1.0,
+							"/track/14/equalizer/filter/7/active" : 1,
+							"/track/14/equalizer/filter/7/freq" : 10000.0,
+							"/track/14/equalizer/filter/7/gain" : 0.0,
+							"/track/14/equalizer/filter/7/q" : 1.0,
+							"/track/14/equalizer/filter/8/active" : 0,
+							"/track/14/equalizer/filter/8/freq" : 16000.0,
+							"/track/14/equalizer/filter/8/order" : 2,
+							"/track/14/gain" : 0.0,
+							"/track/14/gain/ramptime" : 20.0,
+							"/track/14/mute" : 0,
+							"/track/14/annotation" : "",
+							"/track/14/levels/input/visible" : 1,
+							"/track/14/levels/input/post" : 0,
+							"/track/14/levels/input/mode" : "rms",
+							"/track/14/levels/output/visible" : 1,
+							"/track/14/levels/output/post" : 1,
+							"/track/14/levels/output/mode" : "rms",
+							"/track/14/solo" : 0,
+							"/track/14/bus/A/destination" : "VBAP Bus 1",
+							"/track/14/bus/B/destination" : "----",
+							"/track/14/bus/C/destination" : "----",
+							"/track/14/bus/D/destination" : "----",
+							"/track/14/bus/E/destination" : "----",
+							"/track/14/bus/F/destination" : "----",
+							"/track/14/bus/A/mute" : 0,
+							"/track/14/bus/B/mute" : 0,
+							"/track/14/bus/C/mute" : 0,
+							"/track/14/bus/D/mute" : 0,
+							"/track/14/bus/E/mute" : 0,
+							"/track/14/bus/F/mute" : 0,
+							"/track/14/bus/A/gain" : 0.0,
+							"/track/14/bus/B/gain" : 0.0,
+							"/track/14/bus/C/gain" : 0.0,
+							"/track/14/bus/D/gain" : 0.0,
+							"/track/14/bus/E/gain" : 0.0,
+							"/track/14/bus/F/gain" : 0.0,
+							"/track/14/bus/display" : "A",
+							"/track/14/routing/input/1/adc" : 14,
+							"/track/14/lfe/send" : 0.0,
+							"/track/14/lfe/mute" : 0,
+							"/track/14/doppler" : 0,
+							"/track/14/air" : 0,
+							"/track/14/phaseinvert" : 0,
+							"/track/14/azim" : 20.18,
+							"/track/14/elev" : 10.0,
+							"/track/14/dist" : 1.0,
+							"/track/14/delay/linkedtodistance" : 0,
+							"/track/14/direct/linkedtodistance" : 1,
+							"/track/14/early/linkedtodistance" : 1,
+							"/track/14/reverb/linkedtodistance" : 1,
+							"/track/14/delay" : 0.0,
+							"/track/14/direct/gain" : -0.7,
+							"/track/14/direct/gain/low" : 0.0,
+							"/track/14/direct/gain/med" : 0.0,
+							"/track/14/direct/gain/high" : 0.0,
+							"/track/14/direct/freq/low" : 250.0,
+							"/track/14/direct/freq/high" : 4000.0,
+							"/track/14/direct/filter/bypass" : 1,
+							"/track/14/early/gain" : -8.3,
+							"/track/14/early/gain/low" : 0.0,
+							"/track/14/early/gain/med" : 0.0,
+							"/track/14/early/gain/high" : 0.0,
+							"/track/14/early/freq/low" : 250.0,
+							"/track/14/early/freq/high" : 4000.0,
+							"/track/14/early/filter/bypass" : 1,
+							"/track/14/reverb/send" : -7.5,
+							"/track/14/reverb/send/ramptime" : 20.0,
+							"/track/14/early/width" : 30.0,
+							"/track/14/direct/mute" : 0,
+							"/track/14/early/mute" : 1,
+							"/track/14/reverb/mute" : 0,
+							"/track/14/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/14/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/14/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/14/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/14/lock" : 0,
+							"/track/15/name" : "OHL",
+							"/track/15/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/15/numinputs" : 1,
+							"/track/15/visible" : 1,
+							"/track/15/trim" : 0.0,
+							"/track/15/dynamics/attack" : 10.01,
+							"/track/15/dynamics/release" : 30.0,
+							"/track/15/dynamics/lookahead" : 0.0,
+							"/track/15/dynamics/compressor/threshold" : -30.0,
+							"/track/15/dynamics/compressor/ratio" : 1.0,
+							"/track/15/dynamics/expander/threshold" : -30.0,
+							"/track/15/dynamics/expander/ratio" : 1.0,
+							"/track/15/dynamics/makeup" : 0.0,
+							"/track/15/dynamics/link" : 0,
+							"/track/15/dynamics/bypass" : 1,
+							"/track/15/dynamics/grid/visible" : 1,
+							"/track/15/dynamics/curve/fill" : 1,
+							"/track/15/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/15/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/15/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/15/dynamics/curve/thickness" : 1.0,
+							"/track/15/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/15/dynamics/title" : "OHL",
+							"/track/15/equalizer/samplerate" : 44100.0,
+							"/track/15/equalizer/bypass" : 1,
+							"/track/15/equalizer/gain" : 0.0,
+							"/track/15/equalizer/filter/1/active" : 0,
+							"/track/15/equalizer/filter/1/freq" : 50.0,
+							"/track/15/equalizer/filter/1/order" : 2,
+							"/track/15/equalizer/filter/2/active" : 1,
+							"/track/15/equalizer/filter/2/freq" : 100.0,
+							"/track/15/equalizer/filter/2/gain" : 0.0,
+							"/track/15/equalizer/filter/2/q" : 1.0,
+							"/track/15/equalizer/filter/3/active" : 1,
+							"/track/15/equalizer/filter/3/freq" : 500.0,
+							"/track/15/equalizer/filter/3/gain" : 0.0,
+							"/track/15/equalizer/filter/3/q" : 1.0,
+							"/track/15/equalizer/filter/4/active" : 1,
+							"/track/15/equalizer/filter/4/freq" : 1000.0,
+							"/track/15/equalizer/filter/4/gain" : 0.0,
+							"/track/15/equalizer/filter/4/q" : 1.0,
+							"/track/15/equalizer/filter/5/active" : 1,
+							"/track/15/equalizer/filter/5/freq" : 2000.0,
+							"/track/15/equalizer/filter/5/gain" : 0.0,
+							"/track/15/equalizer/filter/5/q" : 1.0,
+							"/track/15/equalizer/filter/6/active" : 1,
+							"/track/15/equalizer/filter/6/freq" : 5000.0,
+							"/track/15/equalizer/filter/6/gain" : 0.0,
+							"/track/15/equalizer/filter/6/q" : 1.0,
+							"/track/15/equalizer/filter/7/active" : 1,
+							"/track/15/equalizer/filter/7/freq" : 10000.0,
+							"/track/15/equalizer/filter/7/gain" : 0.0,
+							"/track/15/equalizer/filter/7/q" : 1.0,
+							"/track/15/equalizer/filter/8/active" : 0,
+							"/track/15/equalizer/filter/8/freq" : 16000.0,
+							"/track/15/equalizer/filter/8/order" : 2,
+							"/track/15/gain" : 0.0,
+							"/track/15/gain/ramptime" : 20.0,
+							"/track/15/mute" : 0,
+							"/track/15/annotation" : "",
+							"/track/15/levels/input/visible" : 1,
+							"/track/15/levels/input/post" : 0,
+							"/track/15/levels/input/mode" : "rms",
+							"/track/15/levels/output/visible" : 1,
+							"/track/15/levels/output/post" : 1,
+							"/track/15/levels/output/mode" : "rms",
+							"/track/15/solo" : 0,
+							"/track/15/bus/A/destination" : "VBAP Bus 1",
+							"/track/15/bus/B/destination" : "----",
+							"/track/15/bus/C/destination" : "----",
+							"/track/15/bus/D/destination" : "----",
+							"/track/15/bus/E/destination" : "----",
+							"/track/15/bus/F/destination" : "----",
+							"/track/15/bus/A/mute" : 0,
+							"/track/15/bus/B/mute" : 0,
+							"/track/15/bus/C/mute" : 0,
+							"/track/15/bus/D/mute" : 0,
+							"/track/15/bus/E/mute" : 0,
+							"/track/15/bus/F/mute" : 0,
+							"/track/15/bus/A/gain" : 0.0,
+							"/track/15/bus/B/gain" : 0.0,
+							"/track/15/bus/C/gain" : 0.0,
+							"/track/15/bus/D/gain" : 0.0,
+							"/track/15/bus/E/gain" : 0.0,
+							"/track/15/bus/F/gain" : 0.0,
+							"/track/15/bus/display" : "A",
+							"/track/15/routing/input/1/adc" : 15,
+							"/track/15/lfe/send" : 0.0,
+							"/track/15/lfe/mute" : 0,
+							"/track/15/doppler" : 0,
+							"/track/15/air" : 0,
+							"/track/15/phaseinvert" : 0,
+							"/track/15/azim" : -45.0,
+							"/track/15/elev" : 10.0,
+							"/track/15/dist" : 1.0,
+							"/track/15/delay/linkedtodistance" : 0,
+							"/track/15/direct/linkedtodistance" : 1,
+							"/track/15/early/linkedtodistance" : 1,
+							"/track/15/reverb/linkedtodistance" : 1,
+							"/track/15/delay" : 0.0,
+							"/track/15/direct/gain" : -0.7,
+							"/track/15/direct/gain/low" : 0.0,
+							"/track/15/direct/gain/med" : 0.0,
+							"/track/15/direct/gain/high" : 0.0,
+							"/track/15/direct/freq/low" : 250.0,
+							"/track/15/direct/freq/high" : 4000.0,
+							"/track/15/direct/filter/bypass" : 1,
+							"/track/15/early/gain" : -8.3,
+							"/track/15/early/gain/low" : 0.0,
+							"/track/15/early/gain/med" : 0.0,
+							"/track/15/early/gain/high" : 0.0,
+							"/track/15/early/freq/low" : 250.0,
+							"/track/15/early/freq/high" : 4000.0,
+							"/track/15/early/filter/bypass" : 1,
+							"/track/15/reverb/send" : -7.5,
+							"/track/15/reverb/send/ramptime" : 20.0,
+							"/track/15/early/width" : 30.0,
+							"/track/15/direct/mute" : 0,
+							"/track/15/early/mute" : 1,
+							"/track/15/reverb/mute" : 0,
+							"/track/15/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/15/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/15/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/15/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/15/lock" : 0,
+							"/track/16/name" : "OHR",
+							"/track/16/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
+							"/track/16/numinputs" : 1,
+							"/track/16/visible" : 1,
+							"/track/16/trim" : 0.0,
+							"/track/16/dynamics/attack" : 10.01,
+							"/track/16/dynamics/release" : 30.0,
+							"/track/16/dynamics/lookahead" : 0.0,
+							"/track/16/dynamics/compressor/threshold" : -30.0,
+							"/track/16/dynamics/compressor/ratio" : 1.0,
+							"/track/16/dynamics/expander/threshold" : -30.0,
+							"/track/16/dynamics/expander/ratio" : 1.0,
+							"/track/16/dynamics/makeup" : 0.0,
+							"/track/16/dynamics/link" : 0,
+							"/track/16/dynamics/bypass" : 1,
+							"/track/16/dynamics/grid/visible" : 1,
+							"/track/16/dynamics/curve/fill" : 1,
+							"/track/16/dynamics/background/color" : [ 1.0, 1.0, 1.0, 0.0 ],
+							"/track/16/dynamics/foreground/color" : [ 0.117647, 0.564706, 1.0, 0.6 ],
+							"/track/16/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
+							"/track/16/dynamics/curve/thickness" : 1.0,
+							"/track/16/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
+							"/track/16/dynamics/title" : "OHR",
+							"/track/16/equalizer/samplerate" : 44100.0,
+							"/track/16/equalizer/bypass" : 1,
+							"/track/16/equalizer/gain" : 0.0,
+							"/track/16/equalizer/filter/1/active" : 0,
+							"/track/16/equalizer/filter/1/freq" : 50.0,
+							"/track/16/equalizer/filter/1/order" : 2,
+							"/track/16/equalizer/filter/2/active" : 1,
+							"/track/16/equalizer/filter/2/freq" : 100.0,
+							"/track/16/equalizer/filter/2/gain" : 0.0,
+							"/track/16/equalizer/filter/2/q" : 1.0,
+							"/track/16/equalizer/filter/3/active" : 1,
+							"/track/16/equalizer/filter/3/freq" : 500.0,
+							"/track/16/equalizer/filter/3/gain" : 0.0,
+							"/track/16/equalizer/filter/3/q" : 1.0,
+							"/track/16/equalizer/filter/4/active" : 1,
+							"/track/16/equalizer/filter/4/freq" : 1000.0,
+							"/track/16/equalizer/filter/4/gain" : 0.0,
+							"/track/16/equalizer/filter/4/q" : 1.0,
+							"/track/16/equalizer/filter/5/active" : 1,
+							"/track/16/equalizer/filter/5/freq" : 2000.0,
+							"/track/16/equalizer/filter/5/gain" : 0.0,
+							"/track/16/equalizer/filter/5/q" : 1.0,
+							"/track/16/equalizer/filter/6/active" : 1,
+							"/track/16/equalizer/filter/6/freq" : 5000.0,
+							"/track/16/equalizer/filter/6/gain" : 0.0,
+							"/track/16/equalizer/filter/6/q" : 1.0,
+							"/track/16/equalizer/filter/7/active" : 1,
+							"/track/16/equalizer/filter/7/freq" : 10000.0,
+							"/track/16/equalizer/filter/7/gain" : 0.0,
+							"/track/16/equalizer/filter/7/q" : 1.0,
+							"/track/16/equalizer/filter/8/active" : 0,
+							"/track/16/equalizer/filter/8/freq" : 16000.0,
+							"/track/16/equalizer/filter/8/order" : 2,
+							"/track/16/gain" : 0.0,
+							"/track/16/gain/ramptime" : 20.0,
+							"/track/16/mute" : 0,
+							"/track/16/annotation" : "",
+							"/track/16/levels/input/visible" : 1,
+							"/track/16/levels/input/post" : 0,
+							"/track/16/levels/input/mode" : "rms",
+							"/track/16/levels/output/visible" : 1,
+							"/track/16/levels/output/post" : 1,
+							"/track/16/levels/output/mode" : "rms",
+							"/track/16/solo" : 0,
+							"/track/16/bus/A/destination" : "VBAP Bus 1",
+							"/track/16/bus/B/destination" : "----",
+							"/track/16/bus/C/destination" : "----",
+							"/track/16/bus/D/destination" : "----",
+							"/track/16/bus/E/destination" : "----",
+							"/track/16/bus/F/destination" : "----",
+							"/track/16/bus/A/mute" : 0,
+							"/track/16/bus/B/mute" : 0,
+							"/track/16/bus/C/mute" : 0,
+							"/track/16/bus/D/mute" : 0,
+							"/track/16/bus/E/mute" : 0,
+							"/track/16/bus/F/mute" : 0,
+							"/track/16/bus/A/gain" : 0.0,
+							"/track/16/bus/B/gain" : 0.0,
+							"/track/16/bus/C/gain" : 0.0,
+							"/track/16/bus/D/gain" : 0.0,
+							"/track/16/bus/E/gain" : 0.0,
+							"/track/16/bus/F/gain" : 0.0,
+							"/track/16/bus/display" : "A",
+							"/track/16/routing/input/1/adc" : 16,
+							"/track/16/lfe/send" : 0.0,
+							"/track/16/lfe/mute" : 0,
+							"/track/16/doppler" : 0,
+							"/track/16/air" : 0,
+							"/track/16/phaseinvert" : 0,
+							"/track/16/azim" : 45.0,
+							"/track/16/elev" : 10.0,
+							"/track/16/dist" : 1.0,
+							"/track/16/delay/linkedtodistance" : 0,
+							"/track/16/direct/linkedtodistance" : 1,
+							"/track/16/early/linkedtodistance" : 1,
+							"/track/16/reverb/linkedtodistance" : 1,
+							"/track/16/delay" : 0.0,
+							"/track/16/direct/gain" : -0.7,
+							"/track/16/direct/gain/low" : 0.0,
+							"/track/16/direct/gain/med" : 0.0,
+							"/track/16/direct/gain/high" : 0.0,
+							"/track/16/direct/freq/low" : 250.0,
+							"/track/16/direct/freq/high" : 4000.0,
+							"/track/16/direct/filter/bypass" : 1,
+							"/track/16/early/gain" : -8.3,
+							"/track/16/early/gain/low" : 0.0,
+							"/track/16/early/gain/med" : 0.0,
+							"/track/16/early/gain/high" : 0.0,
+							"/track/16/early/freq/low" : 250.0,
+							"/track/16/early/freq/high" : 4000.0,
+							"/track/16/early/filter/bypass" : 1,
+							"/track/16/reverb/send" : -7.5,
+							"/track/16/reverb/send/ramptime" : 20.0,
+							"/track/16/early/width" : 30.0,
+							"/track/16/direct/mute" : 0,
+							"/track/16/early/mute" : 1,
+							"/track/16/reverb/mute" : 0,
+							"/track/16/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/16/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/16/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/16/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
+							"/track/16/lock" : 0,
 							"/group/number" : 3,
 							"/group/1/name" : "all",
 							"/group/1/affects/mute" : 1,
 							"/group/1/affects/solo" : 1,
 							"/group/1/affects/send" : 1,
-							"/group/1/track" : 1,
+							"/group/1/track" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
 							"/group/1/active" : 0,
 							"/group/2/name" : "all mono",
 							"/group/2/affects/mute" : 1,
 							"/group/2/affects/solo" : 1,
 							"/group/2/affects/send" : 1,
-							"/group/2/track" : 1,
+							"/group/2/track" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ],
 							"/group/2/active" : 0,
 							"/group/3/name" : "all multi",
 							"/group/3/affects/mute" : 1,
@@ -5159,7 +7275,7 @@
 							"/internals" : 8,
 							"/viewer/layout" : "single",
 							"/viewer/background/color" : [ 0.709804, 0.709804, 0.709804, 1.0 ],
-							"/viewer/display/zoom" : 76.813599,
+							"/viewer/display/zoom" : 134.130051,
 							"/viewer/display/offset/x" : 0.0,
 							"/viewer/display/offset/y" : 0.0,
 							"/viewer/display/offset/z" : 0.0,
@@ -5188,16 +7304,16 @@
 							"/viewer/settings/editable" : 1,
 							"/viewer/area/number" : 0,
 							"/viewer/anchor/number" : 0,
-							"/window/title" : "Panoramix",
-							"/window/visible" : 0,
+							"/window/title" : "Panoramix *",
+							"/window/visible" : 1,
 							"/window/moveable" : 1,
 							"/window/resizable" : 1,
 							"/window/enable" : 1,
-							"/window/bounds" : [ 318, 54, 1044, 960 ],
+							"/window/bounds" : [ 579, 45, 1680, 1001 ],
 							"/window/background/color" : [ 0.827451, 0.827451, 0.827451, 1.0 ],
 							"/window/fullscreen" : 0,
 							"/window/minimise" : 0,
-							"/window/scale" : 1.0,
+							"/window/scale" : 100.0,
 							"/window/rendering/engine" : "CoreGraphics Renderer",
 							"/window/rendering/fps/visible" : 0,
 							"/window/floating" : 0
@@ -5391,9 +7507,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
 									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontsize" : [ 11.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5402,9 +7518,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
 									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontsize" : [ 10.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5413,6 +7529,7 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
 									"bgfillcolor" : 									{
@@ -5423,8 +7540,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -5450,6 +7566,7 @@
 , 							{
 								"name" : "jbb",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontsize" : [ 9.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -5459,8 +7576,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -5534,7 +7650,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "Panoramix-AVM.json",
+					"autorestore" : "ODB-Panoramix-AVM-Presets.json",
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -7706,7 +9822,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 300.5, 240.0, 127.0, 20.0 ],
 									"style" : "",
-									"text" : "-2 45 357 436"
+									"text" : "0 71 357 615"
 								}
 
 							}
@@ -8247,7 +10363,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 8.0, 197.0, 222.0, 22.0 ],
+					"patching_rect" : [ 8.0, 197.0, 262.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -8257,7 +10373,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "p change mode affichage et sauve taille"
+					"text" : "p change display mode affichage and save size"
 				}
 
 			}
@@ -8758,9 +10874,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 11.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8769,9 +10885,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 10.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8780,6 +10896,7 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
 													"bgfillcolor" : 													{
@@ -8790,8 +10907,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -8817,6 +10933,7 @@
 , 											{
 												"name" : "jbb",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontsize" : [ 9.0 ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
@@ -8826,8 +10943,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -9090,9 +11206,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 11.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9101,9 +11217,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 10.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9112,6 +11228,7 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
 													"bgfillcolor" : 													{
@@ -9122,8 +11239,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -9149,6 +11265,7 @@
 , 											{
 												"name" : "jbb",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontsize" : [ 9.0 ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
@@ -9158,8 +11275,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -9316,9 +11432,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 11.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9327,9 +11443,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"fontname" : [ "Arial Bold" ],
 													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ]
+													"fontsize" : [ 10.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9338,6 +11454,7 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
 													"bgfillcolor" : 													{
@@ -9348,8 +11465,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -9375,6 +11491,7 @@
 , 											{
 												"name" : "jbb",
 												"default" : 												{
+													"fontname" : [ "Arial" ],
 													"fontsize" : [ 9.0 ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
@@ -9384,8 +11501,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -13764,9 +15880,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
 									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontsize" : [ 11.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13775,9 +15891,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"fontname" : [ "Arial Bold" ],
 									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ]
+									"fontsize" : [ 10.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13786,6 +15902,7 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
 									"bgfillcolor" : 									{
@@ -13796,8 +15913,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -13823,6 +15939,7 @@
 , 							{
 								"name" : "jbb",
 								"default" : 								{
+									"fontname" : [ "Arial" ],
 									"fontsize" : [ 9.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
@@ -13832,8 +15949,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -14058,9 +16174,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 266.0, 154.0, 400.424347, 21.0 ],
+					"patching_rect" : [ 266.0, 154.0, 274.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"annotation_name" : "",
 						"parameter_enable" : 0
 					}
 ,
@@ -14150,7 +16265,7 @@
 					"numinlets" : 18,
 					"numoutlets" : 18,
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 364.00769, 800.0, 326.416656, 21.0 ],
+					"patching_rect" : [ 364.00769, 870.0, 326.416656, 21.0 ],
 					"style" : "",
 					"text" : "spat5.thru~ @channels 18"
 				}
@@ -17218,7 +19333,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 852.0, 374.0, 405.0, 139.0 ],
+										"rect" : [ 0.0, 649.0, 333.0, 144.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -17346,9 +19461,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 338.0, 237.0, 67.0, 45.0 ],
+													"patching_rect" : [ 338.0, 237.0, 67.0, 49.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 316.0, 104.0, 74.0, 25.0 ],
+													"presentation_rect" : [ 316.0, 104.0, 74.0, 29.0 ],
 													"style" : "",
 													"text" : "Annuler"
 												}
@@ -17393,9 +19508,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 176.0, 237.0, 49.0, 25.0 ],
+													"patching_rect" : [ 176.0, 237.0, 49.0, 29.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 12.0, 104.0, 43.0, 25.0 ],
+													"presentation_rect" : [ 12.0, 104.0, 43.0, 29.0 ],
 													"style" : "",
 													"text" : "OUI"
 												}
@@ -18096,13 +20211,16 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-29",
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1264.0, 358.0, 235.5, 17.0 ],
+									"patching_rect" : [ 1264.0, 358.0, 235.5, 47.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 3.5, 52.0, 281.5, 17.0 ],
-									"style" : ""
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 3.5, 52.0, 281.5, 27.0 ],
+									"style" : "",
+									"text" : "Macintosh HD:/Users/avm/Desktop/Alexis - NICHT LÖSCHEN !!!/Panoramix-AVM-Tests/ODB/ODB-Panoramix-AVM-Presets.json"
 								}
 
 							}
@@ -19575,7 +21693,7 @@
 									"bgfillcolor_type" : "color",
 									"fontsize" : 14.0,
 									"id" : "obj-28",
-									"items" : [ "<init>", ",", 1, "AVM default 16ch" ],
+									"items" : [ "<init>", ",", 1, "ODB preset1" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -22061,7 +24179,6 @@
 													"fontsize" : 12.0,
 													"id" : "obj-2",
 													"keymode" : 1,
-													"linecount" : 2,
 													"lines" : 1,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
@@ -22073,7 +24190,7 @@
 													"presentation_rect" : [ 3.0, 27.0, 234.0, 23.0 ],
 													"style" : "",
 													"tabmode" : 0,
-													"text" : "\"source-filter last cue (ctenor)\""
+													"text" : "\"ODB preset1\""
 												}
 
 											}
@@ -22633,7 +24750,7 @@
 													"fontsize" : 22.0,
 													"id" : "obj-2",
 													"ignoreclick" : 1,
-													"linecount" : 3,
+													"linecount" : 2,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
 													"numoutlets" : 4,
@@ -22644,7 +24761,7 @@
 													"presentation_linecount" : 2,
 													"presentation_rect" : [ 8.0, 6.0, 372.0, 90.0 ],
 													"style" : "",
-													"text" : "Are you sure to replace preset n° 4 <<source-filter last cue (ctenor)>> ?",
+													"text" : "Are you sure to replace preset n° 1 <<ODB preset1>> ?",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"textjustification" : 1
 												}
@@ -24760,7 +26877,7 @@
 ,
 					"patching_rect" : [ -100.0, 820.0, 347.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.467102, 303.76416, 347.532898, 76.23584 ],
+					"presentation_rect" : [ 2.467102, 461.0, 347.532898, 76.23584 ],
 					"viewvisibility" : 1
 				}
 
@@ -24782,7 +26899,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 460.0, 332.0, 139.0 ],
+						"rect" : [ 0.0, 486.0, 332.0, 139.0 ],
 						"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -24826,7 +26943,7 @@
 											"parameter_longname" : "live.menu[4]",
 											"parameter_shortname" : "live.menu",
 											"parameter_type" : 2,
-											"parameter_enum" : [ "none", "inlet #1", "inlet #2", "inlet #3", "inlet #4", "inlet #5", "inlet #6", "inlet #7", "inlet #8", "inlet #9", "inlet #10", "inlet #11", "inlet #12", "inlet #13", "inlet #14", "inlet #15", "inlet #16", "inlet #17", "inlet #18", "inlet #19", "inlet #20", "inlet #21", "inlet #22", "inlet #23", "inlet #24", "inlet #25", "inlet #26", "inlet #27", "inlet #28", "inlet #29", "inlet #30", "inlet #31", "inlet #32" ]
+											"parameter_enum" : [ "none", "input #1", "input #2", "input #3", "input #4", "input #5", "input #6", "input #7", "input #8", "input #9", "input #10", "input #11", "input #12", "input #13", "input #14", "input #15", "input #16", "input #17", "input #18", "input #19", "input #20", "input #21", "input #22", "input #23", "input #24", "input #25", "input #26", "input #27", "input #28", "input #29", "input #30", "input #31", "input #32" ]
 										}
 
 									}
@@ -25942,6 +28059,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -25991,126 +28115,126 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 17 ],
+					"destination" : [ "obj-25", 1 ],
 					"source" : [ "obj-157", 17 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 16 ],
+					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-157", 16 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 15 ],
+					"destination" : [ "obj-37", 15 ],
 					"source" : [ "obj-157", 15 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 14 ],
+					"destination" : [ "obj-37", 14 ],
 					"source" : [ "obj-157", 14 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 13 ],
+					"destination" : [ "obj-37", 13 ],
 					"source" : [ "obj-157", 13 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 12 ],
+					"destination" : [ "obj-37", 12 ],
 					"source" : [ "obj-157", 12 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 11 ],
+					"destination" : [ "obj-37", 11 ],
 					"source" : [ "obj-157", 11 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 10 ],
+					"destination" : [ "obj-37", 10 ],
 					"source" : [ "obj-157", 10 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 9 ],
+					"destination" : [ "obj-37", 9 ],
 					"source" : [ "obj-157", 9 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 8 ],
+					"destination" : [ "obj-37", 8 ],
 					"source" : [ "obj-157", 8 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 7 ],
+					"destination" : [ "obj-37", 7 ],
 					"source" : [ "obj-157", 7 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 6 ],
+					"destination" : [ "obj-37", 6 ],
 					"source" : [ "obj-157", 6 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 5 ],
+					"destination" : [ "obj-37", 5 ],
 					"source" : [ "obj-157", 5 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 4 ],
+					"destination" : [ "obj-37", 4 ],
 					"source" : [ "obj-157", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 3 ],
+					"destination" : [ "obj-37", 3 ],
 					"source" : [ "obj-157", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 2 ],
+					"destination" : [ "obj-37", 2 ],
 					"source" : [ "obj-157", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
+					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-157", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-157", 0 ]
 				}
 
@@ -26600,6 +28724,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-142", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"source" : [ "obj-2", 17 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-2", 16 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 699.00769, 509.0, 714.253845, 509.0, 714.253845, 143.0, 275.5, 143.0 ],
 					"source" : [ "obj-2", 18 ]
@@ -26608,126 +28767,112 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 17 ],
-					"source" : [ "obj-2", 17 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 16 ],
-					"source" : [ "obj-2", 16 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 15 ],
+					"destination" : [ "obj-37", 15 ],
 					"source" : [ "obj-2", 15 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 14 ],
+					"destination" : [ "obj-37", 14 ],
 					"source" : [ "obj-2", 14 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 13 ],
+					"destination" : [ "obj-37", 13 ],
 					"source" : [ "obj-2", 13 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 12 ],
+					"destination" : [ "obj-37", 12 ],
 					"source" : [ "obj-2", 12 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 11 ],
+					"destination" : [ "obj-37", 11 ],
 					"source" : [ "obj-2", 11 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 10 ],
+					"destination" : [ "obj-37", 10 ],
 					"source" : [ "obj-2", 10 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 9 ],
+					"destination" : [ "obj-37", 9 ],
 					"source" : [ "obj-2", 9 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 8 ],
+					"destination" : [ "obj-37", 8 ],
 					"source" : [ "obj-2", 8 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 7 ],
+					"destination" : [ "obj-37", 7 ],
 					"source" : [ "obj-2", 7 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 6 ],
+					"destination" : [ "obj-37", 6 ],
 					"source" : [ "obj-2", 6 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 5 ],
+					"destination" : [ "obj-37", 5 ],
 					"source" : [ "obj-2", 5 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 4 ],
+					"destination" : [ "obj-37", 4 ],
 					"source" : [ "obj-2", 4 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 3 ],
+					"destination" : [ "obj-37", 3 ],
 					"source" : [ "obj-2", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 2 ],
+					"destination" : [ "obj-37", 2 ],
 					"source" : [ "obj-2", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
+					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -26750,6 +28895,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 17 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 16 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -27351,6 +29510,118 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 15 ],
+					"source" : [ "obj-37", 15 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 14 ],
+					"source" : [ "obj-37", 14 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 13 ],
+					"source" : [ "obj-37", 13 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 12 ],
+					"source" : [ "obj-37", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 11 ],
+					"source" : [ "obj-37", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 10 ],
+					"source" : [ "obj-37", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 9 ],
+					"source" : [ "obj-37", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 8 ],
+					"source" : [ "obj-37", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 7 ],
+					"source" : [ "obj-37", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 6 ],
+					"source" : [ "obj-37", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 5 ],
+					"source" : [ "obj-37", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 4 ],
+					"source" : [ "obj-37", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 3 ],
+					"source" : [ "obj-37", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 2 ],
+					"source" : [ "obj-37", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-37", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 1.0, 1.0 ],
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 293.5, 129.0, 284.5, 129.0, 284.5, 109.0, 275.5, 109.0 ],
@@ -27411,6 +29682,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-444", 0 ],
 					"source" : [ "obj-446", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -27806,103 +30084,93 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-57" : [ "live.text[9]", "live.text[9]", 0 ],
-			"obj-62" : [ "live.text[23]", "live.text[9]", 0 ],
-			"obj-32::obj-19" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-167::obj-222::obj-26::obj-58" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-53" : [ "OSCOutPort[1]", "OutPort", 0 ],
-			"obj-9::obj-3::obj-2::obj-28" : [ "live.text[35]", "live.text[8]", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-11" : [ "live.text[4]", "live.text", 0 ],
-			"obj-167::obj-222::obj-46::obj-36" : [ "select folder[1]", "select folder", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-21" : [ "OSCIP4", "IP4", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-11" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-53" : [ "OSCOutPort", "OutPort", 0 ],
-			"obj-157::obj-222::obj-46::obj-6" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-8" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-157::obj-222::obj-26::obj-58" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-20" : [ "live.button[10]", "live.button", 0 ],
-			"obj-157::obj-222::obj-182" : [ "live.text[44]", "live.text[1]", 0 ],
-			"obj-34" : [ " ", "vu-meters rate", 0 ],
-			"obj-444::obj-64" : [ "live.text[13]", "live.text[8]", 0 ],
-			"obj-159" : [ "live.text[16]", "live.text[8]", 0 ],
-			"obj-55" : [ "live.text[42]", "live.text", 0 ],
-			"obj-151" : [ "live.text[46]", "live.text[8]", 0 ],
-			"obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
-			"obj-9::obj-4::obj-51::obj-16" : [ "live.tab[4]", "live.tab", 0 ],
-			"obj-167::obj-222::obj-26::obj-56" : [ "live.button[6]", "live.button[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-2" : [ "live.text[30]", "live.text", 0 ],
-			"obj-444::obj-59" : [ "live.text[11]", "live.text[8]", 0 ],
-			"obj-157::obj-222::obj-12::obj-4" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-9::obj-5::obj-53" : [ "live.dial[1]", "scale", 0 ],
-			"obj-157::obj-222::obj-23" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-6" : [ "live.button[5]", "live.button[5]", 0 ],
-			"obj-167::obj-222::obj-5::obj-12" : [ "live.button", "live.button", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
-			"obj-32::obj-7" : [ "live.numbox[10]", "live.numbox", 0 ],
-			"obj-28" : [ "live.text[31]", "live.text[8]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-14" : [ "live.text[20]", "live.text", 0 ],
-			"obj-167::obj-222::obj-26::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-18" : [ "OSCIP3", "IP3", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-20" : [ "live.button[11]", "live.button", 0 ],
+			"obj-9::obj-4::obj-51::obj-48" : [ "live.text", "live.text", 0 ],
 			"obj-157::obj-222::obj-46::obj-36" : [ "select folder[2]", "select folder", 0 ],
+			"obj-167::obj-222::obj-182" : [ "live.text[48]", "live.text[1]", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-2" : [ "live.text[30]", "live.text", 0 ],
+			"obj-157::obj-222::obj-26::obj-56" : [ "live.button[2]", "live.button[1]", 0 ],
+			"obj-157::obj-222::obj-1" : [ "live.menu[3]", "live.menu", 0 ],
+			"obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
+			"obj-32::obj-19" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-606" : [ "live.text[2]", "live.text", 0 ],
+			"obj-445" : [ "live.text[41]", "live.text[8]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-11" : [ "live.numbox[12]", "live.numbox", 0 ],
+			"obj-9::obj-3::obj-2::obj-28" : [ "live.text[35]", "live.text[8]", 0 ],
+			"obj-9::obj-5::obj-53" : [ "live.dial[1]", "scale", 0 ],
+			"obj-157::obj-222::obj-43::obj-8" : [ "live.dial[2]", "freq", 0 ],
+			"obj-6" : [ "live.button[5]", "live.button[5]", 0 ],
+			"obj-157::obj-222::obj-12::obj-4" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-62" : [ "live.text[23]", "live.text[9]", 0 ],
+			"obj-32::obj-15" : [ "live.numbox[11]", "live.numbox", 0 ],
+			"obj-157::obj-222::obj-182" : [ "live.text[44]", "live.text[1]", 0 ],
+			"obj-167::obj-222::obj-46::obj-36" : [ "select folder[1]", "select folder", 0 ],
+			"obj-167::obj-222::obj-46::obj-8" : [ "live.drop", "live.drop", 0 ],
+			"obj-37" : [ "live.gain~[3]", "loudspeakers", 0 ],
+			"obj-28" : [ "live.text[31]", "live.text[8]", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ],
+			"obj-57" : [ "live.text[9]", "live.text[9]", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-14" : [ "live.text[29]", "live.text", 0 ],
+			"obj-157::obj-222::obj-46::obj-8" : [ "live.drop[1]", "live.drop", 0 ],
+			"obj-34" : [ " ", "vu-meters rate", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-11" : [ "live.text[4]", "live.text", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-21" : [ "OSCIP4", "IP4", 0 ],
+			"obj-157::obj-222::obj-26::obj-59" : [ "live.numbox[13]", "live.numbox[1]", 0 ],
+			"obj-167::obj-222::obj-5::obj-12" : [ "live.button", "live.button", 0 ],
+			"obj-167::obj-222::obj-26::obj-58" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-2" : [ "live.text[21]", "live.text", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-53" : [ "OSCOutPort", "OutPort", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-18" : [ "OSCIP3", "IP3", 0 ],
+			"obj-444::obj-59" : [ "live.text[11]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-26::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-17" : [ "OSCIP2", "IP2", 0 ],
+			"obj-162" : [ "live.text[17]", "live.text[8]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-8" : [ "OSCIP1", "IP1", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-14" : [ "live.text[20]", "live.text", 0 ],
+			"obj-157::obj-3" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-157::obj-222::obj-46::obj-6" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-159" : [ "live.text[16]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-26::obj-56" : [ "live.button[6]", "live.button[1]", 0 ],
+			"obj-151" : [ "live.text[46]", "live.text[8]", 0 ],
+			"obj-444::obj-64" : [ "live.text[13]", "live.text[8]", 0 ],
+			"obj-157::obj-222::obj-26::obj-58" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
+			"obj-32::obj-7" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-157::obj-222::obj-23" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-167::obj-222::obj-2" : [ "live.gain~", " ", 0 ],
+			"obj-55" : [ "live.text[42]", "live.text", 0 ],
+			"obj-25" : [ "live.gain~[2]", "headphones", 0 ],
+			"obj-167::obj-222::obj-12::obj-4" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-9::obj-3::obj-2::obj-8::obj-55" : [ "live.text[3]", "live.text", 0 ],
 			"obj-167::obj-3" : [ "live.menu[4]", "live.menu", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-17" : [ "OSCIP2", "IP2", 0 ],
-			"obj-157::obj-222::obj-26::obj-56" : [ "live.button[2]", "live.button[1]", 0 ],
-			"obj-72" : [ "live.text[14]", "live.text[8]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-8" : [ "OSCIP1", "IP1", 0 ],
-			"obj-157::obj-3" : [ "live.menu[2]", "live.menu", 0 ],
-			"obj-167::obj-222::obj-2" : [ "live.gain~", " ", 0 ],
-			"obj-32::obj-3" : [ "live.tab[3]", "live.tab", 0 ],
-			"obj-445" : [ "live.text[41]", "live.text[8]", 0 ],
-			"obj-167::obj-222::obj-12::obj-4" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-20" : [ "live.button[11]", "live.button", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-14" : [ "live.text[29]", "live.text", 0 ],
-			"obj-157::obj-222::obj-43::obj-8" : [ "live.dial[2]", "freq", 0 ],
-			"obj-167::obj-222::obj-182" : [ "live.text[48]", "live.text[1]", 0 ],
-			"obj-167::obj-222::obj-23" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-157::obj-222::obj-26::obj-59" : [ "live.numbox[13]", "live.numbox[1]", 0 ],
-			"obj-9::obj-3::obj-2::obj-31" : [ "live.text[34]", "live.text[8]", 0 ],
-			"obj-157::obj-222::obj-2" : [ "live.gain~[1]", " ", 0 ],
-			"obj-162" : [ "live.text[17]", "live.text[8]", 0 ],
-			"obj-167::obj-222::obj-43::obj-8" : [ "live.dial", "freq", 0 ],
-			"obj-167::obj-222::obj-1" : [ "live.menu", "live.menu", 0 ],
-			"obj-32::obj-15" : [ "live.numbox[11]", "live.numbox", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-2" : [ "live.text[21]", "live.text", 0 ],
-			"obj-32::obj-10" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-606" : [ "live.text[2]", "live.text", 0 ],
-			"obj-167::obj-222::obj-46::obj-6" : [ "live.text[36]", "live.text[1]", 0 ],
-			"obj-9::obj-4::obj-51::obj-48" : [ "live.text", "live.text", 0 ],
 			"obj-9::obj-5::obj-19" : [ "live.text[43]", "live.text[28]", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-53" : [ "OSCOutPort[1]", "OutPort", 0 ],
+			"obj-167::obj-222::obj-23" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-9::obj-4::obj-51::obj-16" : [ "live.tab[4]", "live.tab", 0 ],
+			"obj-72" : [ "live.text[14]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-46::obj-6" : [ "live.text[36]", "live.text[1]", 0 ],
 			"obj-157::obj-222::obj-5::obj-12" : [ "live.button[3]", "live.button", 0 ],
-			"obj-157::obj-222::obj-1" : [ "live.menu[3]", "live.menu", 0 ]
+			"obj-167::obj-222::obj-43::obj-8" : [ "live.dial", "freq", 0 ],
+			"obj-32::obj-3" : [ "live.tab[3]", "live.tab", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-8" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-157::obj-222::obj-2" : [ "live.gain~[1]", " ", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-20" : [ "live.button[10]", "live.button", 0 ],
+			"obj-167::obj-222::obj-1" : [ "live.menu", "live.menu", 0 ],
+			"obj-9::obj-3::obj-2::obj-31" : [ "live.text[34]", "live.text[8]", 0 ],
+			"obj-32::obj-10" : [ "live.numbox[2]", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "spat5.input~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.deferloadmess.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "spat5.thru~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "controle_pattrstorage.maxpat",
-				"bootpath" : "/Volumes/Data2/Max/librairies/mes_libs/controle_pattrstorage",
-				"patcherrelativepath" : "../../Max/librairies/mes_libs/controle_pattrstorage",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -27913,22 +30181,29 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "spat5.thru~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "spat5.around.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.deferloadbang.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AudioSetup.maxpat",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM/patches",
+				"bootpath" : "~/Desktop/Panoramix-AVM/patches",
 				"patcherrelativepath" : "./patches",
 				"type" : "JSON",
 				"implicit" : 1
@@ -27936,27 +30211,27 @@
 , 			{
 				"name" : "spat5.monitor.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.osc.sendreceive-custom.maxpat",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM/patches",
+				"bootpath" : "~/Desktop/Panoramix-AVM/patches",
 				"patcherrelativepath" : "./patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.osc.receive-custom.maxpat",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM/patches",
+				"bootpath" : "~/Desktop/Panoramix-AVM/patches",
 				"patcherrelativepath" : "./patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.osc.send-custom.maxpat",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM/patches",
+				"bootpath" : "~/Desktop/Panoramix-AVM/patches",
 				"patcherrelativepath" : "./patches",
 				"type" : "JSON",
 				"implicit" : 1
@@ -27964,15 +30239,29 @@
 , 			{
 				"name" : "spat5.panoramix2tosca.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../../../Users/baskind/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Panoramix-AVM.json",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM",
+				"bootpath" : "~/Desktop/Panoramix-AVM",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.multi.connect.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/patchers",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.multi-connect.js",
+				"bootpath" : "~/Documents/Max 7/Packages/spat5/javascript",
+				"patcherrelativepath" : "../../Documents/Max 7/Packages/spat5/javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -28036,10 +30325,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "spat5.osc.flip.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "spat5.osc.trim.mxo",
 				"type" : "iLaX"
 			}
@@ -28083,9 +30368,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"fontname" : [ "Arial Bold" ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"fontsize" : [ 11.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -28094,9 +30379,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"fontname" : [ "Arial Bold" ],
 					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
-					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ]
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -28105,6 +30390,7 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"fontface" : [ 1 ],
 					"fontsize" : [ 11.0 ],
 					"bgfillcolor" : 					{
@@ -28115,8 +30401,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"fontname" : [ "Arial" ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -28142,6 +30427,7 @@
 , 			{
 				"name" : "jbb",
 				"default" : 				{
+					"fontname" : [ "Arial" ],
 					"fontsize" : [ 9.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -28151,8 +30437,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"fontname" : [ "Arial" ]
+
 				}
 ,
 				"parentstyle" : "",
