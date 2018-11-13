@@ -39,6 +39,22 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 40.0, 122.0, 21.0 ],
+					"presentation_rect" : [ 210.0, 20.0, 122.0, 21.0 ],
+					"style" : "",
+					"text" : "spat5.deferloadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -67,7 +83,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -315,7 +331,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -825,6 +841,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 4 ],
 					"source" : [ "obj-30", 0 ]
 				}
@@ -915,6 +938,31 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-20" : [ "live.button", "live.button", 0 ],
+			"obj-11" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-53" : [ "OSCOutPort", "OutPort", 0 ],
+			"obj-14" : [ "live.text[1]", "live.text", 0 ],
+			"obj-8" : [ "OSCIP1", "IP1", 0 ],
+			"obj-17" : [ "OSCIP2", "IP2", 0 ],
+			"obj-21" : [ "OSCIP4", "IP4", 0 ],
+			"obj-18" : [ "OSCIP3", "IP3", 0 ],
+			"obj-2" : [ "live.text", "live.text", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "spat5.deferloadmess.maxpat",
+				"bootpath" : "/Volumes/Data2/Max/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../../Max/Packages/spat5/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.osc.speedlim.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"default_bgcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 	}
 
