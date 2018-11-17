@@ -2575,7 +2575,7 @@
 						}
  ],
 					"early_gain" : [ 0.0 ],
-					"monitoring_oper" : [ 						{
+					"Binaural Monitoring::monitoring_oper" : [ 						{
 							"/source/number" : 1,
 							"/source/1/visible" : 1,
 							"/source/1/editable" : 0,
@@ -2722,7 +2722,7 @@
 							"/window/floating" : 0
 						}
  ],
-					"itdscaling" : [ 100.0 ]
+					"Binaural Monitoring::itdscaling" : [ 100.0 ]
 				}
 
 			}

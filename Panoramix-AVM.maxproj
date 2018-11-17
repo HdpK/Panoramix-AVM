@@ -2,7 +2,7 @@
 	"name" : "Panoramix-AVM",
 	"version" : 1,
 	"creationdate" : 3609486721,
-	"modificationdate" : 3610040228,
+	"modificationdate" : 3625330294,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -23,6 +23,10 @@
 
 		}
 ,
+		"data" : 		{
+
+		}
+,
 		"externals" : 		{
 
 		}
@@ -34,6 +38,13 @@
 	}
 ,
 	"searchpath" : 	{
+		"0" : 		{
+			"bootpath" : "/Volumes/Data2/Developpement/hedrot-headtracker/hedrot",
+			"projectrelativepath" : "../hedrot-headtracker/hedrot",
+			"label" : "",
+			"recursive" : 1,
+			"enabled" : 1
+		}
 
 	}
 ,
