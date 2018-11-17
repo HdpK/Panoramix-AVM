@@ -802,9 +802,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -813,9 +813,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -824,7 +824,9 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -833,9 +835,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ],
-													"fontface" : [ 1 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -862,6 +862,7 @@
 												"name" : "jbb",
 												"default" : 												{
 													"fontsize" : [ 9.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -870,8 +871,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -1115,9 +1115,9 @@
 											"/source/1/mute" : 0,
 											"/source/1/solo" : 0,
 											"/source/1/direct/mute" : 0,
-											"/source/1/early/mute" : 1,
-											"/source/1/cluster/mute" : 1,
-											"/source/1/reverb/mute" : 1,
+											"/source/1/early/mute" : 0,
+											"/source/1/cluster/mute" : 0,
+											"/source/1/reverb/mute" : 0,
 											"/source/1/early/width" : 30.0,
 											"/source/1/early/shape" : 50.0,
 											"/source/1/panrev" : 0.0,
@@ -1140,7 +1140,7 @@
 											"/room/1/cluster/distr" : 0.7,
 											"/room/1/reverb/min" : 17.0,
 											"/room/1/reverb/density" : 0.25,
-											"/room/1/mute" : 0,
+											"/room/1/mute" : 1,
 											"/internals" : 8,
 											"/viewer/visible" : 0,
 											"/viewer/only" : 0,
@@ -2347,9 +2347,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 580.0, 291.5, 179.0, 22.0 ],
+									"patching_rect" : [ 580.0, 291.5, 226.0, 22.0 ],
 									"style" : "",
-									"text" : "/listener/orientation $2 $3 $4 $1"
+									"text" : "/source/*/listener/orientation $2 $3 $4 $1"
 								}
 
 							}
@@ -2948,9 +2948,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2959,9 +2959,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2970,7 +2970,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -2979,9 +2981,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -3008,6 +3008,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -3016,8 +3017,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -3969,9 +3969,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3980,9 +3980,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -3991,7 +3991,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -4000,9 +4002,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -4029,6 +4029,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -4037,8 +4038,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -6193,9 +6193,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -6204,9 +6204,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -6215,7 +6215,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -6224,9 +6226,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -6253,6 +6253,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -6261,8 +6262,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -10162,7 +10162,7 @@
 							"/master/equalizer/filter/8/active" : 0,
 							"/master/equalizer/filter/8/freq" : 16000.0,
 							"/master/equalizer/filter/8/order" : 2,
-							"/master/gain" : -17.299999,
+							"/master/gain" : -12.2,
 							"/master/gain/ramptime" : 20.0,
 							"/master/mute" : 0,
 							"/master/annotation" : "",
@@ -10178,7 +10178,7 @@
 							"/monitoring/color" : [ 1.0, 1.0, 1.0, 1.0 ],
 							"/monitoring/numinputs" : 2,
 							"/monitoring/numoutputs" : 2,
-							"/monitoring/visible" : 0,
+							"/monitoring/visible" : 1,
 							"/monitoring/trim" : 0.0,
 							"/monitoring/dynamics/attack" : 10.01,
 							"/monitoring/dynamics/release" : 30.0,
@@ -10233,7 +10233,7 @@
 							"/monitoring/equalizer/filter/8/order" : 2,
 							"/monitoring/gain" : 0.0,
 							"/monitoring/gain/ramptime" : 20.0,
-							"/monitoring/mute" : 1,
+							"/monitoring/mute" : 0,
 							"/monitoring/annotation" : "",
 							"/monitoring/levels/input/visible" : 1,
 							"/monitoring/levels/input/post" : 0,
@@ -10321,7 +10321,7 @@
 							"/bus/1/speaker/number" : 11,
 							"/bus/1/speakers/correction/delay" : "off",
 							"/bus/1/speakers/correction/gain" : "off",
-							"/bus/1/speakers/aed" : [ -30.0, 0.0, 1.0, 30.0, 0.0, 1.0, 0.0, 0.0, 1.0, -110.0, 0.0, 1.0, 110.0, 0.0, 1.0, -150.0, 0.0, 1.0, 150.0, 0.0, 1.0, -30.0, 30.000008, 1.0, 30.0, 30.000008, 1.0, -110.0, 30.000011, 1.0, 110.0, 30.000011, 1.0 ],
+							"/bus/1/speakers/aed" : [ -30.0, 0.0, 1.0, 30.0, 0.0, 1.0, 0.0, 0.0, 1.0, -110.0, 0.0, 1.0, 110.0, 0.0, 1.0, -150.0, 0.0, 1.0, 150.0, 0.0, 1.0, -30.0, 30.0, 1.0, 30.0, 30.0, 1.0, -110.0, 30.0, 1.0, 110.0, 30.0, 1.0 ],
 							"/bus/1/speaker/1/delay" : 0.0,
 							"/bus/1/speaker/2/delay" : 0.0,
 							"/bus/1/speaker/3/delay" : 0.0,
@@ -10422,7 +10422,7 @@
 							"/reverb/1/equalizer/filter/8/active" : 0,
 							"/reverb/1/equalizer/filter/8/freq" : 16000.0,
 							"/reverb/1/equalizer/filter/8/order" : 2,
-							"/reverb/1/gain" : -10.0,
+							"/reverb/1/gain" : 0.0,
 							"/reverb/1/gain/ramptime" : 20.0,
 							"/reverb/1/mute" : 0,
 							"/reverb/1/annotation" : "",
@@ -10445,7 +10445,7 @@
 							"/reverb/1/tr0" : 1.995,
 							"/reverb/1/trl" : 1.0,
 							"/reverb/1/trm" : 1.0,
-							"/reverb/1/trh" : 0.8,
+							"/reverb/1/trh" : 0.5,
 							"/reverb/1/fl" : 250.0,
 							"/reverb/1/fh" : 8000.0,
 							"/reverb/1/air" : 1,
@@ -10538,7 +10538,7 @@
 							"/d2m/indices" : [  ],
 							"/d2b/number" : 0,
 							"/d2b/indices" : [  ],
-							"/track/1/name" : "MainL",
+							"/track/1/name" : "Mono 1",
 							"/track/1/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/1/numinputs" : 1,
 							"/track/1/visible" : 1,
@@ -10560,7 +10560,7 @@
 							"/track/1/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/1/dynamics/curve/thickness" : 1.0,
 							"/track/1/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/1/dynamics/title" : "MainL",
+							"/track/1/dynamics/title" : "Mono 1",
 							"/track/1/equalizer/samplerate" : 44100.0,
 							"/track/1/equalizer/bypass" : 1,
 							"/track/1/equalizer/gain" : 0.0,
@@ -10630,7 +10630,7 @@
 							"/track/1/doppler" : 0,
 							"/track/1/air" : 0,
 							"/track/1/phaseinvert" : 0,
-							"/track/1/azim" : -112.269997,
+							"/track/1/azim" : 0.0,
 							"/track/1/elev" : 0.0,
 							"/track/1/dist" : 1.0,
 							"/track/1/delay/linkedtodistance" : 0,
@@ -10651,23 +10651,23 @@
 							"/track/1/early/gain/high" : 0.0,
 							"/track/1/early/freq/low" : 250.0,
 							"/track/1/early/freq/high" : 4000.0,
-							"/track/1/early/filter/bypass" : 0,
+							"/track/1/early/filter/bypass" : 1,
 							"/track/1/reverb/send" : -7.5,
 							"/track/1/reverb/send/ramptime" : 20.0,
 							"/track/1/early/width" : 30.0,
 							"/track/1/direct/mute" : 0,
 							"/track/1/early/mute" : 0,
 							"/track/1/reverb/mute" : 0,
-							"/track/1/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/1/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/1/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/1/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/1/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/1/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/1/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/1/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/1/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/1/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/1/lock" : 0,
-							"/track/2/name" : "MainR",
+							"/track/2/name" : "Mono 2",
 							"/track/2/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/2/numinputs" : 1,
 							"/track/2/visible" : 1,
@@ -10689,7 +10689,7 @@
 							"/track/2/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/2/dynamics/curve/thickness" : 1.0,
 							"/track/2/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/2/dynamics/title" : "MainR",
+							"/track/2/dynamics/title" : "Mono 2",
 							"/track/2/equalizer/samplerate" : 44100.0,
 							"/track/2/equalizer/bypass" : 1,
 							"/track/2/equalizer/gain" : 0.0,
@@ -10759,7 +10759,7 @@
 							"/track/2/doppler" : 0,
 							"/track/2/air" : 0,
 							"/track/2/phaseinvert" : 0,
-							"/track/2/azim" : 112.529999,
+							"/track/2/azim" : 30.0,
 							"/track/2/elev" : 0.0,
 							"/track/2/dist" : 1.0,
 							"/track/2/delay/linkedtodistance" : 0,
@@ -10780,23 +10780,23 @@
 							"/track/2/early/gain/high" : 0.0,
 							"/track/2/early/freq/low" : 250.0,
 							"/track/2/early/freq/high" : 4000.0,
-							"/track/2/early/filter/bypass" : 0,
+							"/track/2/early/filter/bypass" : 1,
 							"/track/2/reverb/send" : -7.5,
 							"/track/2/reverb/send/ramptime" : 20.0,
 							"/track/2/early/width" : 30.0,
 							"/track/2/direct/mute" : 0,
 							"/track/2/early/mute" : 0,
 							"/track/2/reverb/mute" : 0,
-							"/track/2/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/2/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/2/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/2/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/2/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/2/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/2/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/2/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/2/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/2/lock" : 0,
-							"/track/3/name" : "Cl",
+							"/track/3/name" : "Mono 3",
 							"/track/3/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/3/numinputs" : 1,
 							"/track/3/visible" : 1,
@@ -10818,7 +10818,7 @@
 							"/track/3/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/3/dynamics/curve/thickness" : 1.0,
 							"/track/3/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/3/dynamics/title" : "Cl",
+							"/track/3/dynamics/title" : "Mono 3",
 							"/track/3/equalizer/samplerate" : 44100.0,
 							"/track/3/equalizer/bypass" : 1,
 							"/track/3/equalizer/gain" : 0.0,
@@ -10888,7 +10888,7 @@
 							"/track/3/doppler" : 0,
 							"/track/3/air" : 0,
 							"/track/3/phaseinvert" : 0,
-							"/track/3/azim" : -180.0,
+							"/track/3/azim" : 60.0,
 							"/track/3/elev" : 0.0,
 							"/track/3/dist" : 1.0,
 							"/track/3/delay/linkedtodistance" : 0,
@@ -10909,23 +10909,23 @@
 							"/track/3/early/gain/high" : 0.0,
 							"/track/3/early/freq/low" : 250.0,
 							"/track/3/early/freq/high" : 4000.0,
-							"/track/3/early/filter/bypass" : 0,
+							"/track/3/early/filter/bypass" : 1,
 							"/track/3/reverb/send" : -7.5,
 							"/track/3/reverb/send/ramptime" : 20.0,
 							"/track/3/early/width" : 30.0,
 							"/track/3/direct/mute" : 0,
 							"/track/3/early/mute" : 0,
 							"/track/3/reverb/mute" : 0,
-							"/track/3/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/3/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/3/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/3/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/3/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/3/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/3/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/3/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/3/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/3/lock" : 0,
-							"/track/4/name" : "BasSx",
+							"/track/4/name" : "Mono 4",
 							"/track/4/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/4/numinputs" : 1,
 							"/track/4/visible" : 1,
@@ -10947,7 +10947,7 @@
 							"/track/4/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/4/dynamics/curve/thickness" : 1.0,
 							"/track/4/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/4/dynamics/title" : "BasSx",
+							"/track/4/dynamics/title" : "Mono 4",
 							"/track/4/equalizer/samplerate" : 44100.0,
 							"/track/4/equalizer/bypass" : 1,
 							"/track/4/equalizer/gain" : 0.0,
@@ -11017,44 +11017,44 @@
 							"/track/4/doppler" : 0,
 							"/track/4/air" : 0,
 							"/track/4/phaseinvert" : 0,
-							"/track/4/azim" : -152.919998,
+							"/track/4/azim" : 90.0,
 							"/track/4/elev" : 0.0,
-							"/track/4/dist" : 1.08,
+							"/track/4/dist" : 1.0,
 							"/track/4/delay/linkedtodistance" : 0,
 							"/track/4/direct/linkedtodistance" : 1,
 							"/track/4/early/linkedtodistance" : 1,
 							"/track/4/reverb/linkedtodistance" : 1,
 							"/track/4/delay" : 0.0,
-							"/track/4/direct/gain" : -1.4,
+							"/track/4/direct/gain" : -0.7,
 							"/track/4/direct/gain/low" : 0.0,
 							"/track/4/direct/gain/med" : 0.0,
 							"/track/4/direct/gain/high" : 0.0,
 							"/track/4/direct/freq/low" : 250.0,
 							"/track/4/direct/freq/high" : 4000.0,
 							"/track/4/direct/filter/bypass" : 1,
-							"/track/4/early/gain" : -9.0,
+							"/track/4/early/gain" : -8.3,
 							"/track/4/early/gain/low" : 0.0,
 							"/track/4/early/gain/med" : 0.0,
 							"/track/4/early/gain/high" : 0.0,
 							"/track/4/early/freq/low" : 250.0,
 							"/track/4/early/freq/high" : 4000.0,
-							"/track/4/early/filter/bypass" : 0,
-							"/track/4/reverb/send" : -7.8,
+							"/track/4/early/filter/bypass" : 1,
+							"/track/4/reverb/send" : -7.5,
 							"/track/4/reverb/send/ramptime" : 20.0,
 							"/track/4/early/width" : 30.0,
 							"/track/4/direct/mute" : 0,
 							"/track/4/early/mute" : 0,
 							"/track/4/reverb/mute" : 0,
-							"/track/4/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/4/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/4/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/4/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/4/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/4/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/4/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/4/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/4/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/4/lock" : 0,
-							"/track/5/name" : "BasCl",
+							"/track/5/name" : "Mono 5",
 							"/track/5/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/5/numinputs" : 1,
 							"/track/5/visible" : 1,
@@ -11076,7 +11076,7 @@
 							"/track/5/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/5/dynamics/curve/thickness" : 1.0,
 							"/track/5/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/5/dynamics/title" : "BasCl",
+							"/track/5/dynamics/title" : "Mono 5",
 							"/track/5/equalizer/samplerate" : 44100.0,
 							"/track/5/equalizer/bypass" : 1,
 							"/track/5/equalizer/gain" : 0.0,
@@ -11146,7 +11146,7 @@
 							"/track/5/doppler" : 0,
 							"/track/5/air" : 0,
 							"/track/5/phaseinvert" : 0,
-							"/track/5/azim" : -156.570007,
+							"/track/5/azim" : 120.0,
 							"/track/5/elev" : 0.0,
 							"/track/5/dist" : 1.0,
 							"/track/5/delay/linkedtodistance" : 0,
@@ -11167,23 +11167,23 @@
 							"/track/5/early/gain/high" : 0.0,
 							"/track/5/early/freq/low" : 250.0,
 							"/track/5/early/freq/high" : 4000.0,
-							"/track/5/early/filter/bypass" : 0,
+							"/track/5/early/filter/bypass" : 1,
 							"/track/5/reverb/send" : -7.5,
 							"/track/5/reverb/send/ramptime" : 20.0,
 							"/track/5/early/width" : 30.0,
 							"/track/5/direct/mute" : 0,
 							"/track/5/early/mute" : 0,
 							"/track/5/reverb/mute" : 0,
-							"/track/5/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/5/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/5/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/5/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/5/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/5/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/5/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/5/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/5/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/5/lock" : 0,
-							"/track/6/name" : "Tb",
+							"/track/6/name" : "Mono 6",
 							"/track/6/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/6/numinputs" : 1,
 							"/track/6/visible" : 1,
@@ -11205,7 +11205,7 @@
 							"/track/6/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/6/dynamics/curve/thickness" : 1.0,
 							"/track/6/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/6/dynamics/title" : "Tb",
+							"/track/6/dynamics/title" : "Mono 6",
 							"/track/6/equalizer/samplerate" : 44100.0,
 							"/track/6/equalizer/bypass" : 1,
 							"/track/6/equalizer/gain" : 0.0,
@@ -11275,7 +11275,7 @@
 							"/track/6/doppler" : 0,
 							"/track/6/air" : 0,
 							"/track/6/phaseinvert" : 0,
-							"/track/6/azim" : 132.0,
+							"/track/6/azim" : 150.0,
 							"/track/6/elev" : 0.0,
 							"/track/6/dist" : 1.0,
 							"/track/6/delay/linkedtodistance" : 0,
@@ -11296,23 +11296,23 @@
 							"/track/6/early/gain/high" : 0.0,
 							"/track/6/early/freq/low" : 250.0,
 							"/track/6/early/freq/high" : 4000.0,
-							"/track/6/early/filter/bypass" : 0,
+							"/track/6/early/filter/bypass" : 1,
 							"/track/6/reverb/send" : -7.5,
 							"/track/6/reverb/send/ramptime" : 20.0,
 							"/track/6/early/width" : 30.0,
 							"/track/6/direct/mute" : 0,
 							"/track/6/early/mute" : 0,
 							"/track/6/reverb/mute" : 0,
-							"/track/6/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/6/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/6/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/6/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/6/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/6/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/6/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/6/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/6/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/6/lock" : 0,
-							"/track/7/name" : "Tp",
+							"/track/7/name" : "Mono 7",
 							"/track/7/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/7/numinputs" : 1,
 							"/track/7/visible" : 1,
@@ -11334,7 +11334,7 @@
 							"/track/7/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/7/dynamics/curve/thickness" : 1.0,
 							"/track/7/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/7/dynamics/title" : "Tp",
+							"/track/7/dynamics/title" : "Mono 7",
 							"/track/7/equalizer/samplerate" : 44100.0,
 							"/track/7/equalizer/bypass" : 1,
 							"/track/7/equalizer/gain" : 0.0,
@@ -11404,7 +11404,7 @@
 							"/track/7/doppler" : 0,
 							"/track/7/air" : 0,
 							"/track/7/phaseinvert" : 0,
-							"/track/7/azim" : 134.210007,
+							"/track/7/azim" : -180.0,
 							"/track/7/elev" : 0.0,
 							"/track/7/dist" : 1.0,
 							"/track/7/delay/linkedtodistance" : 0,
@@ -11425,23 +11425,23 @@
 							"/track/7/early/gain/high" : 0.0,
 							"/track/7/early/freq/low" : 250.0,
 							"/track/7/early/freq/high" : 4000.0,
-							"/track/7/early/filter/bypass" : 0,
+							"/track/7/early/filter/bypass" : 1,
 							"/track/7/reverb/send" : -7.5,
 							"/track/7/reverb/send/ramptime" : 20.0,
 							"/track/7/early/width" : 30.0,
 							"/track/7/direct/mute" : 0,
 							"/track/7/early/mute" : 0,
 							"/track/7/reverb/mute" : 0,
-							"/track/7/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/7/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/7/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/7/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/7/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/7/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/7/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/7/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/7/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/7/lock" : 0,
-							"/track/8/name" : "HammL",
+							"/track/8/name" : "Mono 8",
 							"/track/8/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/8/numinputs" : 1,
 							"/track/8/visible" : 1,
@@ -11463,7 +11463,7 @@
 							"/track/8/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/8/dynamics/curve/thickness" : 1.0,
 							"/track/8/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/8/dynamics/title" : "HammL",
+							"/track/8/dynamics/title" : "Mono 8",
 							"/track/8/equalizer/samplerate" : 44100.0,
 							"/track/8/equalizer/bypass" : 1,
 							"/track/8/equalizer/gain" : 0.0,
@@ -11533,7 +11533,7 @@
 							"/track/8/doppler" : 0,
 							"/track/8/air" : 0,
 							"/track/8/phaseinvert" : 0,
-							"/track/8/azim" : -120.0,
+							"/track/8/azim" : -150.0,
 							"/track/8/elev" : 0.0,
 							"/track/8/dist" : 1.0,
 							"/track/8/delay/linkedtodistance" : 0,
@@ -11554,23 +11554,23 @@
 							"/track/8/early/gain/high" : 0.0,
 							"/track/8/early/freq/low" : 250.0,
 							"/track/8/early/freq/high" : 4000.0,
-							"/track/8/early/filter/bypass" : 0,
+							"/track/8/early/filter/bypass" : 1,
 							"/track/8/reverb/send" : -7.5,
 							"/track/8/reverb/send/ramptime" : 20.0,
 							"/track/8/early/width" : 30.0,
 							"/track/8/direct/mute" : 0,
 							"/track/8/early/mute" : 0,
 							"/track/8/reverb/mute" : 0,
-							"/track/8/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/8/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/8/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/8/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/8/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/8/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/8/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/8/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/8/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/8/lock" : 0,
-							"/track/9/name" : "HammR",
+							"/track/9/name" : "Mono 9",
 							"/track/9/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/9/numinputs" : 1,
 							"/track/9/visible" : 1,
@@ -11592,7 +11592,7 @@
 							"/track/9/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/9/dynamics/curve/thickness" : 1.0,
 							"/track/9/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/9/dynamics/title" : "HammR",
+							"/track/9/dynamics/title" : "Mono 9",
 							"/track/9/equalizer/samplerate" : 44100.0,
 							"/track/9/equalizer/bypass" : 1,
 							"/track/9/equalizer/gain" : 0.0,
@@ -11662,7 +11662,7 @@
 							"/track/9/doppler" : 0,
 							"/track/9/air" : 0,
 							"/track/9/phaseinvert" : 0,
-							"/track/9/azim" : -60.0,
+							"/track/9/azim" : -120.0,
 							"/track/9/elev" : 0.0,
 							"/track/9/dist" : 1.0,
 							"/track/9/delay/linkedtodistance" : 0,
@@ -11683,23 +11683,23 @@
 							"/track/9/early/gain/high" : 0.0,
 							"/track/9/early/freq/low" : 250.0,
 							"/track/9/early/freq/high" : 4000.0,
-							"/track/9/early/filter/bypass" : 0,
+							"/track/9/early/filter/bypass" : 1,
 							"/track/9/reverb/send" : -7.5,
 							"/track/9/reverb/send/ramptime" : 20.0,
 							"/track/9/early/width" : 30.0,
 							"/track/9/direct/mute" : 0,
 							"/track/9/early/mute" : 0,
 							"/track/9/reverb/mute" : 0,
-							"/track/9/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/9/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/9/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/9/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/9/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/9/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/9/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/9/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/9/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/9/lock" : 0,
-							"/track/10/name" : "ClaviL",
+							"/track/10/name" : "Mono 10",
 							"/track/10/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/10/numinputs" : 1,
 							"/track/10/visible" : 1,
@@ -11721,7 +11721,7 @@
 							"/track/10/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/10/dynamics/curve/thickness" : 1.0,
 							"/track/10/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/10/dynamics/title" : "ClaviL",
+							"/track/10/dynamics/title" : "Mono 10",
 							"/track/10/equalizer/samplerate" : 44100.0,
 							"/track/10/equalizer/bypass" : 1,
 							"/track/10/equalizer/gain" : 0.0,
@@ -11791,7 +11791,7 @@
 							"/track/10/doppler" : 0,
 							"/track/10/air" : 0,
 							"/track/10/phaseinvert" : 0,
-							"/track/10/azim" : 60.0,
+							"/track/10/azim" : -90.0,
 							"/track/10/elev" : 0.0,
 							"/track/10/dist" : 1.0,
 							"/track/10/delay/linkedtodistance" : 0,
@@ -11812,23 +11812,23 @@
 							"/track/10/early/gain/high" : 0.0,
 							"/track/10/early/freq/low" : 250.0,
 							"/track/10/early/freq/high" : 4000.0,
-							"/track/10/early/filter/bypass" : 0,
+							"/track/10/early/filter/bypass" : 1,
 							"/track/10/reverb/send" : -7.5,
 							"/track/10/reverb/send/ramptime" : 20.0,
 							"/track/10/early/width" : 30.0,
 							"/track/10/direct/mute" : 0,
 							"/track/10/early/mute" : 0,
 							"/track/10/reverb/mute" : 0,
-							"/track/10/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/10/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/10/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/10/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/10/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/10/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/10/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/10/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/10/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/10/lock" : 0,
-							"/track/11/name" : "ClaviR",
+							"/track/11/name" : "Mono 11",
 							"/track/11/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/11/numinputs" : 1,
 							"/track/11/visible" : 1,
@@ -11850,7 +11850,7 @@
 							"/track/11/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/11/dynamics/curve/thickness" : 1.0,
 							"/track/11/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/11/dynamics/title" : "ClaviR",
+							"/track/11/dynamics/title" : "Mono 11",
 							"/track/11/equalizer/samplerate" : 44100.0,
 							"/track/11/equalizer/bypass" : 1,
 							"/track/11/equalizer/gain" : 0.0,
@@ -11920,7 +11920,7 @@
 							"/track/11/doppler" : 0,
 							"/track/11/air" : 0,
 							"/track/11/phaseinvert" : 0,
-							"/track/11/azim" : 120.309998,
+							"/track/11/azim" : -60.0,
 							"/track/11/elev" : 0.0,
 							"/track/11/dist" : 1.0,
 							"/track/11/delay/linkedtodistance" : 0,
@@ -11941,23 +11941,23 @@
 							"/track/11/early/gain/high" : 0.0,
 							"/track/11/early/freq/low" : 250.0,
 							"/track/11/early/freq/high" : 4000.0,
-							"/track/11/early/filter/bypass" : 0,
+							"/track/11/early/filter/bypass" : 1,
 							"/track/11/reverb/send" : -7.5,
 							"/track/11/reverb/send/ramptime" : 20.0,
 							"/track/11/early/width" : 30.0,
 							"/track/11/direct/mute" : 0,
 							"/track/11/early/mute" : 0,
 							"/track/11/reverb/mute" : 0,
-							"/track/11/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/11/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/11/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/11/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/11/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/11/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/11/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/11/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/11/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/11/lock" : 0,
-							"/track/12/name" : "Kick",
+							"/track/12/name" : "Mono 12",
 							"/track/12/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/12/numinputs" : 1,
 							"/track/12/visible" : 1,
@@ -11979,7 +11979,7 @@
 							"/track/12/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/12/dynamics/curve/thickness" : 1.0,
 							"/track/12/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/12/dynamics/title" : "Kick",
+							"/track/12/dynamics/title" : "Mono 12",
 							"/track/12/equalizer/samplerate" : 44100.0,
 							"/track/12/equalizer/bypass" : 1,
 							"/track/12/equalizer/gain" : 0.0,
@@ -12049,8 +12049,8 @@
 							"/track/12/doppler" : 0,
 							"/track/12/air" : 0,
 							"/track/12/phaseinvert" : 0,
-							"/track/12/azim" : 0.0,
-							"/track/12/elev" : 10.0,
+							"/track/12/azim" : -30.0,
+							"/track/12/elev" : 0.0,
 							"/track/12/dist" : 1.0,
 							"/track/12/delay/linkedtodistance" : 0,
 							"/track/12/direct/linkedtodistance" : 1,
@@ -12070,23 +12070,23 @@
 							"/track/12/early/gain/high" : 0.0,
 							"/track/12/early/freq/low" : 250.0,
 							"/track/12/early/freq/high" : 4000.0,
-							"/track/12/early/filter/bypass" : 0,
+							"/track/12/early/filter/bypass" : 1,
 							"/track/12/reverb/send" : -7.5,
 							"/track/12/reverb/send/ramptime" : 20.0,
 							"/track/12/early/width" : 30.0,
 							"/track/12/direct/mute" : 0,
 							"/track/12/early/mute" : 0,
 							"/track/12/reverb/mute" : 0,
-							"/track/12/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/12/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/12/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/12/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/12/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/12/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/12/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/12/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/12/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/12/lock" : 0,
-							"/track/13/name" : "Snare",
+							"/track/13/name" : "Mono 13",
 							"/track/13/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/13/numinputs" : 1,
 							"/track/13/visible" : 1,
@@ -12108,7 +12108,7 @@
 							"/track/13/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/13/dynamics/curve/thickness" : 1.0,
 							"/track/13/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/13/dynamics/title" : "Snare",
+							"/track/13/dynamics/title" : "Mono 13",
 							"/track/13/equalizer/samplerate" : 44100.0,
 							"/track/13/equalizer/bypass" : 1,
 							"/track/13/equalizer/gain" : 0.0,
@@ -12178,44 +12178,44 @@
 							"/track/13/doppler" : 0,
 							"/track/13/air" : 0,
 							"/track/13/phaseinvert" : 0,
-							"/track/13/azim" : 0.0,
-							"/track/13/elev" : 10.0,
-							"/track/13/dist" : 1.38,
+							"/track/13/azim" : 45.0,
+							"/track/13/elev" : 30.0,
+							"/track/13/dist" : 1.0,
 							"/track/13/delay/linkedtodistance" : 0,
 							"/track/13/direct/linkedtodistance" : 1,
 							"/track/13/early/linkedtodistance" : 1,
 							"/track/13/reverb/linkedtodistance" : 1,
 							"/track/13/delay" : 0.0,
-							"/track/13/direct/gain" : -3.5,
+							"/track/13/direct/gain" : -0.7,
 							"/track/13/direct/gain/low" : 0.0,
 							"/track/13/direct/gain/med" : 0.0,
 							"/track/13/direct/gain/high" : 0.0,
 							"/track/13/direct/freq/low" : 250.0,
 							"/track/13/direct/freq/high" : 4000.0,
 							"/track/13/direct/filter/bypass" : 1,
-							"/track/13/early/gain" : -11.1,
+							"/track/13/early/gain" : -8.3,
 							"/track/13/early/gain/low" : 0.0,
 							"/track/13/early/gain/med" : 0.0,
 							"/track/13/early/gain/high" : 0.0,
 							"/track/13/early/freq/low" : 250.0,
 							"/track/13/early/freq/high" : 4000.0,
-							"/track/13/early/filter/bypass" : 0,
-							"/track/13/reverb/send" : -8.9,
+							"/track/13/early/filter/bypass" : 1,
+							"/track/13/reverb/send" : -7.5,
 							"/track/13/reverb/send/ramptime" : 20.0,
 							"/track/13/early/width" : 30.0,
 							"/track/13/direct/mute" : 0,
 							"/track/13/early/mute" : 0,
 							"/track/13/reverb/mute" : 0,
-							"/track/13/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/13/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/13/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/13/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/13/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/13/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/13/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/13/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/13/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/13/lock" : 0,
-							"/track/14/name" : "Amp",
+							"/track/14/name" : "Mono 14",
 							"/track/14/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/14/numinputs" : 1,
 							"/track/14/visible" : 1,
@@ -12237,7 +12237,7 @@
 							"/track/14/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/14/dynamics/curve/thickness" : 1.0,
 							"/track/14/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/14/dynamics/title" : "Amp",
+							"/track/14/dynamics/title" : "Mono 14",
 							"/track/14/equalizer/samplerate" : 44100.0,
 							"/track/14/equalizer/bypass" : 1,
 							"/track/14/equalizer/gain" : 0.0,
@@ -12307,8 +12307,8 @@
 							"/track/14/doppler" : 0,
 							"/track/14/air" : 0,
 							"/track/14/phaseinvert" : 0,
-							"/track/14/azim" : 20.18,
-							"/track/14/elev" : 10.0,
+							"/track/14/azim" : -45.0,
+							"/track/14/elev" : 30.0,
 							"/track/14/dist" : 1.0,
 							"/track/14/delay/linkedtodistance" : 0,
 							"/track/14/direct/linkedtodistance" : 1,
@@ -12328,23 +12328,23 @@
 							"/track/14/early/gain/high" : 0.0,
 							"/track/14/early/freq/low" : 250.0,
 							"/track/14/early/freq/high" : 4000.0,
-							"/track/14/early/filter/bypass" : 0,
+							"/track/14/early/filter/bypass" : 1,
 							"/track/14/reverb/send" : -7.5,
 							"/track/14/reverb/send/ramptime" : 20.0,
 							"/track/14/early/width" : 30.0,
 							"/track/14/direct/mute" : 0,
 							"/track/14/early/mute" : 0,
 							"/track/14/reverb/mute" : 0,
-							"/track/14/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/14/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/14/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/14/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/14/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/14/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/14/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/14/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/14/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/14/lock" : 0,
-							"/track/15/name" : "OHL",
+							"/track/15/name" : "Mono 15",
 							"/track/15/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/15/numinputs" : 1,
 							"/track/15/visible" : 1,
@@ -12366,7 +12366,7 @@
 							"/track/15/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/15/dynamics/curve/thickness" : 1.0,
 							"/track/15/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/15/dynamics/title" : "OHL",
+							"/track/15/dynamics/title" : "Mono 15",
 							"/track/15/equalizer/samplerate" : 44100.0,
 							"/track/15/equalizer/bypass" : 1,
 							"/track/15/equalizer/gain" : 0.0,
@@ -12436,8 +12436,8 @@
 							"/track/15/doppler" : 0,
 							"/track/15/air" : 0,
 							"/track/15/phaseinvert" : 0,
-							"/track/15/azim" : -180.0,
-							"/track/15/elev" : 10.0,
+							"/track/15/azim" : 135.0,
+							"/track/15/elev" : 30.0,
 							"/track/15/dist" : 1.0,
 							"/track/15/delay/linkedtodistance" : 0,
 							"/track/15/direct/linkedtodistance" : 1,
@@ -12457,23 +12457,23 @@
 							"/track/15/early/gain/high" : 0.0,
 							"/track/15/early/freq/low" : 250.0,
 							"/track/15/early/freq/high" : 4000.0,
-							"/track/15/early/filter/bypass" : 0,
+							"/track/15/early/filter/bypass" : 1,
 							"/track/15/reverb/send" : -7.5,
 							"/track/15/reverb/send/ramptime" : 20.0,
 							"/track/15/early/width" : 30.0,
 							"/track/15/direct/mute" : 0,
 							"/track/15/early/mute" : 0,
 							"/track/15/reverb/mute" : 0,
-							"/track/15/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/15/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/15/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/15/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/15/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/15/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/15/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/15/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/15/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/15/lock" : 0,
-							"/track/16/name" : "OHR",
+							"/track/16/name" : "Mono 16",
 							"/track/16/color" : [ 0.117647, 0.564706, 1.0, 1.0 ],
 							"/track/16/numinputs" : 1,
 							"/track/16/visible" : 1,
@@ -12495,7 +12495,7 @@
 							"/track/16/dynamics/curve/color" : [ 0.094118, 0.45098, 0.8, 1.0 ],
 							"/track/16/dynamics/curve/thickness" : 1.0,
 							"/track/16/dynamics/grid/color" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-							"/track/16/dynamics/title" : "OHR",
+							"/track/16/dynamics/title" : "Mono 16",
 							"/track/16/equalizer/samplerate" : 44100.0,
 							"/track/16/equalizer/bypass" : 1,
 							"/track/16/equalizer/gain" : 0.0,
@@ -12565,8 +12565,8 @@
 							"/track/16/doppler" : 0,
 							"/track/16/air" : 0,
 							"/track/16/phaseinvert" : 0,
-							"/track/16/azim" : -180.0,
-							"/track/16/elev" : 10.0,
+							"/track/16/azim" : -135.0,
+							"/track/16/elev" : 30.0,
 							"/track/16/dist" : 1.0,
 							"/track/16/delay/linkedtodistance" : 0,
 							"/track/16/direct/linkedtodistance" : 1,
@@ -12586,20 +12586,20 @@
 							"/track/16/early/gain/high" : 0.0,
 							"/track/16/early/freq/low" : 250.0,
 							"/track/16/early/freq/high" : 4000.0,
-							"/track/16/early/filter/bypass" : 0,
+							"/track/16/early/filter/bypass" : 1,
 							"/track/16/reverb/send" : -7.5,
 							"/track/16/reverb/send/ramptime" : 20.0,
 							"/track/16/early/width" : 30.0,
 							"/track/16/direct/mute" : 0,
 							"/track/16/early/mute" : 0,
 							"/track/16/reverb/mute" : 0,
-							"/track/16/bus/A/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/A/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/16/bus/A/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/16/bus/B/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/B/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/16/bus/B/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/16/bus/C/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/C/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/16/bus/C/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-							"/track/16/bus/D/early/delays" : [ 22.219999, 25.296947, 26.636086, 28.912621, 32.273994, 34.406315, 36.777008, 39.709999 ],
+							"/track/16/bus/D/early/delays" : [ 22.219999, 25.2969, 26.636101, 28.9126, 32.273998, 34.4063, 36.777, 39.709999 ],
 							"/track/16/bus/D/early/gains" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 							"/track/16/lock" : 0,
 							"/group/number" : 3,
@@ -12623,7 +12623,7 @@
 							"/internals" : 8,
 							"/viewer/layout" : "single",
 							"/viewer/background/color" : [ 0.709804, 0.709804, 0.709804, 1.0 ],
-							"/viewer/display/zoom" : 134.130051,
+							"/viewer/display/zoom" : 134.130005,
 							"/viewer/display/offset/x" : 0.0,
 							"/viewer/display/offset/y" : 0.0,
 							"/viewer/display/offset/z" : 0.0,
@@ -12652,7 +12652,7 @@
 							"/viewer/settings/editable" : 1,
 							"/viewer/area/number" : 0,
 							"/viewer/anchor/number" : 0,
-							"/window/title" : "Panoramix",
+							"/window/title" : "Panoramix *",
 							"/window/visible" : 0,
 							"/window/moveable" : 1,
 							"/window/resizable" : 1,
@@ -12855,9 +12855,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -12866,9 +12866,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -12877,7 +12877,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -12886,9 +12888,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -12915,6 +12915,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -12923,8 +12924,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -13003,7 +13003,7 @@
 						"Binaural Monitoring::HEADTRACKER::hedrotReceiver" : 0
 					}
 ,
-					"autorestore" : "ODB-Panoramix-AVM-Presets.json",
+					"autorestore" : "Panoramix-AVM.json",
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -13054,7 +13054,7 @@
 					"activebgoncolor" : [ 0.32531, 0.766881, 0.0, 1.0 ],
 					"activetextcolor" : [ 0.151146, 0.151146, 0.151146, 1.0 ],
 					"activetextoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bordercolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
+					"bordercolor" : [ 0.196078, 0.196078, 0.196078, 1.0 ],
 					"focusbordercolor" : [ 0.0, 0.019608, 0.078431, 0.0 ],
 					"fontsize" : 15.0,
 					"id" : "obj-55",
@@ -13065,7 +13065,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1484.5, 146.0, 118.439392, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.467102, 356.0, 127.282898, 37.471649 ],
+					"presentation_rect" : [ 7.358551, 356.0, 127.282898, 37.471649 ],
 					"rounded" : 8.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -14679,9 +14679,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -14690,9 +14690,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -14701,7 +14701,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -14710,9 +14712,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -14739,6 +14739,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -14747,8 +14748,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -16436,9 +16436,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -16447,9 +16447,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -16458,7 +16458,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -16467,9 +16469,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -16496,6 +16496,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -16504,8 +16505,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -16853,9 +16853,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -16864,9 +16864,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -16875,7 +16875,9 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -16884,9 +16886,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ],
-													"fontface" : [ 1 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -16913,6 +16913,7 @@
 												"name" : "jbb",
 												"default" : 												{
 													"fontsize" : [ 9.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -16921,8 +16922,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -17163,9 +17163,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -17174,9 +17174,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -17185,7 +17185,9 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -17194,9 +17196,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ],
-													"fontface" : [ 1 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -17223,6 +17223,7 @@
 												"name" : "jbb",
 												"default" : 												{
 													"fontsize" : [ 9.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -17231,8 +17232,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -17389,9 +17389,9 @@
 , 											{
 												"name" : "Default M4L",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 11.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -17400,9 +17400,9 @@
 , 											{
 												"name" : "Default M4L Poletti",
 												"default" : 												{
+													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 													"fontsize" : [ 10.0 ],
-													"fontname" : [ "Arial Bold" ],
-													"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -17411,7 +17411,9 @@
 , 											{
 												"name" : "Default M4L-1",
 												"default" : 												{
+													"fontface" : [ 1 ],
 													"fontsize" : [ 11.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -17420,9 +17422,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ],
-													"fontface" : [ 1 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -17449,6 +17449,7 @@
 												"name" : "jbb",
 												"default" : 												{
 													"fontsize" : [ 9.0 ],
+													"fontname" : [ "Arial" ],
 													"bgfillcolor" : 													{
 														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -17457,8 +17458,7 @@
 														"angle" : 270.0,
 														"proportion" : 0.39
 													}
-,
-													"fontname" : [ "Arial" ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -21765,9 +21765,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -21776,9 +21776,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -21787,7 +21787,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -21796,9 +21798,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -21825,6 +21825,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -21833,8 +21834,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -26772,16 +26772,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-29",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1264.0, 358.0, 235.5, 27.0 ],
+									"patching_rect" : [ 1264.0, 358.0, 235.5, 17.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
-									"presentation_rect" : [ 3.5, 52.0, 281.5, 27.0 ],
-									"style" : "",
-									"text" : "Data2:/Developpement/Panoramix-AVM-Tests/ODB/ODB-Panoramix-AVM-Presets.json"
+									"presentation_rect" : [ 3.5, 52.0, 281.5, 17.0 ],
+									"style" : ""
 								}
 
 							}
@@ -28254,7 +28251,7 @@
 									"bgfillcolor_type" : "color",
 									"fontsize" : 14.0,
 									"id" : "obj-28",
-									"items" : [ "<init>", ",", 1, "ODB preset1" ],
+									"items" : [ "<init>", ",", 1, "AVM default 16ch" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -35709,9 +35706,9 @@
 , 							{
 								"name" : "Default M4L",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 11.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -35720,9 +35717,9 @@
 , 							{
 								"name" : "Default M4L Poletti",
 								"default" : 								{
+									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 									"fontsize" : [ 10.0 ],
-									"fontname" : [ "Arial Bold" ],
-									"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -35731,7 +35728,9 @@
 , 							{
 								"name" : "Default M4L-1",
 								"default" : 								{
+									"fontface" : [ 1 ],
 									"fontsize" : [ 11.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -35740,9 +35739,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ],
-									"fontface" : [ 1 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -35769,6 +35766,7 @@
 								"name" : "jbb",
 								"default" : 								{
 									"fontsize" : [ 9.0 ],
+									"fontname" : [ "Arial" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -35777,8 +35775,7 @@
 										"angle" : 270.0,
 										"proportion" : 0.39
 									}
-,
-									"fontname" : [ "Arial" ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -38359,92 +38356,92 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-167::obj-222::obj-23" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-42::obj-3" : [ "live.text[40]", "live.text[9]", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ],
-			"obj-55" : [ "live.text[42]", "live.text", 0 ],
-			"obj-60::obj-2::obj-3" : [ "live.text[63]", "live.text[9]", 0 ],
-			"obj-95" : [ "live.text[55]", "live.text[8]", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-14" : [ "live.text[29]", "live.text", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-11" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-167::obj-222::obj-26::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
-			"obj-9::obj-5::obj-53" : [ "live.dial[1]", "scale", 0 ],
-			"obj-157::obj-222::obj-46::obj-36" : [ "select folder[2]", "select folder", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-53" : [ "OSCOutPort", "OutPort", 0 ],
-			"obj-167::obj-222::obj-1" : [ "live.menu", "live.menu", 0 ],
-			"obj-157::obj-222::obj-26::obj-59" : [ "live.numbox[13]", "live.numbox[1]", 0 ],
-			"obj-37" : [ "live.gain~[3]", "loudspeakers", 0 ],
-			"obj-25" : [ "live.gain~[2]", "headphones", 0 ],
-			"obj-9::obj-4::obj-51::obj-48" : [ "live.text", "live.text", 0 ],
-			"obj-42::obj-72" : [ "live.text[49]", "live.text[8]", 0 ],
-			"obj-60::obj-2::obj-62" : [ "live.text[66]", "live.text[9]", 0 ],
-			"obj-444::obj-59" : [ "live.text[11]", "live.text[8]", 0 ],
-			"obj-9::obj-5::obj-19" : [ "live.text[43]", "live.text[28]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-20" : [ "live.button[11]", "live.button", 0 ],
-			"obj-60::obj-2::obj-58" : [ "live.text[67]", "live.text[9]", 0 ],
-			"obj-167::obj-222::obj-46::obj-36" : [ "select folder[1]", "select folder", 0 ],
-			"obj-29" : [ "early reflections gain", "early reflections gain", 0 ],
-			"obj-157::obj-222::obj-43::obj-8" : [ "live.dial[2]", "freq", 0 ],
-			"obj-157::obj-222::obj-26::obj-56" : [ "live.button[2]", "live.button[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-21" : [ "OSCIP4", "IP4", 0 ],
-			"obj-62" : [ "live.text[23]", "live.text[9]", 0 ],
-			"obj-9::obj-3::obj-2::obj-28" : [ "live.text[35]", "live.text[8]", 0 ],
-			"obj-157::obj-222::obj-23" : [ "live.toggle[3]", "live.toggle", 0 ],
-			"obj-167::obj-222::obj-26::obj-56" : [ "live.button[6]", "live.button[1]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-18" : [ "OSCIP3", "IP3", 0 ],
-			"obj-60::obj-51" : [ "live.text[62]", "live.text[8]", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-17" : [ "OSCIP2", "IP2", 0 ],
-			"obj-157::obj-222::obj-46::obj-6" : [ "live.text[15]", "live.text[1]", 0 ],
-			"obj-42::obj-62" : [ "live.text[50]", "live.text[9]", 0 ],
-			"obj-445" : [ "live.text[41]", "live.text[8]", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-53" : [ "OSCOutPort[1]", "OutPort", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-8" : [ "OSCIP1", "IP1", 0 ],
-			"obj-162" : [ "live.text[17]", "live.text[8]", 0 ],
-			"obj-167::obj-222::obj-26::obj-58" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
-			"obj-60::obj-107" : [ "live.text[60]", "live.text[8]", 0 ],
-			"obj-9::obj-3::obj-2::obj-31" : [ "live.text[34]", "live.text[8]", 0 ],
-			"obj-60::obj-2::obj-57" : [ "live.text[64]", "live.text[9]", 0 ],
-			"obj-167::obj-222::obj-46::obj-8" : [ "live.drop", "live.drop", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-8" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-157::obj-222::obj-5::obj-12" : [ "live.button[3]", "live.button", 0 ],
-			"obj-157::obj-222::obj-2" : [ "live.gain~[1]", " ", 0 ],
 			"obj-9::obj-3::obj-2::obj-8::obj-11" : [ "live.text[4]", "live.text", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-20" : [ "live.button[10]", "live.button", 0 ],
-			"obj-157::obj-222::obj-1" : [ "live.menu[3]", "live.menu", 0 ],
-			"obj-167::obj-222::obj-46::obj-6" : [ "live.text[36]", "live.text[1]", 0 ],
-			"obj-444::obj-64" : [ "live.text[13]", "live.text[8]", 0 ],
+			"obj-444::obj-59" : [ "live.text[11]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-46::obj-36" : [ "select folder[1]", "select folder", 0 ],
+			"obj-157::obj-222::obj-26::obj-56" : [ "live.button[2]", "live.button[1]", 0 ],
 			"obj-9::obj-3::obj-2::obj-8::obj-606" : [ "live.text[2]", "live.text", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-14" : [ "live.text[20]", "live.text", 0 ],
-			"obj-42::obj-58" : [ "live.text[51]", "live.text[9]", 0 ],
-			"obj-60::obj-77" : [ "live.text[61]", "live.text[9]", 0 ],
-			"obj-167::obj-222::obj-43::obj-8" : [ "live.dial", "freq", 0 ],
-			"obj-9::obj-4::obj-15::obj-1::obj-2" : [ "live.text[21]", "live.text", 0 ],
-			"obj-444::obj-72" : [ "live.text[14]", "live.text[8]", 0 ],
-			"obj-167::obj-222::obj-5::obj-12" : [ "live.button", "live.button", 0 ],
-			"obj-9::obj-4::obj-15::obj-5::obj-2" : [ "live.text[30]", "live.text", 0 ],
-			"obj-157::obj-222::obj-46::obj-8" : [ "live.drop[1]", "live.drop", 0 ],
-			"obj-159" : [ "live.text[16]", "live.text[8]", 0 ],
-			"obj-151" : [ "live.text[46]", "live.text[8]", 0 ],
-			"obj-45" : [ "live.text[18]", "live.text[8]", 0 ],
-			"obj-66" : [ "live.text[47]", "live.text[9]", 0 ],
-			"obj-157::obj-222::obj-26::obj-58" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-8" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-42::obj-3" : [ "live.text[40]", "live.text[9]", 0 ],
 			"obj-60::obj-114" : [ "itd scaling[1]", "itd scaling", 0 ],
-			"obj-167::obj-222::obj-182" : [ "live.text[48]", "live.text[1]", 0 ],
-			"obj-42::obj-57" : [ "live.text[45]", "live.text[9]", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-20" : [ "live.button[10]", "live.button", 0 ],
+			"obj-9::obj-3::obj-2::obj-28" : [ "live.text[35]", "live.text[8]", 0 ],
+			"obj-42::obj-72" : [ "live.text[49]", "live.text[8]", 0 ],
+			"obj-55" : [ "live.text[42]", "live.text", 0 ],
+			"obj-60::obj-77" : [ "live.text[61]", "live.text[9]", 0 ],
+			"obj-167::obj-222::obj-46::obj-8" : [ "live.drop", "live.drop", 0 ],
+			"obj-60::obj-2::obj-62" : [ "live.text[66]", "live.text[9]", 0 ],
+			"obj-157::obj-222::obj-12::obj-4" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-2" : [ "live.text[30]", "live.text", 0 ],
+			"obj-162" : [ "live.text[17]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-26::obj-56" : [ "live.button[6]", "live.button[1]", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
+			"obj-157::obj-222::obj-182" : [ "live.text[44]", "live.text[1]", 0 ],
+			"obj-34" : [ " ", "vu-meters rate", 0 ],
 			"obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
 			"obj-9::obj-3::obj-2::obj-8::obj-55" : [ "live.text[3]", "live.text", 0 ],
-			"obj-9::obj-3::obj-2::obj-8::obj-607" : [ "live.button[1]", "live.button", 0 ],
-			"obj-9::obj-4::obj-51::obj-16" : [ "live.tab[4]", "live.tab", 0 ],
-			"obj-6" : [ "live.button[5]", "live.button[5]", 0 ],
-			"obj-167::obj-222::obj-2" : [ "live.gain~", " ", 0 ],
-			"obj-157::obj-222::obj-12::obj-4" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-157::obj-3" : [ "live.menu[2]", "live.menu", 0 ],
-			"obj-167::obj-222::obj-12::obj-4" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-157::obj-222::obj-182" : [ "live.text[44]", "live.text[1]", 0 ],
-			"obj-60::obj-2::obj-72" : [ "live.text[65]", "live.text[8]", 0 ],
-			"obj-34" : [ " ", "vu-meters rate", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-8" : [ "OSCIP1", "IP1", 0 ],
+			"obj-42::obj-57" : [ "live.text[45]", "live.text[9]", 0 ],
+			"obj-62" : [ "live.text[23]", "live.text[9]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-21" : [ "OSCIP4", "IP4", 0 ],
+			"obj-157::obj-222::obj-2" : [ "live.gain~[1]", " ", 0 ],
+			"obj-95" : [ "live.text[55]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-5::obj-12" : [ "live.button", "live.button", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-18" : [ "OSCIP3", "IP3", 0 ],
+			"obj-9::obj-5::obj-53" : [ "live.dial[1]", "scale", 0 ],
+			"obj-37" : [ "live.gain~[3]", "loudspeakers", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-11" : [ "live.numbox[12]", "live.numbox", 0 ],
+			"obj-60::obj-51" : [ "live.text[62]", "live.text[8]", 0 ],
+			"obj-60::obj-107" : [ "live.text[60]", "live.text[8]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-17" : [ "OSCIP2", "IP2", 0 ],
+			"obj-444::obj-64" : [ "live.text[13]", "live.text[8]", 0 ],
+			"obj-25" : [ "live.gain~[2]", "headphones", 0 ],
+			"obj-157::obj-222::obj-46::obj-36" : [ "select folder[2]", "select folder", 0 ],
+			"obj-60::obj-2::obj-58" : [ "live.text[67]", "live.text[9]", 0 ],
+			"obj-45" : [ "live.text[18]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-46::obj-6" : [ "live.text[36]", "live.text[1]", 0 ],
+			"obj-157::obj-222::obj-26::obj-58" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
 			"obj-28" : [ "live.text[31]", "live.text[8]", 0 ],
-			"obj-167::obj-3" : [ "live.menu[4]", "live.menu", 0 ]
+			"obj-157::obj-222::obj-46::obj-6" : [ "live.text[15]", "live.text[1]", 0 ],
+			"obj-151" : [ "live.text[46]", "live.text[8]", 0 ],
+			"obj-167::obj-222::obj-26::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
+			"obj-9::obj-3::obj-2::obj-8::obj-16" : [ "live.text[1]", "live.text", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-20" : [ "live.button[11]", "live.button", 0 ],
+			"obj-29" : [ "early reflections gain", "early reflections gain", 0 ],
+			"obj-167::obj-222::obj-2" : [ "live.gain~", " ", 0 ],
+			"obj-157::obj-222::obj-43::obj-8" : [ "live.dial[2]", "freq", 0 ],
+			"obj-60::obj-2::obj-57" : [ "live.text[64]", "live.text[9]", 0 ],
+			"obj-167::obj-222::obj-12::obj-4" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-14" : [ "live.text[29]", "live.text", 0 ],
+			"obj-167::obj-222::obj-43::obj-8" : [ "live.dial", "freq", 0 ],
+			"obj-157::obj-222::obj-26::obj-59" : [ "live.numbox[13]", "live.numbox[1]", 0 ],
+			"obj-167::obj-222::obj-182" : [ "live.text[48]", "live.text[1]", 0 ],
+			"obj-157::obj-222::obj-23" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-167::obj-222::obj-23" : [ "live.toggle", "live.toggle", 0 ],
+			"obj-42::obj-58" : [ "live.text[51]", "live.text[9]", 0 ],
+			"obj-445" : [ "live.text[41]", "live.text[8]", 0 ],
+			"obj-157::obj-3" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-2" : [ "live.text[21]", "live.text", 0 ],
+			"obj-444::obj-72" : [ "live.text[14]", "live.text[8]", 0 ],
+			"obj-9::obj-4::obj-51::obj-16" : [ "live.tab[4]", "live.tab", 0 ],
+			"obj-167::obj-222::obj-1" : [ "live.menu", "live.menu", 0 ],
+			"obj-167::obj-3" : [ "live.menu[4]", "live.menu", 0 ],
+			"obj-9::obj-3::obj-2::obj-31" : [ "live.text[34]", "live.text[8]", 0 ],
+			"obj-157::obj-222::obj-5::obj-12" : [ "live.button[3]", "live.button", 0 ],
+			"obj-60::obj-2::obj-72" : [ "live.text[65]", "live.text[8]", 0 ],
+			"obj-6" : [ "live.button[5]", "live.button[5]", 0 ],
+			"obj-157::obj-222::obj-1" : [ "live.menu[3]", "live.menu", 0 ],
+			"obj-9::obj-4::obj-51::obj-48" : [ "live.text", "live.text", 0 ],
+			"obj-167::obj-222::obj-26::obj-58" : [ "live.toggle[1]", "live.toggle[1]", 0 ],
+			"obj-42::obj-62" : [ "live.text[50]", "live.text[9]", 0 ],
+			"obj-159" : [ "live.text[16]", "live.text[8]", 0 ],
+			"obj-9::obj-5::obj-19" : [ "live.text[43]", "live.text[28]", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-53" : [ "OSCOutPort", "OutPort", 0 ],
+			"obj-9::obj-4::obj-15::obj-1::obj-14" : [ "live.text[20]", "live.text", 0 ],
+			"obj-9::obj-4::obj-15::obj-5::obj-53" : [ "OSCOutPort[1]", "OutPort", 0 ],
+			"obj-157::obj-222::obj-46::obj-8" : [ "live.drop[1]", "live.drop", 0 ],
+			"obj-60::obj-2::obj-3" : [ "live.text[63]", "live.text[9]", 0 ],
+			"obj-66" : [ "live.text[47]", "live.text[9]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -38524,9 +38521,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ODB-Panoramix-AVM-Presets.json",
-				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM-Tests/ODB",
-				"patcherrelativepath" : "../Panoramix-AVM-Tests/ODB",
+				"name" : "Panoramix-AVM.json",
+				"bootpath" : "/Volumes/Data2/Developpement/Panoramix-AVM",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -38689,9 +38686,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -38700,9 +38697,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -38711,7 +38708,9 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
+					"fontface" : [ 1 ],
 					"fontsize" : [ 11.0 ],
+					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -38720,9 +38719,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"fontname" : [ "Arial" ],
-					"fontface" : [ 1 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -38749,6 +38746,7 @@
 				"name" : "jbb",
 				"default" : 				{
 					"fontsize" : [ 9.0 ],
+					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -38757,8 +38755,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"fontname" : [ "Arial" ]
+
 				}
 ,
 				"parentstyle" : "",
