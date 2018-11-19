@@ -14,8 +14,8 @@
 							"/options/vumeters/rate" : 80.0,
 							"/master/name" : "Master",
 							"/master/color" : [ 0.0, 0.0, 0.0, 1.0 ],
-							"/master/numinputs" : 18,
-							"/master/numoutputs" : 18,
+							"/master/numinputs" : 16,
+							"/master/numoutputs" : 16,
 							"/master/visible" : 1,
 							"/master/trim" : 0.0,
 							"/master/dynamics/attack" : 10.01,
@@ -152,8 +152,7 @@
 							"/monitoring/itd/scaling" : 100.0,
 							"/monitoring/hrtf" : "",
 							"/monitoring/listener/orientation" : [ 0.0, 0.0, 0.0, 1.0 ],
-							"/monitoring/routing/output/1/master" : 17,
-							"/monitoring/routing/output/2/master" : 18,
+							"/monitoring/routing/output/empty" : [  ],
 							"/monitoring/lock" : 0,
 							"/bus/number" : 1,
 							"/bus/indices" : 1,
@@ -424,7 +423,7 @@
 							"/lfe/levels/output/visible" : 1,
 							"/lfe/levels/output/post" : 1,
 							"/lfe/levels/output/mode" : "rms",
-							"/lfe/routing/output/empty" : [  ],
+							"/lfe/routing/output/1/master" : [ 12, 13 ],
 							"/lfe/lock" : 0,
 							"/lfe/cutoff" : 50.0,
 							"/track/number" : 16,
@@ -2559,7 +2558,7 @@
 							"/viewer/settings/editable" : 1,
 							"/viewer/area/number" : 0,
 							"/viewer/anchor/number" : 0,
-							"/window/title" : "Panoramix",
+							"/window/title" : "Panoramix *",
 							"/window/visible" : 0,
 							"/window/moveable" : 1,
 							"/window/resizable" : 1,
@@ -2722,7 +2721,8 @@
 							"/window/floating" : 0
 						}
  ],
-					"Binaural Monitoring::itdscaling" : [ 100.0 ]
+					"Binaural Monitoring::itdscaling" : [ 100.0 ],
+					"Binaural Monitoring::HEADTRACKER::hedrotReceiver" : [ 1 ]
 				}
 
 			}
